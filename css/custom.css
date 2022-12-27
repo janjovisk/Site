@@ -1279,14 +1279,9 @@ svg circle:nth-child(2){
 
 @media (max-width:768px) {
       .gallery a span {
-    width: 320px !important;
-   }
-}
-
-@media (max-width:600px) {
-      .gallery a span {
     width: 210px !important;
    }
 }
+
 
 
