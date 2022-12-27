@@ -686,21 +686,17 @@
 
 @media (max-width:768px) {
       .gallery a span {
-    width: 500px !important;
+    width: 320px !important;
    }
 }
 
 @media (max-width:575px) {
       .gallery a span {
-    width: 320px !important;
-   }
-}
-
-@media (max-width:400px) {
-      .gallery a span {
     width: 210px !important;
    }
 }
+
+
 
 
 
