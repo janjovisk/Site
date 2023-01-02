@@ -9,6 +9,7 @@ $(document).ready(function () {
     $(".dashboard, .impressao").fadeOut();
     $(".menuToggle").removeClass('active');
     $("input[name='tela']").prop("checked", false);
+    $(".toggle, .toggle_recolhe").show();
     $(".navigation").addClass('active');
     $(".layout_group").fadeOut();
     setTimeout(function () {
