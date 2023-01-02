@@ -1277,11 +1277,61 @@ svg circle:nth-child(2){
     color: #00ced1;
 }
 
-@media (max-width:768px) {
-      .gallery a span {
-    width: 210px !important;
-   }
-}
+/* ajuste Responsivo -------------------------- */
 
+
+@media (max-width:767px) {
+    
+    
+    .gallery a span {
+        width: 210px !important;
+    }
+
+    .menu_dash{
+        left: -76px;
+    }
+
+    .dashboard {
+        padding: 7.6em 1em 1em 1.5em;
+    }
+
+
+    #abre_meu_dash ~ Label{
+        position: fixed;
+        top: 50px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        cursor: pointer;
+        z-index: 5;
+        transition: 0.5s ease-in-out;
+        font-size: 2em;
+        border-radius: 50%;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 15px 25px rgb(0 0 0 / 15%);
+        color: #00ced1;
+    }
+
+    #abre_meu_dash ~ Label .fa-circle-xmark{
+        display: none;
+    }
+
+    #abre_meu_dash:checked ~ Label .fa-ellipsis-vertical{
+        display: none;
+    }
+
+    #abre_meu_dash:checked ~ Label .fa-circle-xmark{
+        display: block;
+    }
+
+    #abre_meu_dash:checked ~ .menu_dash{
+        left: 0;
+    }
+
+}
 
 
