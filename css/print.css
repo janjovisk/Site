@@ -282,6 +282,12 @@ p {
     }
 }
 
+@media(max-width:767px) {
+    .containerP {
+        margin-top: 7.6em;
+    }
+}
+
 
 @media(min-width:768px) and (max-width:991px) {
 
