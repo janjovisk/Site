@@ -1,4 +1,3 @@
-// $('#video, .dashboard, .desktop, #xp_02, #webdesigner, #Ilustrador, #designerintruct').hide();
 $('#video, .dashboard, .impressao, #xp_02, #webdesigner, #Ilustrador, #designerintruct').hide();
 
 $(document).ready(function () {
@@ -73,23 +72,29 @@ $(document).ready(function () {
 
   // Exibir dashboard 
 
+  var width = screen.width;
   $("#sistem_view").click(function () {
     $(".desktop, .impressao").fadeOut(1000);
     setTimeout(function () {
       $(".dashboard, .principal").fadeIn(1000);
     }, 1500);
 
+    if (width <= 767)
+      $(".toggle, .toggle_recolhe").hide();
+    else
+      $(".toggle, .toggle_recolhe").show();
+
   });
 
-    // Exibir mobile
+  // Exibir mobile
 
-    // $("#mobile_view").click(function () {
-    //   $(".impressao, .dashboard, .principal").fadeOut(1000);
-    //   setTimeout(function () {
-    //     $(".desktop").fadeIn(1000);
+  // $("#mobile_view").click(function () {
+  //   $(".impressao, .dashboard, .principal").fadeOut(1000);
+  //   setTimeout(function () {
+  //     $(".desktop").fadeIn(1000);
 
-    //   }, 1500);
-    // });
+  //   }, 1500);
+  // });
 
 
   // Exibir Modelo de Impressão
@@ -142,6 +147,9 @@ $(document).ready(function () {
   });
 
 
+  $(".link_menu").click(function () {
+    $("#abre_meu_dash").prop("checked", false);
+  });
 
 
 
@@ -153,7 +161,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $("#xp_02").slideDown(1000);
       }, 1000);
-    }else{
+    } else {
       $("#xp_02").slideUp(1000);
       setTimeout(function () {
         $("#xp_01").slideDown(1000);
@@ -163,5 +171,4 @@ $(document).ready(function () {
   });
 
 });
-
 
