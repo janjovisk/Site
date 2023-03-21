@@ -687,7 +687,7 @@ label .numb {
 
 .treeview ul {
   text-transform: uppercase;
-  margin-left: -6px;
+  margin-left: 6px;
   font-weight: 800;
   font-size: 12px;
 }
