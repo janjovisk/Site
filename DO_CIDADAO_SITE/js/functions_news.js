@@ -126,7 +126,7 @@ $('.resultBox, .materia').click(function() {
 
 
 
-
+$('.img_fundo').hide();
 
 // TESTE DE IMAGEM BANNER CARROSSEL
 $(function () {
