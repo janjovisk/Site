@@ -698,6 +698,15 @@ label .numb {
   text-transform: uppercase;
 }
 
+.treeview li .Lv1 label{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.treeview li .Lv2 label{
+  font-size: 14px !important;
+}
+
 .treeview a {
   position: relative;
   font-size: 14px;
