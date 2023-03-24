@@ -7,7 +7,7 @@ window.onload = function() {
 
 
 
-// Botão de PEsquisa Avançada
+// Botão de Pesquisa Avançada
 $(function () {
 
   $('#PesAvanc').click(function () {
@@ -21,6 +21,26 @@ $(function () {
 
 });
 
+// Tipo de visualização
+$('#result_lista').hide();
+
+$(function () {
+
+  $('#tab01').click(function () {
+    $('.tab_views a').removeClass("ativo")
+    $(this).addClass("ativo");
+    $('#result_lista').hide();
+    $('#result_edicao').slideDown();
+  });
+
+  $('#tab02').click(function () {
+    $('.tab_views a').removeClass("ativo")
+    $(this).addClass("ativo");
+    $('#result_edicao').hide();
+    $('#result_lista').slideDown();
+  });
+
+});
 
 // Scroll com header fixo
 // $(window).on('scroll', function(event) {
