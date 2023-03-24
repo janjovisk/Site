@@ -285,7 +285,7 @@
     <section class="conteudo px-3">
 
         <div class="container-custom p-3">
-            <h3 class="subTitle"> Edição </h3>
+            <h3 class="text-center my-4"> Edição </h3>
 
             <div class="row">
                 <div class="col-2 px-0 px-lg-2">
@@ -423,7 +423,7 @@
 
             <div class="my-5">
 
-                <h3 class="subTitle">Caderno</h3>
+                <h3 class="text-center my-4">Caderno</h3>
 
                 <div class="row">
                     <div class="col-sm-6 col-xl-3  caderno">
@@ -460,7 +460,7 @@
 
             <div class="my-5" id="area_secao">
 
-                <h3 class="subTitle">Seção</h3>
+                <h3 class="text-center my-4">Seção</h3>
 
                 <div class="row">
                     <div class="col-lg-4 secao">
@@ -714,6 +714,12 @@
             // mousewheel: true,
             // keyboard: true,
         });
+
+        
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
 
 
     </script>
