@@ -333,6 +333,7 @@ a.btn {
   padding: 2px;
   margin: 8px !important;
   background: #fff;
+  border: 1px solid #fff !important;
   color: #303030;
   font-weight: 600;
 }
@@ -340,6 +341,13 @@ a.btn {
 .swiper-pagination-bullet-active {
   background: #274fae !important;
   color: #fff !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover{
+background: #fff;
+border: 1px solid #ccc !important;
+text-decoration: none;
 }
 
 .swiper-button-next,
@@ -939,27 +947,43 @@ label .numb {
   text-align: justify;
 }
 
-.page-item.disabled .page-link {
+.pagination li i{
+  color: #274fae;
+}
+
+.page-item.disabled .page-link,
+.page-item.disabled .page-link i {
   color: #ccc !important;
 }
 
 .page-link {
-  color: #51a2e9 !important;
-  margin: 0 6px;
-  border-radius: 0px !important;
+  background: #fff;
+  width: 36px !important;
+  height: 36px !important;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #303030 !important;
+  margin: 0 12px;
+  border-radius: 50% !important;
+  border: #fff !important;
+  transition: 0.5s;
 }
 
 .page-link:hover {
-  color: #fff !important;
-  background: #4885B9 !important;
+  background: #fff;
+  border: 1px solid #ccc !important;
   text-decoration: none;
+
 }
 
 .page-item.active .page-link {
   color: #fff !important;
-  background-color: #002D53 !important;
-  border-color: #002D53 !important;
+  background-color: #274fae !important;
+  border-color: #274fae !important;
 }
+
 
 .recente .links {
   font-weight: 400;
