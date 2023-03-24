@@ -22,7 +22,7 @@ $(function () {
 });
 
 // Tipo de visualização
-$('#result_lista').hide();
+$('#result_lista, .sobe').hide();
 
 $(function () {
 
@@ -54,6 +54,16 @@ $(function () {
 //   }
 // });
 
+
+// Scroll UP
+ $(window).on('scroll', function(event) {
+  if ($(window).scrollTop() > 300) {
+  $('.sobe').fadeIn();
+    
+  } else {
+    $('.sobe').fadeOut();
+  }
+});
 
 // Selecionando Caderno Executivo
 
