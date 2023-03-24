@@ -156,130 +156,134 @@
         </div>
     </div>
 
-    <header id="header_menu" class="container-fluid d-flex align-items-center">
-        <form class="container-lg mt-3">
-            <div class="row">
-                <div class="col-3 col-lg-2 col-xl-3 d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/logo_DO.png" alt="Diário Oficial do Estado de São Paulo" id="LogoDO">
-                    </a>
-                </div>
+    <header id="header_menu" class="container-fluid px-0">
+        <form class="container-custom px-3 px-xxl-0">
+            <div class="row position-relative">
+                <a class="navbar-brand d-none d-xxl-flex" href="index.html"> <img src="img/logo_DO.png"
+                        alt="Diário Oficial do Estado de São Paulo" id="LogoDO"> </a>
 
-                <div class="col-5 col-lg-6 d-flex align-items-center position-relative">
+                <div class="col-2 position-relative d-xxl-none align-items-center px-0">
+                    <a class="navbar-brand" href="index.html"> <img src="img/logo_DO.png"
+                            alt="Diário Oficial do Estado de São Paulo" id="LogoDO"> </a>
+                </div>
+                <div class="col-10 col-xxl-12">
                     <input type="text" id="busca_principal">
-                    <button type="button" id="buscar"><i class="fal fa-search"></i></button>
-                </div>
 
-                <div class="col-2 col-lg col-xl-2 d-flex align-items-center position-relative my-3 my-lg-0">
-                    <button type="button" id="PesAvanc" class="BtnType1"><span class="d-none d-md-block">Pesquisa Avançada</span> <i
-                            class="far fa-chevron-down"></i></button>
-                </div>
+                    <button type="button" id="buscar" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Pesquisar"><i class="fal fa-search"></i></button>
 
-                <div class="col-2 col-lg-1 d-flex align-items-center justify-content-center">
-                    <button type="button" id="menu"><i class="fal fa-bars fa-2x"></i></button>
-                </div>
+                    <button type="button" id="limpar" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Limpar Campos"><i class="fal fa-times"></i></button>
 
+                    <button type="button" id="PesAvanc" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Pesquisa Avançada"><i class="far fa-chevron-down"></i></button>
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-9 col-xl-8 position-relative offset-lg-2 offset-xl-3">
-                    <div id="BoxPesqAvanc">
-                        <div class="px-4 pt-4 text-center">
-                            <h2 class="mt-2 mb-5">
-                                Busque no Diário Oficial
-                            </h2>
+            <div class="position-relative">
+                <div id="BoxPesqAvanc">
+                    <div class="px-4 pt-4 text-center">
+                        <h4 class="mt-2 mb-3">
+                            Busca Avançada
+                        </h4>
 
-                            <div class="row">
-                                <div class="col-xl-4 col-md-6 mb-4">
-                                    <div class="inputBox">
-                                        <input type="date" name="" class="form-control def1" required="">
-                                        <label for="">Data de Início</label>
-                                    </div>
-                                </div>
+                        <div class="row">
 
-                                <div class="col-xl-4 col-md-6 mb-4">
-                                    <div class="inputBox">
-                                        <input type="date" name="" class="form-control def1" required="">
-                                        <label for="">Data Final</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6 mb-4">
-                                    <div class="inputBox">
-                                        <select name="" class="form-select def1" id="">
-                                            <option value="Busca por Título e Conteúdo">Busca por Título e Conteúdo
-                                            </option>
-                                            <option value="Busca por Título">Busca por Título</option>
-                                            <option value="Busca por Conteúdo">Busca por Conteúdo</option>
-                                        </select>
-                                        <label for="">Tipo de Busca</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6 mb-4">
-                                    <div class="inputBox">
-                                        <select name="" class="form-select def1" id="">
-                                            <option value="">Todos</option>
-                                            <option value="">Itens ---- </option>
-                                        </select>
-                                        <label for="">Busca por Caderno</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6 mb-4">
-                                    <div class="inputBox">
-                                        <select name="TipoBusca" class="form-select def1" id="TipoBusca">
-                                            <option value="">Todos</option>
-                                            <option value="">Itens ---- </option>
-                                        </select>
-
-                                        <label for="">Busca por Seção</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-4 col-md-6 mb-4">
-                                    <div class="inputBox">
-                                        <select name="TipoBusca" class="form-select def1" id="TipoBusca">
-                                            <option value="">Todos</option>
-                                            <option value="">Itens ---- </option>
-                                        </select>
-
-                                        <label for="">Busca por Tipos de Ato</label>
-                                    </div>
+                            <div class="col-12 mb-4">
+                                <div class="inputBox">
+                                    <select name="" class="form-select def1" id="data_search">
+                                        <option value="01">Hoje - 10/03/2023 </option>
+                                        <option value="02">Definir uma Data</option>
+                                    </select>
+                                    <label for="">Data:</label>
                                 </div>
                             </div>
 
+                            <div class="col-12" id="data_custom">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="inputBox">
+                                            <input type="date" name="" class="form-control def1" required="">
+                                            <label for="">Data de Início</label>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-md-6 mb-4">
+                                        <div class="inputBox">
+                                            <input type="date" name="" class="form-control def1" required="">
+                                            <label for="">Data Final</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-md-6 mb-4">
+                                <div class="inputBox">
+                                    <select name="" class="form-select def1" id="">
+                                        <option value="">Todos</option>
+                                        <option value="">Itens ---- </option>
+                                    </select>
+                                    <label for="">Caderno</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="inputBox">
+                                    <select name="" class="form-select def1" id="">
+                                        <option value="">Todos</option>
+                                        <option value="">Itens ---- </option>
+                                    </select>
+
+                                    <label for="">Seção</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="inputBox">
+                                    <select name="" class="form-select def1" id="">
+                                        <option value="">Por Data</option>
+                                        <option value="">Por Título</option>
+                                    </select>
+
+                                    <label for="">Ordenação</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="inputBox">
+                                    <select name="" class="form-select def1" id="">
+                                        <option value="">Resultado Exato</option>
+                                        <option value="">Todas a palavras</option>
+                                    </select>
+
+                                    <label for="">Tipo de Pesquisa</label>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="footer_pesq p-4">
-                            <div class="row">
-                                <div class="col-lg-4 col-6">
-                                    <button type="button" class="btn btn-cancel w-100">Limpar</button>
-                                </div>
+                    </div>
 
-                                <div class="col-lg-4 offset-lg-4 col-6">
-                                    <button type="button" class="btn btn-ok w-100" id="go_resultado">Buscar</button>
-                                </div>
+                    <div class="footer_pesq p-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="button" class="btn btn-ok w-100" id="go_resultado">Pesquisar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-10 col-xl-9 offset-lg-2 offset-xl-3 d-none d-lg-block" id="caminho">
-                    <div>
-                        <a href="index.html"><i class="far fa-home me-1"></i>Diário Oficial</a>>
-                        <span>Leitura no Diário</span>
-                    </div>
+            <div class="row position-relative mt-4">
+                <div class="col-10 col-xxl-12 offset-2 offset-xxl-0 d-none d-xxl-block" id="caminho">
+                    <a href="index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a>
                 </div>
             </div>
         </form>
     </header>
-
     <section class="conteudo px-3">
 
-        <div class="container-lg p-3">
+        <div class="container-custom p-3">
             <h2 class="mt-3 mb-5">
                 Leitura no Diário
             </h2>
@@ -511,7 +515,7 @@
 
         </div>
 
-        <div class="container-lg px-0 py-3">
+        <div class="container-custom px-0 py-3">
             <div class="row mx-0" id="filtoList">
                 <div class="col-sm-6 col-lg-3 px-0 px-sm-1 mb-3">
                     <select name="" id="" class="form-select selectMOD">
@@ -539,7 +543,7 @@
             </div>
         </div>
 
-        <div class="container-lg py-3">
+        <div class="container-custom py-3">
             <div class="mx-0 position-relative" id="result_edicao">
 
                 <div class="retrair">
