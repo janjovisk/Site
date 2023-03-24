@@ -19,6 +19,10 @@ $(function () {
     $('#data_custom').slideDown();
   });
 
+  $('#data_search2').change(function () {
+    $('#data_custom2').slideDown();
+  });
+
 });
 
 // Tipo de visualização
