@@ -207,7 +207,7 @@
                                             <label for="">Data de Início</label>
                                         </div>
                                     </div>
-        
+
                                     <div class="col-md-6 mb-4">
                                         <div class="inputBox">
                                             <input type="date" name="" class="form-control def1" required="">
@@ -216,7 +216,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
 
                             <div class="col-md-6 mb-4">
                                 <div class="inputBox">
@@ -276,7 +276,8 @@
 
             <div class="row position-relative mt-4">
                 <div class="col-10 col-xxl-12 offset-2 offset-xxl-0 d-none d-xxl-block" id="caminho">
-                    <a href="index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a>
+                    <a href="index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a> >
+                    <span>Leitura do Diário</span>
                 </div>
             </div>
         </form>
@@ -284,12 +285,10 @@
     <section class="conteudo px-3">
 
         <div class="container-custom p-3">
-            <h2 class="mt-3 mb-5">
-                Leitura no Diário
-            </h2>
+            <h3 class="subTitle"> Edição </h3>
 
             <div class="row">
-                <div class="col col-sm-2 col-xl-1 offset-sm-1 offset-xl-2 px-0 px-lg-2">
+                <div class="col-2 px-0 px-lg-2">
                     <select name="" id="" class="form-select selectMOD">
                         <option value="">01</option>
                         <option value="">02</option>
@@ -312,7 +311,7 @@
                     </select>
                 </div>
 
-                <div class="col-4 col-sm-3 col-xl-3 px-0 px-lg-2">
+                <div class="col-4 px-0 px-lg-2">
                     <select name="" id="" class="form-select selectMOD">
                         <option value="">Janeiro</option>
                         <option value="">Fevereiro</option>
@@ -329,7 +328,7 @@
                     </select>
                 </div>
 
-                <div class="col col-sm-3 col-xl-3 px-0 px-lg-2">
+                <div class="col-4 px-0 px-lg-2">
                     <select name="" id="" class="form-select selectMOD">
                         <option value="">2023</option>
                         <option value="">2022</option>
@@ -340,8 +339,9 @@
                     </select>
                 </div>
 
-                <div class="col col-sm-2 col-xl-1 px-0 px-lg-2">
-                    <button type="button" class="btn btn-ok w-100 h-100 shadow-sm"><i class="fal fa-search"></i></button>
+                <div class="col-2 px-0 px-lg-2">
+                    <button type="button" class="btn btn-ok w-100 h-100 shadow-sm"><i
+                            class="fal fa-search"></i></button>
                 </div>
             </div>
 
@@ -349,9 +349,9 @@
             <div class="my-5 px-0">
                 <div class="row">
 
-                    <div class="col DataDia">
-                        <label class="h-100">
-                            <i class="far fa-chevron-left fa-3x"></i>
+                    <div class="col DataDia d-flex justify-content-center align-items-center">
+                        <label class="">
+                            <i class="fas fa-angle-left fa-3x"></i>
                         </label>
                     </div>
 
@@ -411,9 +411,9 @@
                         </label>
                     </div>
 
-                    <div class="col DataDia">
-                        <label class="h-100">
-                            <i class="far fa-chevron-right fa-3x"></i>
+                    <div class="col DataDia d-flex justify-content-center align-items-center">
+                        <label class="">
+                            <i class="fas fa-angle-right fa-3x"></i>
                         </label>
                     </div>
 
@@ -491,24 +491,17 @@
             </div>
 
 
-            <div class="my-5" id="resumoSelect">
+            <div class="" id="resumoSelect">
                 <div class="row">
-                    <div class="col-md-6 col-lg-9 col-xxl-10 p-0 d-flex">
-                        <div class="marcador"></div>
-                        <div class="assunto">10/03/2023</div>
-                        <div class="assunto" id="b01">Executivo</div>
-                        <div class="assunto" id="b02">Legislativo</div>
-                        <div class="assunto" id="b03">Municipal</div>
-                        <div class="assunto" id="b04">Empresarial</div>
-                        <div class="assunto" id="c01">1 - Atos Normativos</div>
-                        <div class="assunto" id="c02">2 - Atos de Pessoal</div>
-                        <div class="assunto" id="c03">3 - Negócios Públicos</div>
+                    <div class="12">
+                        <h3 class="text-center my-4">
+                            Caderno executivo, seção 1, de 25 de fevereiro de 2023
+                        </h3>
                     </div>
 
-                    <div
-                        class="col-md-6 col-lg-3 col-xxl-2 p-0 d-flex justify-content-center justify-content-md-end align-items-center mt-4 mt-md-0">
-                        <a href="#" class="linksDoc" alt="Documento PDF">Diário Completo<i
-                                class="fal fa-file-pdf ms-3"></i></a>
+                    <div class="col-12 p-0 d-flex justify-content-center">
+                        <a href="#" class="linksDoc" alt="Documento PDF">
+                            <img src="img/verified.png" class="me-3"> DIÁRIO COMPLETO CERTIFICADO</a>
                     </div>
                 </div>
             </div>
@@ -517,25 +510,20 @@
 
         <div class="container-custom px-0 py-3">
             <div class="row mx-0" id="filtoList">
-                <div class="col-sm-6 col-lg-3 px-0 px-sm-1 mb-3">
-                    <select name="" id="" class="form-select selectMOD">
-                        <option>Explorar Sumário</option>
-                    </select>
-                </div>
 
-                <div class="col-sm-6 col-lg-3 px-0 px-sm-1 mb-3">
+                <div class="col-md-4 px-0 px-sm-1 mb-3">
                     <select name="" id="" class="form-select selectMOD">
                         <option>Extrutura Principal</option>
                     </select>
                 </div>
 
-                <div class="col-sm-6 col-lg-3 px-0 px-sm-1 mb-3">
+                <div class="col-md-4 px-0 px-sm-1 mb-3">
                     <select name="" id="" class="form-select selectMOD">
                         <option>Extrutura Subordinada</option>
                     </select>
                 </div>
 
-                <div class="col-sm-6 col-lg-3 px-0 px-sm-1 mb-3">
+                <div class="col-md-4 px-0 px-sm-1 mb-3">
                     <select name="" id="" class="form-select selectMOD">
                         <option>Tipo de Ato</option>
                     </select>
@@ -543,17 +531,33 @@
             </div>
         </div>
 
+     
+
         <div class="container-custom py-3">
+        
+
+            <nav class="tab_views">
+                <a href="#result_edicao" class="ativo" id="tab01">
+                    <img src="img/tree-view.png">
+                    <span>Visualização Estruturada</span>
+                </a>
+
+                <a href="#result_lista" id="tab02">
+                    <img src="img/mesa.png">
+                    <span>Visualização em Lista</span>
+                </a>
+            </nav>
+
+
             <div class="mx-0 position-relative" id="result_edicao">
 
-                <div class="retrair">
-                    <input type="checkbox" id="abre_fecha_tudo">
-                    <label for="abre_fecha_tudo">
-                        <span name="retrai">Retrair Tudo <i class="far fa-angle-double-up ms-2"></i> </span>
-                        <span name="expand">Expandir Tudo <i class="far fa-angle-double-down ms-2"></i></span>
+                <div class="form-check form-switch mb-4 ms-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="abre_fecha_tudo">
+                    <label for="abre_fecha_tudo" class="form-check-label">
+                        <span name="retrai">Retrair Tudo </span>
+                        <span name="expand">Expandir Tudo </span>
                     </label>
                 </div>
-
 
                 <ul class="treeview Lv1">
                     <li>
@@ -592,26 +596,10 @@
                                 <label for="SECR_sub1_C">Secretaria Executiva</label>
 
                                 <ul class="Lv3">
-                                    <li>
-                                        <label for="SECR_sub1_C">Outros Assuntos</label>
-
-                                        <ul class="Lv4">
-                                            <li>
-                                                <label for="SECR_sub1_C">Outros Assuntos</label>
-
-                                                <ul class="Lv5">
-                                                    <li>
-                                                        <label for="SECR_sub1_C">Outros Assuntos</label>
-
-                                                        <ul class="Lv6">
-                                                            <li><a href="public.html">PORTARIA Nº 10, DE 10 DE Março DE 2013</a> </li>
-                                                            <li><a href="public.html">PORTARIA Nº 10, DE 10 DE Março DE 2013, texto , texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto</a> </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-
-                                            </li>
-                                        </ul>
+                                    <li><a href="public.html">PORTARIA Nº 10, DE 10 DE Março DE 2013</a> </li>
+                                    <li><a href="public.html">PORTARIA Nº 10, DE 10 DE Março DE 2013, texto , texto,
+                                            texto, texto, texto, texto, texto, texto, texto, texto, texto, texto texto,
+                                            texto, texto, texto, texto, texto, texto, texto, texto, texto, texto</a>
                                     </li>
                                 </ul>
                             </li>
@@ -619,6 +607,57 @@
                     </li>
                 </ul>
             </div>
+
+
+            <div class="container-custom px-3" id="result_lista">
+                <div class="mb-4">
+                    <div class="row">
+                        <div class="col-12">
+    
+    
+                            <div class="resultBox">
+                                <div class="caminho">Seção 1 > Atos do Poder Judiciário > Supremo Tribunal Federal > Plenário > Edição Nº 36 de 22/02/2023 - Pág. 1</div>
+                                <h6 class="titulo">PORTARIA Nº 10, DE 10 DE MARÇO DE 2023</h6>
+                                <div class="descricao">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                </div>
+                            </div>
+    
+                            <div class="resultBox">
+                                <div class="caminho">Seção 1 > Atos do Poder Judiciário > Supremo Tribunal Federal > Plenário > Edição Nº 36 de 22/02/2023 - Pág. 1</div>
+                                <h6 class="titulo">PORTARIA Nº 10, DE 10 DE MARÇO DE 2023</h6>
+                                <div class="descricao">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                </div>
+                            </div>
+    
+                            <div class="resultBox">
+                                <div class="caminho">Seção 1 > Atos do Poder Judiciário > Supremo Tribunal Federal > Plenário > Edição Nº 36 de 22/02/2023 - Pág. 1</div>
+                                <h6 class="titulo">PORTARIA Nº 10, DE 10 DE MARÇO DE 2023</h6>
+                                <div class="descricao">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                </div>
+                            </div>
+    
+                            <div class="resultBox">
+                                <div class="caminho">Seção 1 > Atos do Poder Judiciário > Supremo Tribunal Federal > Plenário > Edição Nº 36 de 22/02/2023 - Pág. 1</div>
+                                <h6 class="titulo">PORTARIA Nº 10, DE 10 DE MARÇO DE 2023</h6>
+                                <div class="descricao">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto aut sapiente perspiciatis praesentium reprehenderit accusamus, impedit blanditiis esse. Cumque quidem harum odio possimus sint tenetur vitae incidunt laboriosam voluptatum.
+                                </div>
+                            </div>
+    
+                        
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
