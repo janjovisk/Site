@@ -1088,7 +1088,16 @@ label .numb {
 
 
 #bus_avanc_page h3{
+  text-transform: uppercase;
   color: #1f54ad;
+}
+
+#bus_avanc_page h5{
+  font-size: 1em;
+  font-weight: bolder;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  color: #000;
 }
 
 /* FOOTER ------------------ */
