@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb {
 
 /* Handle on hover */
 html::-webkit-scrollbar-thumb:hover {
-  background: #141414;
+  background: #000;
 }
 
 h1,
@@ -61,7 +61,7 @@ p {
 a,
 a:active {
   cursor: pointer;
-  color: #274fae;
+  color: #1f54ad;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -218,7 +218,7 @@ a.btn {
   top: 7px;
   left: 10px;
   background: #fff;
-  color: #707070;
+  color: #797979;
   pointer-events: none;
   transition: 0.5s;
   font-weight: 400;
@@ -234,7 +234,7 @@ a.btn {
 
 .def1:focus,
 .def1:valid {
-  color: #141414;
+  color: #000;
   transition: 1s;
 }
 
@@ -279,7 +279,7 @@ a.btn {
 }
 
 .btn-cancel {
-  background: #141414;
+  background: #000;
 }
 
 .btn-back {
@@ -409,7 +409,7 @@ text-decoration: none;
   flex-direction: column;
   align-items: center;
   z-index: 3;
-  color: #141414;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -473,7 +473,7 @@ text-decoration: none;
 }
 
 .l4 {
-  background: #141414;
+  background: #000;
 }
 
 .link-home:hover,
@@ -505,7 +505,7 @@ text-decoration: none;
 }
 
 .link-home2 span {
-  color: #141414 !important;
+  color: #000 !important;
   font-weight: 400;
   font-size: 1em;
   text-align: center;
@@ -514,7 +514,7 @@ text-decoration: none;
 .link-home2:hover,
 .link-home2:active {
   text-decoration: none;
-  border: 1px solid #141414;
+  border: 1px solid #000;
 }
 
 .treeview input,
@@ -607,7 +607,7 @@ text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #141414;
+  color: #000;
   font-weight: 500;
   font-size: 1.2em;
   color: #303030;
@@ -618,7 +618,7 @@ text-decoration: none;
 
 .DataDia input[name="semana"]:disabled~label,
 .DataDia input[name="semana"]:disabled~label:hover {
-  color: #808080;
+  color: #424242;
   background: #fff;
   border: 1px solid #E8E8E8;
   cursor: default;
@@ -638,7 +638,7 @@ text-decoration: none;
 .DataDia label:hover,
 .caderno label:hover,
 .secao label:hover {
-  border: 1px solid #707070;
+  border: 1px solid #797979;
   color: #303030;
 }
 
@@ -679,7 +679,7 @@ label .numb {
 }
 
 .marcador.chave {
-  background: #141414;
+  background: #000;
 }
 
 .assunto {
@@ -720,7 +720,7 @@ label .numb {
 }
 
 .selectMOD:hover {
-  border: 1px solid #141414;
+  border: 1px solid #000;
 }
 
 .tab_views{
@@ -892,7 +892,7 @@ label .numb {
 
 .resultBox .caminho {
   font-size: 12px;
-  color: #737373;
+  color: #797979;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -900,14 +900,14 @@ label .numb {
 
 .conteudo .caminho {
   font-size: 14px;
-  color: #737373;
+  color: #797979;
 }
 
 .resultBox h6 {
   margin: 4px 0;
   font-weight: 600;
   text-transform: uppercase;
-  color: #0C5088;
+  color: #1f54ad;
 }
 
 .resultBox .descricao,
@@ -1034,7 +1034,7 @@ label .numb {
 }
 
 .box .links:nth-child(2) {
-  background: #0C5088;
+  background: #1f54ad;
 }
 
 .box .links:nth-child(3) {
@@ -1098,7 +1098,7 @@ label .numb {
 }
 
 .linha_preta {
-  background: #141414;
+  background: #000;
 }
 
 
