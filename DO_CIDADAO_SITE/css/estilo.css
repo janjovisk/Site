@@ -61,13 +61,13 @@ p {
 a,
 a:active {
   cursor: pointer;
-  color: #4885B9;
+  color: #274fae;
   text-decoration: none;
   transition: 0.5s;
 }
 
 a:hover {
-  color: #51a2e9;
+  color: #007dd7;
   text-decoration: underline;
 }
 
@@ -75,7 +75,7 @@ a.btn {
   text-decoration: none;
 }
 
-.container-custom{
+.container-custom {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -105,12 +105,14 @@ a.btn {
   height: 40px;
   width: 100%;
   padding: 0 16px;
-  border: 1px solid #cccccc;
-  background: linear-gradient(0deg, #fff, #E8E8E8 10%, #fff);
+  border: 1px solid #E8E8E8;
+  /* background: linear-gradient(0deg, #fff, #E8E8E8 10%, #fff); */
   outline: none;
 }
 
-#buscar, #limpar, #PesAvanc{
+#buscar,
+#limpar,
+#PesAvanc {
   right: 38px;
   margin: 1px 16px;
   position: absolute;
@@ -124,38 +126,43 @@ a.btn {
   transition: 0.5s;
 }
 
-#PesAvanc{
+#PesAvanc {
   right: -3px;
 }
 
 
-#buscar:hover, #limpar:hover, #PesAvanc:hover{
-  box-shadow:inset 0 0 0 #cccccc;
+#buscar:hover,
+#limpar:hover,
+#PesAvanc:hover {
+  box-shadow: inset 0 0 0 #cccccc;
   background: #fff;
 }
 
 
-#buscar:active, #limpar:active, #PesAvanc:active{
+#buscar:active,
+#limpar:active,
+#PesAvanc:active {
   box-shadow: inset 0 2px 5px #cccccc;
   background: #f0f0f0;
 }
 
 
-#PesAvanc.alt{
+#PesAvanc.alt {
   box-shadow: inset 0 2px 5px #cccccc;
   background: #f0f0f0;
 }
 
-#PesAvanc.alt i{
+#PesAvanc.alt i {
   transition: 0.5s;
-  transform: rotate3d(1,0,0, 180deg);
+  transform: rotate3d(1, 0, 0, 180deg);
 }
 
-#limpar, #data_custom{
+#limpar,
+#data_custom {
   display: none;
 }
 
-#acoes{
+#acoes {
   margin: 0 -0.75em !important;
 }
 
@@ -168,9 +175,9 @@ a.btn {
   border: 1px solid #ccc;
   outline: none;
   background: #fff;
-  box-shadow:inset 0 0 0 #00000030;
+  box-shadow: inset 0 0 0 #00000030;
   height: 40px;
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .BtnType1:hover {
@@ -185,21 +192,12 @@ a.btn {
   position: absolute;
   z-index: 3;
   background: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #E8E8E8;
   box-shadow: 0 10px 20px #00000030;
   top: -2px;
   overflow: hidden;
 }
 
-.selectMOD {
-  border-radius: 0px;
-  border: 1px solid #cccccc;
-  box-shadow: 0 3px 4px #00000030, inset 0 0 0 #00000030;
-  font-size: 1.4em;
-  font-weight: 600;
-  color: #4885B9;
-  padding: 6px 16px;
-}
 
 .inputBox {
   position: relative;
@@ -255,12 +253,12 @@ a.btn {
   margin-top: -20px;
   margin-bottom: 8px;
   font-size: 0.8em;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.btn{
+.btn {
   border-radius: 0px !important;
 }
 
@@ -284,7 +282,7 @@ a.btn {
   background: #141414;
 }
 
-.btn-back{
+.btn-back {
   background: #fff;
   border: 1px solid #ccc;
   transition: 0.5s;
@@ -298,7 +296,7 @@ a.btn {
   filter: brightness(1.5);
 }
 
-.btn-back:hover{
+.btn-back:hover {
   background: #f0f0f0;
 }
 
@@ -344,21 +342,23 @@ a.btn {
   color: #fff !important;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   margin-top: 96px !important;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   margin-left: 50% !important;
   transform: translateX(-120px);
 }
 
-.swiper-button-next{
+.swiper-button-next {
   margin-right: 50% !important;
   transform: translateX(120px);
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: #274fae !important;
   font-weight: 800;
   font-size: 1.4em !important;
@@ -524,14 +524,18 @@ a.btn {
   display: none;
 }
 
+.DataDia {
+  padding: 0 3px;
+}
+
 .DataDia label {
   background: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #E8E8E8;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #4885B9;
+  color: #303030;
   font-weight: 800;
   text-transform: uppercase;
   max-width: 120px;
@@ -541,9 +545,32 @@ a.btn {
 
 .DataDia:first-child label,
 .DataDia:last-child label {
-  border: 1px solid #fff;
+  background: #274fae;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 64px !important;
+  height: 64px !important;
 }
 
+.DataDia:first-child label:hover,
+.DataDia:last-child label:hover {
+  background: #fff;
+  color: #274fae;
+  border-radius: 50%;
+  width: 64px !important;
+  height: 64px !important;
+  border: none;
+}
+
+
+.DataDia:first-child label i {
+  margin-left: -6px;
+}
+
+.DataDia:last-child label i {
+  margin-right: -6px;
+}
 
 
 .DataDia .num {
@@ -554,6 +581,7 @@ a.btn {
 .DataDia .sem {
   margin-top: -20px;
   margin-bottom: 8px;
+  font-weight: 400;
   font-size: 1.3em;
 }
 
@@ -568,15 +596,15 @@ a.btn {
 .secao label {
   position: relative;
   width: 100%;
-  height: 60px;
-  border: 1px solid #cccccc;
+  height: 90px;
+  border: 1px solid #E8E8E8;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #141414;
-  font-weight: 600;
-  font-size: 1.4em;
-  color: #4885B9;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #303030;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -584,17 +612,17 @@ a.btn {
 
 .DataDia input[name="semana"]:disabled~label,
 .DataDia input[name="semana"]:disabled~label:hover {
-  color: #ccc;
+  color: #808080;
   background: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #E8E8E8;
   cursor: default;
 }
 
 .DataDia input[name="semana"]:checked~label,
 .caderno input[name="caderno"]:checked~label,
 .secao input[name="secao"]:checked~label {
-  background: #0C5088;
-  border: 1px solid #0C5088;
+  background: #274fae;
+  border: 1px solid #274fae;
   color: #fff;
   border: none;
   cursor: default;
@@ -604,25 +632,37 @@ a.btn {
 .DataDia label:hover,
 .caderno label:hover,
 .secao label:hover {
-  background: #4885B9;
-  border: 1px solid #4885B9;
-  color: #fff;
+  border: 1px solid #707070;
+  color: #303030;
+}
+
+.secao label {
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 label .numb {
-  font-size: 1.5em;
-  position: absolute;
-  top: 50%;
-  left: 24px;
-  transform: translateY(-50%);
+  font-size: 2em;
   font-weight: 800;
+  padding-bottom: 0;
+  margin-bottom: -10px;
 }
 
 .subTitle {
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-weight: 800;
   text-align: center;
+}
+
+#resumoSelect h3 {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 800;
+  margin-bottom: 0;
 }
 
 .marcador {
@@ -632,7 +672,7 @@ label .numb {
   background: #002D53;
 }
 
-.marcador.chave{
+.marcador.chave {
   background: #141414;
 }
 
@@ -652,16 +692,73 @@ label .numb {
 }
 
 .linksDoc {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
 }
 
 
-#filtoList .selectMOD {
-  color: #737373;
+.selectMOD {
+  border:  1px solid #E8E8E8;
+  height: 44px;
+  border-radius: 0px;
+  color: #274fae;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url("../img/select_down.png") 94.5% 50% no-repeat;
+  background-size: auto 40%;
+  transition: 0.5s;
 }
+
+.selectMOD:hover {
+  border: 1px solid #141414;
+}
+
+.tab_views{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab_views img{
+  width: 36px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.tab_views a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0 #274fae;
+  margin: 6px 16px;
+  transition: 0.5s;
+}
+
+.tab_views a.ativo{
+  box-shadow: 0 5px 0 0 #274fae;
+  
+}
+
+.tab_views a:hover img{
+  opacity: 0.6;
+}
+
+
+.tab_views a:hover{
+  text-decoration: none;
+  color: #007dd7;
+}
+
+
+
+
+
+
+
 
 
 .retrair {
@@ -678,7 +775,6 @@ label .numb {
   cursor: pointer;
 }
 
-#abre_fecha_tudo,
 #abre_fecha_tudo~label span[name="expand"],
 #abre_fecha_tudo:checked~label span[name="retrai"],
 .treeview input:checked~.Lv2 {
@@ -689,6 +785,9 @@ label .numb {
   display: block;
 }
 
+#abre_fecha_tudo~label {
+  color: #274fae;
+}
 
 .treeview li {
   list-style: none;
@@ -704,7 +803,7 @@ label .numb {
 
 .treeview ul {
   text-transform: uppercase;
-  margin-left: 6px;
+  margin-left: 16px;
   font-weight: 800;
   font-size: 12px;
 }
@@ -715,19 +814,19 @@ label .numb {
   text-transform: uppercase;
 }
 
-.treeview li .Lv1 label{
-  font-size: 18px;
+.treeview li .Lv1 label {
+  font-size: 16px;
   font-weight: bolder;
 }
 
-.treeview li .Lv2 label{
-  font-size: 14px !important;
+.treeview li .Lv2 label {
+  font-size: 12px !important;
 }
 
 .treeview a {
   position: relative;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   width: 100%;
   overflow: hidden;
 }
@@ -784,7 +883,7 @@ label .numb {
   white-space: nowrap;
 }
 
-.conteudo .caminho{
+.conteudo .caminho {
   font-size: 14px;
   color: #737373;
 }
@@ -916,20 +1015,20 @@ label .numb {
 }
 
 
-.logo_doc{
+.logo_doc {
   height: 100px;
   margin-bottom: 12px;
 }
 
-.texto_doc_just{
+.texto_doc_just {
   text-align: justify;
 }
 
-.texto_doc_just p{
+.texto_doc_just p {
   text-indent: 46px
 }
 
-.preambulo{
+.preambulo {
   margin-left: 50%;
   text-align: start;
 }
@@ -963,7 +1062,7 @@ label .numb {
     height: 88px;
     position: absolute;
     top: 50%;
-    transform: translate(-110%,-50%);
+    transform: translate(-110%, -50%);
   }
 }
 
@@ -974,10 +1073,10 @@ label .numb {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 
-  
+
 
   #header_menu {
 
@@ -1019,9 +1118,7 @@ label .numb {
     display: none;
   }
 
-  #header_menu {
-
-}
+  #header_menu {}
 
 }
 
@@ -1036,11 +1133,11 @@ label .numb {
   }
 
 
-  .preambulo{
+  .preambulo {
     margin-left: 35%;
     text-align: start;
   }
-  
+
 
 }
 
@@ -1103,7 +1200,7 @@ label .numb {
     left: -10px;
   }
 
-  .resultBox .descricao{
+  .resultBox .descricao {
     -webkit-line-clamp: 5;
   }
 
@@ -1133,4 +1230,3 @@ label .numb {
 @media screen and (max-width: 375px) {}
 
 @media screen and (max-width: 320px) {}
-
