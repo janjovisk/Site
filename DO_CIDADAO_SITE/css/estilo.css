@@ -158,7 +158,7 @@ a.btn {
 }
 
 #limpar,
-#data_custom {
+#data_custom, #data_custom2{
   display: none;
 }
 
@@ -1086,6 +1086,10 @@ label .numb {
 }
 
 
+
+#bus_avanc_page h3{
+  color: #1f54ad;
+}
 
 /* FOOTER ------------------ */
 
