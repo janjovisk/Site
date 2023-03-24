@@ -11,24 +11,28 @@ window.onload = function() {
 $(function () {
 
   $('#PesAvanc').click(function () {
-    $(this).toggleClass("alt")
-    $('#BoxPesqAvanc').toggle();
+    $(this).toggleClass("alt");
+    $('#BoxPesqAvanc, #buscar, #limpar').toggle();
+  });
+
+  $('#data_search').change(function () {
+    $('#data_custom').slideDown();
   });
 
 });
 
 
 // Scroll com header fixo
-$(window).on('scroll', function(event) {
-  if ($(window).scrollTop() > 80) {
-    $('#header_menu').css({"position":"fixed","top":"0"});
-    $('.conteudo').css({"margin-top":"110px"});
+// $(window).on('scroll', function(event) {
+//   if ($(window).scrollTop() > 80) {
+//     $('#header_menu').css({"position":"fixed","top":"0"});
+//     $('.conteudo').css({"margin-top":"110px"});
     
-  } else {
-      $('#header_menu').css({"position" : "relative"});
-      $('.conteudo').css({"margin-top":"10px"});
-  }
-});
+//   } else {
+//       $('#header_menu').css({"position" : "relative"});
+//       $('.conteudo').css({"margin-top":"10px"});
+//   }
+// });
 
 
 // Selecionando Caderno Executivo
@@ -123,16 +127,3 @@ $('.resultBox, .materia').click(function() {
   window.location = "public.html";
 });
 
-
-
-
-$('.img_fundo').hide();
-
-// TESTE DE IMAGEM BANNER CARROSSEL
-$(function () {
-
-  $('#box_teste').click(function () {
-    $('.swiper .img_fundo').toggle();
-  });
-
-});
