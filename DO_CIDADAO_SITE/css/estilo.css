@@ -157,6 +157,12 @@ a.btn {
   transform: rotate3d(1, 0, 0, 180deg);
 }
 
+
+#BoxPesqAvanc h4{
+  text-transform: uppercase !important;
+  font-weight: bold;
+}
+
 #limpar,
 #data_custom, #data_custom2{
   display: none;
@@ -203,10 +209,11 @@ a.btn {
   position: relative;
 }
 
-.def1 {
+.def1, .def2 {
   height: 40px;
   font-size: 0.9em;
   font-weight: 600;
+  border-radius: 0px;
 }
 
 .inputBox {
@@ -229,7 +236,7 @@ a.btn {
 
 .def1 {
   color: transparent;
-  border-radius: 0px;
+
 }
 
 .def1:focus,
@@ -285,6 +292,8 @@ a.btn {
 .btn-back {
   text-transform: uppercase;
   color: #274fae;
+  font-size: 14px;
+  font-weight: 600;
   transition: 0.5s;
 }
 
@@ -297,7 +306,8 @@ a.btn {
 }
 
 .btn-back:hover {
-  background: #f0f0f0;
+  background: transparent;
+  text-decoration: underline;
 }
 
 
@@ -618,7 +628,7 @@ text-decoration: none;
 
 .DataDia input[name="semana"]:disabled~label,
 .DataDia input[name="semana"]:disabled~label:hover {
-  color: #424242;
+  color: #797979;
   background: #fff;
   border: 1px solid #E8E8E8;
   cursor: default;
@@ -1175,6 +1185,8 @@ label .numb {
     left: -16px;
     top: 0px;
   }
+
+
 
   .DataDia:nth-last-child(2),
   .DataDia:nth-last-child(6) {
