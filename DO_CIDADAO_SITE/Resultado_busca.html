@@ -284,22 +284,37 @@
 
     <section class="conteudo px-0">
 
-        <div class="container-custom p-3">
-            <div class="mb-4 mx-0 mx-md-3" id="resumoSelect">
-                <div class="row">
-                    <div class="col-md-6 col-lg-9 col-xxl-10 p-0 d-flex">
-                        <div class="marcador chave"></div>
-                        <div class="assunto">"Palavra Chave"</div>
-                        <div class="marcador"></div>
-                        <div class="assunto">10/03/2023 à 20/03/2023</div>
-                        <div class="assunto">Legislativo</div>
-                        <div class="assunto">3 - Negócios Públicos</div>
-                    </div>
 
-                    <div
-                        class="col-md-6 col-lg-3 col-xxl-2 p-0 d-flex justify-content-center justify-content-md-end align-items-center mt-4 mt-md-0">
-                        Total: <strong class="ms-3"> 25 resultados</strong>
-                    </div>
+        <div class="" id="resumoSelect">
+            <div class="row">
+                <div class="12">
+                    <h3 class="text-center my-4">
+                        Resultado da Pesquisa
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container-custom px-0 py-3">
+            <div class="row mx-0" id="filtoList">
+
+                <div class="col-md-4 px-0 px-sm-1 mb-3">
+                    <select name="" id="" class="form-select selectMOD">
+                        <option>Extrutura Principal</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 px-0 px-sm-1 mb-3">
+                    <select name="" id="" class="form-select selectMOD">
+                        <option>Extrutura Subordinada</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 px-0 px-sm-1 mb-3">
+                    <select name="" id="" class="form-select selectMOD">
+                        <option>Tipo de Ato</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -404,7 +419,7 @@
                         </div>
 
 
-                        <nav class="mt-4 d-flex justify-content-center justify-content-md-start" aria-label="...">
+                        <nav class="mt-4 d-flex justify-content-center" aria-label="...">
                             <ul class="pagination">
                               <li class="page-item disabled">
                                 <span class="page-link"><i class="far fa-chevron-left"></i></span>
@@ -420,81 +435,7 @@
                             </ul>
                           </nav>
                     </div>
-<!-- 
-                    <div class="col-md-5 col-lg-4 col-xl-3">
-                        
-                        <aside class="mb-4 relevant">
-                            <h5 class="mt-0 mb-4">Assuntos Relevantes</h5>
 
-                            <div class="box">
-                                <div class="materia">
-                                    <h6>Edição Nº 36 de 22/02/2023</h6>
-                                    <div class="descricao">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non hic aliquid cum voluptatibus rerum consequatur officiis totam mollitia reprehenderit accusantium sequi nobis obcaecati qui, voluptate itaque impedit. Dolore, enim?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non hic aliquid cum voluptatibus rerum consequatur officiis totam mollitia reprehenderit accusantium sequi nobis obcaecati qui, voluptate itaque impedit. Dolore, enim?
-                                    </div>
-                                </div>
-
-                                <div class="materia">
-                                    <h6>Edição Nº 39 de 27/02/2023</h6>
-                                    <div class="descricao">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non hic aliquid cum voluptatibus rerum consequatur officiis totam mollitia reprehenderit accusantium sequi nobis obcaecati qui, voluptate itaque impedit. Dolore, enim?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non hic aliquid cum voluptatibus rerum consequatur officiis totam mollitia reprehenderit accusantium sequi nobis obcaecati qui, voluptate itaque impedit. Dolore, enim?
-                                    </div>
-                                </div>
-
-                                <div class="materia">
-                                    <h6>Edição Nº 345 de 22/05/2023</h6>
-                                    <div class="descricao">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non hic aliquid cum voluptatibus rerum consequatur officiis totam mollitia reprehenderit accusantium sequi nobis obcaecati qui, voluptate itaque impedit. Dolore, enim?
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non hic aliquid cum voluptatibus rerum consequatur officiis totam mollitia reprehenderit accusantium sequi nobis obcaecati qui, voluptate itaque impedit. Dolore, enim?
-                                    </div>
-                                </div>
-                            </div>
-
-                        </aside>
-
-
-                        <aside class="mb-4 recente">
-                            <h5 class="mt-0 mb-4">Pesquisas Recentes</h5>
-
-                            <div class="box">
-
-                                <div class="links">
-                                    <span class="position">5º</span>
-                                    <span class="texto">Sindicato XPTO</span>
-                                    <span class="total flex-grow-1">12</span>
-                                </div>
-
-                                <div class="links">
-                                    <span class="position">4º</span>
-                                    <span class="texto">Texto muito brande, texto, texto </span>
-                                    <span class="total flex-grow-1">2435</span>
-                                </div>
-
-                                <div class="links">
-                                    <span class="position">3º</span>
-                                    <span class="texto">Deputado João</span>
-                                    <span class="total flex-grow-1">63636</span>
-                                </div>
-
-                                <div class="links">
-                                    <span class="position">2º</span>
-                                    <span class="texto">Documentos XY</span>
-                                    <span class="total flex-grow-1">10</span>
-                                </div>
-
-                                <div class="links">
-                                    <span class="position">1º</span>
-                                    <span class="texto">Aprovação de Lei 23031</span>
-                                    <span class="total flex-grow-1">23</span>
-                                </div>
-
-                            </div>
-
-                        </aside>
-
-                    </div> -->
                 </div>
             </div>
         </div>
