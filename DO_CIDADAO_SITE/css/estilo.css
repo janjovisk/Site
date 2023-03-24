@@ -283,8 +283,7 @@ a.btn {
 }
 
 .btn-back {
-  background: #fff;
-  border: 1px solid #ccc;
+  color: #274fae;
   transition: 0.5s;
 }
 
@@ -352,7 +351,7 @@ text-decoration: none;
 
 .swiper-button-next,
 .swiper-button-prev {
-  margin-top: 96px !important;
+  margin-top: 100px !important;
 }
 
 .swiper-button-prev {
@@ -700,7 +699,8 @@ label .numb {
 }
 
 .linksDoc {
-  font-size: 1em;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -762,7 +762,10 @@ label .numb {
 }
 
 
-
+.doc h3{
+  font-weight: bolder;
+  text-transform: uppercase;
+}
 
 
 
@@ -1058,6 +1061,25 @@ label .numb {
 }
 
 
+.sobe a{
+  background: #274fae;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  right: 10%;
+  bottom: 230px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.sobe a:hover{
+  text-decoration: none;
+  filter: brightness(1.5);
+}
 
 
 
