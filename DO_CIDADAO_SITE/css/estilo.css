@@ -724,9 +724,13 @@ label .numb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url("../img/select_down.png") 94.5% 50% no-repeat;
+  background: #fff url("../img/select_down.png") 96.5555% 50% no-repeat;
   background-size: auto 40%;
   transition: 0.5s;
+}
+
+input.selectMOD{
+  background: #fff;
 }
 
 .selectMOD:hover {
