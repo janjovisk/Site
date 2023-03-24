@@ -75,16 +75,21 @@ a.btn {
   text-decoration: none;
 }
 
+.container-custom{
+  width: 100%;
+  max-width: 1024px;
+}
+
 #govsp-topbarGlobal {
   box-shadow: 0px 3px 9px #00000030 !important;
   z-index: 5;
 }
 
 #header_menu {
-  margin-top: -14px;
+  margin-top: 28px;
   background: #fff;
   position: relative;
-  min-height: 120px;
+  min-height: 78px;
   border-bottom: 1px solid #ccc;
   z-index: 4;
 }
@@ -94,56 +99,63 @@ a.btn {
 }
 
 #busca_principal {
-  position: absolute;
-  width:100%;
+  position: relative;
   height: 40px;
-  display: flex;
-  align-items: center;
-  padding: 16px 100px 16px 16px;
+  width: 100%;
+  padding: 0 16px;
   border: 1px solid #cccccc;
   background: linear-gradient(0deg, #fff, #E8E8E8 10%, #fff);
   outline: none;
 }
 
-#buscar{
-  right: -27px;
-  margin: 16px;
+#buscar, #limpar, #PesAvanc{
+  right: 38px;
+  margin: 1px 16px;
   position: absolute;
   border: none;
   outline: none;
   background: transparent;
   transition: 0.5s;
   font-size: 18px;
-  padding: 4px 24px;
-}
-
-#menu {
-  position: relative;
-  border: none;
-  outline: none;
-  background: transparent;
-  padding: 8px;
+  height: 38px;
+  padding: 6px 12px;
   transition: 0.5s;
-  font-size: 18px;
 }
 
-#buscar:hover{
+#PesAvanc{
+  right: -3px;
+}
+
+
+#buscar:hover, #limpar:hover, #PesAvanc:hover{
   box-shadow:inset 0 0 0 #cccccc;
   background: #fff;
 }
 
-#menu:hover {
-  box-shadow:inset 0 0 0 #cccccc;
-  background: #f0f0f0;
-}
 
-#buscar:active,
-#menu:active {
+#buscar:active, #limpar:active, #PesAvanc:active{
   box-shadow: inset 0 2px 5px #cccccc;
   background: #f0f0f0;
 }
 
 
+#PesAvanc.alt{
+  box-shadow: inset 0 2px 5px #cccccc;
+  background: #f0f0f0;
+}
+
+#PesAvanc.alt i{
+  transition: 0.5s;
+  transform: rotate3d(1,0,0, 180deg);
+}
+
+#limpar, #data_custom{
+  display: none;
+}
+
+#acoes{
+  margin: 0 -0.75em !important;
+}
 
 /* PADRÃO BTN 1 */
 
@@ -164,29 +176,16 @@ a.btn {
   background: #f0f0f0;
 }
 
-#PesAvanc {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.80em;
-}
-
-#PesAvanc.alt,
-.selectMOD:focus {
-  transition: 0s;
-  background: linear-gradient(0deg, #fff, #E8E8E8);
-  box-shadow:inset 0 3px 4px #00000030;
-}
 
 #BoxPesqAvanc {
   display: none;
+  width: 100%;
   position: absolute;
   z-index: 3;
   background: #fff;
   border: 1px solid #cccccc;
   box-shadow: 0 10px 20px #00000030;
-  width: calc(100% - 24px);
-  top: -18px;
+  top: -2px;
   overflow: hidden;
 }
 
@@ -276,11 +275,11 @@ a.btn {
 }
 
 .btn-ok {
-  background: #2E5B81;
+  background: #274fae;
 }
 
 .btn-cancel {
-  background: #737373;
+  background: #141414;
 }
 
 .btn-back{
@@ -316,7 +315,7 @@ a.btn {
 /*  BANNER HOME  */
 
 .banner {
-  height: 370px;
+  height: 300px;
   width: calc(100% - 12px);
 }
 
@@ -329,17 +328,38 @@ a.btn {
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  transform: scale(2);
+  width: 28px;
+  height: 28px;
+  padding: 2px;
   margin: 8px !important;
-  background: rgba(0, 0, 0, 0.2);
+  background: #fff;
+  color: #303030;
+  font-weight: 600;
 }
 
 .swiper-pagination-bullet-active {
-  background: #002D53 !important;
+  background: #274fae !important;
+  color: #fff !important;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  margin-top: 96px !important;
+}
+
+.swiper-button-prev{
+  margin-left: 50% !important;
+  transform: translateX(-120px);
+}
+
+.swiper-button-next{
+  margin-right: 50% !important;
+  transform: translateX(120px);
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
-  color: #141414 !important;
+  color: #274fae !important;
+  font-weight: 800;
+  font-size: 1.4em !important;
 }
 
 .img_fundo {
@@ -370,12 +390,12 @@ a.btn {
 .swiper-home .swiper-slide .info {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   width: 86%;
   max-width: 800px;
   height: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   z-index: 3;
@@ -384,10 +404,11 @@ a.btn {
 }
 
 .info .meio {
-  margin: 16px 0;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(15px);
+  margin: -16px 0;
+  /* background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px); */
   padding: 24px;
+  pointer-events: none;
 }
 
 .info .meio h1 {
@@ -402,27 +423,15 @@ a.btn {
 
 .conteudo h1,
 .conteudo h2 {
-  text-align: center;
   position: relative;
-  margin: 90px 0;
-}
-
-.conteudo h2::after {
-  content: '';
-  position: absolute;
-  background: #ccc;
-  width: 100%;
-  max-width: 400px;
-  height: 1px;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 50px 0;
+  color: #000543;
 }
 
 
 .link-home {
   height: 160px;
-  font-size: 2.6em;
+  font-size: 1.8em;
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
@@ -435,40 +444,46 @@ a.btn {
 
 
 .link-home span {
-  margin-top: -14px;
-  font-weight: 600;
+  margin-top: -10px;
+  font-weight: 400;
   font-size: 0.7em;
 }
 
 
-.link-home:hover,
-.link-home:active {
-  text-decoration: none;
-  color: #fff;
-  filter: brightness(1.4);
-}
-
 .l1 {
-  background: #2E5B81;
+  background: #274fae;
 }
 
 .l2 {
-  background: #0C5088;
+  background: #007dd7;
 }
 
 .l3 {
-  background: #002D53;
+  background: #000644;
+}
+
+.l4 {
+  background: #141414;
+}
+
+.link-home:hover,
+.link-home:active {
+  text-decoration: none;
+  background: #fff;
+  color: #007dd7;
+  box-shadow: 0 0 1px 1px #007dd7;
 }
 
 
 .link-home2 {
   height: 180px;
   padding: 24px;
-  background: #f5f5f5;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid #E8E8E8;
   transition: 0.5s;
 }
 
@@ -476,20 +491,20 @@ a.btn {
   font-size: 1.4em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #0C5088;
+  color: #303030;
 }
 
 .link-home2 span {
   color: #141414 !important;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
 }
 
 .link-home2:hover,
 .link-home2:active {
   text-decoration: none;
-  background: #E8E8E8;
+  border: 1px solid #141414;
 }
 
 .treeview input,
@@ -940,6 +955,38 @@ label .numb {
 /* RESPONSIVO AJUSTE */
 
 
+@media screen and (min-width: 1400px) {
+
+  #LogoDO {
+    height: 88px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-110%,-50%);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  #LogoDO {
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  
+
+  #header_menu {
+
+    min-height: 58px;
+
+  }
+}
+
+
+
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
   #caminho {
@@ -949,15 +996,7 @@ label .numb {
 }
 
 
-@media screen and (min-width: 992px) {}
-
-
 @media screen and (max-width: 991px) {
-
-  #PesAvanc {
-    justify-content: center !important;
-  }
-
 
   .BtnType1 span {
     font-size: 0.7em !important;
@@ -979,7 +1018,7 @@ label .numb {
   }
 
   #header_menu {
-    min-height: auto;
+
 }
 
 }
@@ -994,13 +1033,6 @@ label .numb {
     font-size: 0.95em;
   }
 
-
-  #LogoDO {
-    width: auto;
-    height: 56px;
-    margin-left: -8px;
-    margin-right: -20px;
-  }
 
   .preambulo{
     margin-left: 35%;
@@ -1023,6 +1055,9 @@ label .numb {
     font-size: 1.1em;
   }
 
+  #LogoDO {
+    height: 40px;
+  }
 
   .swiper-home .swiper-slide .info {
     width: 80%;
@@ -1097,16 +1132,3 @@ label .numb {
 
 @media screen and (max-width: 320px) {}
 
-
-
-
-#box_teste{
-  z-index: 2;
-  position: absolute;
-  right: 16px;
-  top: 200px;
-  color: #4885B9;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-}
