@@ -1121,11 +1121,16 @@ input.selectMOD{
   padding: 0;
 }
 
-.selectMOD[type="date"]::after{
+.selectMOD.data::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 16px;
+}
+
+.selectMOD.data::after{
   content: '\f053';
   font-family: "Font Awesome 5 Pro";
   position: absolute;
-  right: 60px;
+  right: 45px;
   top: 50%;
   width: 20px;
   height: 20px;
@@ -1134,11 +1139,11 @@ input.selectMOD{
     
 }
 
-.selectMOD[type="date"]::before{
+.selectMOD.data::before{
   content: '\f054';
   font-family: "Font Awesome 5 Pro";
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: 50%;
   width: 20px;
   height: 20px;
