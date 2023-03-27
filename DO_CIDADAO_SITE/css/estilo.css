@@ -1214,7 +1214,8 @@ input.selectMOD{
 @media screen and (max-width: 767px) {
 
   .DataDia .num {
-    font-size: 3em;
+    font-size: 2.6em;
+    margin: 0 0 6px 0 !important;
   }
 
   .DataDia .sem {
@@ -1306,7 +1307,7 @@ input.selectMOD{
 @media screen and (max-width: 475px) {
 
   .DataDia .num {
-    font-size: 2.6em;
+    font-size: 2.2em;
   }
 
   .DataDia .sem {
