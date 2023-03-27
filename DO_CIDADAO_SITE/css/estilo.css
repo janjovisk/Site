@@ -1121,9 +1121,39 @@ input.selectMOD{
   padding: 0;
 }
 
+.selectMOD[type="date"]::after{
+  content: '\f053';
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  color: #303030;
+
+    
+}
+
+.selectMOD[type="date"]::before{
+  content: '\f054';
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  color: #303030;
+}
+
+
+
+
+
+
+
 .cod{
   width: 90%;
-  max-width: 680px;
+  max-width: 600px;
   margin: 100px 0;
 }
 
