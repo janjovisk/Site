@@ -204,6 +204,9 @@ a.btn {
   overflow: hidden;
 }
 
+#BoxPesqAvanc input, #BoxPesqAvanc select{
+  text-align: center;
+}
 
 .inputBox {
   position: relative;
@@ -1126,6 +1129,7 @@ input.selectMOD{
   left: 16px;
 }
 
+
 .selectMOD.data::after{
   content: '\f053';
   font-family: "Font Awesome 5 Pro";
@@ -1134,9 +1138,7 @@ input.selectMOD{
   top: 50%;
   width: 20px;
   height: 20px;
-  color: #303030;
-
-    
+  color: #303030; 
 }
 
 .selectMOD.data::before{
@@ -1149,6 +1151,13 @@ input.selectMOD{
   height: 20px;
   color: #303030;
 }
+
+
+#BoxPesqAvanc .selectMOD.data::after,
+#BoxPesqAvanc .selectMOD.data::before{
+  top: 42px !important;
+}
+
 
 
 
