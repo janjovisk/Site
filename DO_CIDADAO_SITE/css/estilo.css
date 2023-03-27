@@ -1115,6 +1115,18 @@ input.selectMOD{
   color: #000;
 }
 
+
+#bus_avanc_page .selectMOD , #bus_avanc_page .selectMOD{
+  text-align: center;
+  padding: 0;
+}
+
+.cod{
+  width: 90%;
+  max-width: 680px;
+  margin: 100px 0;
+}
+
 /* FOOTER ------------------ */
 
 .linha_azul {
