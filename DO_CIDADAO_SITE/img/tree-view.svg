@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197" height="200" viewBox="0 0 197 200">
+  <g id="Grupo_1" data-name="Grupo 1" transform="translate(-25 -28)">
+    <path id="Caminho_1" data-name="Caminho 1" d="M78.289,54.165H118.8l7.995,7.995V196.176l5.1,5.1h36.516" fill="none" stroke="#000" stroke-width="20"/>
+    <line id="Linha_1" data-name="Linha 1" x2="42" transform="translate(126.5 128.5)" fill="none" stroke="#000" stroke-width="20"/>
+    <g id="Retângulo_1" data-name="Retângulo 1" transform="translate(25 28)" fill="none" stroke="#000" stroke-width="16">
+      <rect width="54" height="54" stroke="none"/>
+      <rect x="8" y="8" width="38" height="38" fill="none"/>
+    </g>
+    <g id="Retângulo_2" data-name="Retângulo 2" transform="translate(168 101)" fill="none" stroke="#000" stroke-width="16">
+      <rect width="54" height="54" stroke="none"/>
+      <rect x="8" y="8" width="38" height="38" fill="none"/>
+    </g>
+    <g id="Retângulo_3" data-name="Retângulo 3" transform="translate(168 174)" fill="none" stroke="#000" stroke-width="16">
+      <rect width="54" height="54" stroke="none"/>
+      <rect x="8" y="8" width="38" height="38" fill="none"/>
+    </g>
+  </g>
+</svg>
