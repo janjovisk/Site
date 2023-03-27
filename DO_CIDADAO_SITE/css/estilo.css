@@ -708,6 +708,7 @@ label .numb {
 }
 
 .linksDoc {
+  padding: 6px 0 !important;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -724,8 +725,8 @@ label .numb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url("../img/select_down.png") 96.5555% 50% no-repeat;
-  background-size: auto 40%;
+  background: #fff url("../img/select_down.svg") 96.5555% 50% no-repeat;
+  background-size: auto 30%;
   transition: 0.5s;
 }
 
