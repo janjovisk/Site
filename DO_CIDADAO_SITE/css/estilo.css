@@ -946,8 +946,7 @@ input.selectMOD {
   color: #1f54ad;
 }
 
-.resultBox .descricao,
-.relevant .descricao {
+.resultBox .descricao{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -956,38 +955,45 @@ input.selectMOD {
 
 }
 
+.relevant h5 {
+  font-size: 18px;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 12px;
+}
 
+.relevant a, .saiba_mais{
+  height: 40px;;
+  transition: 0.5s;
+  border: 1px solid #e8e8e8;
+  color: #1f54ad;
+}
 
-.relevant .box {
-  padding: 26px 30px 6px 30px;
-  background: #f5f5f5;
+.relevant a:hover, .saiba_mais:hover {
+  border: 1px solid #007dd7;
+  color: #007dd7;
 }
 
 .materia {
+  padding: 16px;
   position: relative;
   font-size: 12px;
-  margin-bottom: 40px;
   transition: 0.5s ease-in-out;
-}
-
-.materia:hover {
   background: #fff;
-  box-shadow: 0 0 0 14px #fff, 0 18px 20px #00000030;
-  cursor: pointer;
+  border: 1px solid  #E8E8E8;
 }
 
 .materia h6 {
   font-size: 14px;
   font-weight: 600;
-  color: #4885B9;
+  color: #303030;
   /* overflow: hidden; 
   text-overflow: ellipsis; 
   white-space: nowrap; */
 }
 
 .relevant .descricao {
-  -webkit-line-clamp: 6;
-  text-align: justify;
+  /* -webkit-line-clamp: 6;
+  text-align: justify; */
 }
 
 .pagination li i {
@@ -1219,6 +1225,14 @@ input.selectMOD {
   color: #333;
 }
 
+.e-public a{
+  color: #1f54ad;
+  transition: 0.5s;
+}
+
+.e-public a:hover{
+  color: #007dd7;
+}
 
 
 
