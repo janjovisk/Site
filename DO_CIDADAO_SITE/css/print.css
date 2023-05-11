@@ -5,6 +5,15 @@ body{
   background-attachment: fixed;
 }
 
+.margem-header{
+  height: 170px;
+  transition: 1s ease-in-out;
+}
+
+.selectMOD.data::after,.selectMOD.data::before {
+  transform: translateY(5px);
+}
+
 .A4-content{
   background: #fff;
   width: 100%;
@@ -47,7 +56,54 @@ body{
   margin-top: -10px;
 }
 
+#pdf_nav{
+  margin: 6px;
+}
 
+#pdf_nav label{
+  transform: scale(0.86);
+}
+
+#pdf_nav h4 b{
+  color: #274fae;
+}
+
+#controlePDF{
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  transition: 1s ease-in-out;
+}
+
+#abreFecha{
+  cursor: pointer;
+  position: fixed;
+  background: #274fae;
+  height: 24px;
+  left: 0;
+  right: 0;
+  top: 120px;
+  transition: 1s ease-in-out;
+}
+
+#abreFecha.fechado{
+  top: 0px;
+}
+
+#abreFecha i{
+  transition: 1s ease-in-out;
+}
+
+#abreFecha.fechado i{
+  transform: rotate(180deg);
+}
+
+#controlePDF.fechado{
+  top: -120px;
+}
 
 .header_print, .footer_print{
   font-size: 10px;
@@ -92,6 +148,10 @@ body{
   overflow: hidden;
 }
 
+.margem-header.fechado{
+  height: 40px;
+}
+
 @media print {
 
 
@@ -114,5 +174,8 @@ body{
     display: table-footer-group;
   }
   
+  .margem-header{
+    display: none;
+  }
 
 }
