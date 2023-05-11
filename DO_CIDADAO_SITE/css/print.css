@@ -64,7 +64,11 @@ body{
   transform: scale(0.86);
 }
 
-#pdf_nav h4 b{
+#pdf_nav h5{
+  padding-top: 12px;
+}
+
+#pdf_nav h5 b{
   color: #274fae;
 }
 
@@ -102,7 +106,7 @@ body{
 }
 
 #controlePDF.fechado{
-  top: -120px;
+  top: -520px;
 }
 
 .header_print, .footer_print{
@@ -178,4 +182,21 @@ body{
     display: none;
   }
 
+}
+
+
+@media screen and (min-width:768px) and (max-width:1199px){
+  #pdf_nav h5{
+    font-size: 16px !important;
+    padding-top: 14px;
+  }
+}
+
+@media (max-width:767px){
+  .margem-header{
+    height: 520px;
+  }
+  #abreFecha{
+    top: 510px;
+  }
 }
