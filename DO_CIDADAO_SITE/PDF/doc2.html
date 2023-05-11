@@ -68,24 +68,24 @@
 
             <div class="col-lg-6 text-start">
                 <h4 class="tit_doc">Sumário</h4>
-                <div class="list-group w-100">
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Atos do Governador</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria da Casa Civil</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Governo e Relações Institucionais</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Gestão e Governo Digital</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Justiça e Cidadania</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Desenvolvimento Social</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Segurança Pública</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Administração Penitenciária</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Fazenda e Planejamento</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Agricultura e Abastecimento</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Educação</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Saúde</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Cultura e Economia Criativa</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Desenvolvimento Econômico</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Desenvolvimento Urbano e Habitação</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Meio Ambiente, Infraestrutura e Logística</strong></a>
-                    <a href="#" class="list-group-item p-1 border-0"><strong>Secretaria de Transportes Metropolitanos</strong></a>
+                <div class="list-group w-100" id="sumario">
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Atos do Governador</strong><i class="ponto"></i><span>1</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria da Casa Civil</strong> <i class="ponto"></i><span>1</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Governo e Relações Institucionais</strong> <i class="ponto"></i><span>2</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Gestão e Governo Digital</strong><i class="ponto"></i><span>3</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Justiça e Cidadania</strong><i class="ponto"></i><span>4</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Desenvolvimento Social</strong><i class="ponto"></i><span>4</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Segurança Pública</strong><i class="ponto"></i><span>5</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Administração Penitenciária</strong><i class="ponto"></i><span>5</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Fazenda e Planejamento</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Agricultura e Abastecimento</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Educação</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Saúde</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Cultura e Economia Criativa</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Desenvolvimento Econômico</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Desenvolvimento Urbano e Habitação</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Meio Ambiente, Infraestrutura e Logística</strong><i class="ponto"></i><span>6</span></a>
+                    <a href="#" class="list-group-item p-0 border-0"><strong>Secretaria de Transportes Metropolitanos</strong><i class="ponto"></i><span>6</span></a>
 
                 </div>
 
@@ -259,6 +259,13 @@
 
     </section>
 
+    <script>
+        var cusid_ele = document.getElementsByClassName('ponto');
+        for (var i = 0; i < cusid_ele.length; ++i) {
+            var item = cusid_ele[i];  
+            item.innerHTML = '.........';
+        }
+    </script>
 
 </body>
 
