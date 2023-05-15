@@ -84,6 +84,8 @@ a.btn {
 
 .container-custom h5 {
   text-align: center;
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -1089,7 +1091,7 @@ input.selectMOD {
 
 
 .logo_doc {
-  height: 100px;
+  height: 80px;
   margin-bottom: 12px;
 }
 
@@ -1098,7 +1100,7 @@ input.selectMOD {
 }
 
 .texto_doc_just p {
-  text-indent: 46px
+  text-indent: 80px
 }
 
 .preambulo {
@@ -1460,3 +1462,10 @@ input.selectMOD {
 @media screen and (max-width: 375px) {}
 
 @media screen and (max-width: 320px) {}
+
+
+.tit_DOC{
+  font-weight: 900;
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
