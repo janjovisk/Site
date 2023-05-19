@@ -66,6 +66,15 @@ a:active {
   transition: 0.5s;
 }
 
+a.active {
+  background: #1f54ad !important;
+  border: 1px solid #1f54ad;
+}
+
+a.active:hover,a.active:active {
+  color: #fff !important;
+}
+
 a:hover {
   color: #007dd7;
   text-decoration: underline;
@@ -1251,6 +1260,11 @@ input.selectMOD {
 .linha_preta {
   background: #000;
 }
+
+#manuaIndice .accordion-item {
+  border: none;
+}
+
 
 
 
