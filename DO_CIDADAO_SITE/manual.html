@@ -295,27 +295,27 @@
 
                         <div class="list-group rounded-0 mb-3" id="indiceManuais">
 
-                            <a href="#manual1" class="list-group-item list-group-item-action active" id="ManualBtn1">
+                            <a href="#ManualBtn1" class="list-group-item list-group-item-action active" id="ManualBtn1">
                                 <i class="far fa-chevron-right me-3"></i> Sobre o Diário Oficial</strong>
                             </a>
                             <div name="verCelular"> </div>
 
-                            <a href="#manual2" class="list-group-item list-group-item-action" id="ManualBtn2">
+                            <a href="#ManualBtn2" class="list-group-item list-group-item-action" id="ManualBtn2">
                                 <i class="far fa-chevron-right me-3"></i> Página Inicial</strong>
                             </a>
                             <div name="verCelular"> </div>
 
-                            <a href="#manual3" class="list-group-item list-group-item-action" id="ManualBtn3">
+                            <a href="#ManualBtn3" class="list-group-item list-group-item-action" id="ManualBtn3">
                                 <i class="far fa-chevron-right me-3"></i> Leitura do Diário</strong>
                             </a>
                             <div name="verCelular"> </div>
 
-                            <a href="#manual4" class="list-group-item list-group-item-action" id="ManualBtn4">
+                            <a href="#ManualBtn4" class="list-group-item list-group-item-action" id="ManualBtn4">
                                 <i class="far fa-chevron-right me-3"></i> Busca Avançada</strong>
                             </a>
                             <div name="verCelular"> </div>
 
-                            <a href="#manual5" class="list-group-item list-group-item-action" id="ManualBtn5">
+                            <a href="#ManualBtn5" class="list-group-item list-group-item-action" id="ManualBtn5">
                                 <i class="far fa-chevron-right me-3"></i> Autenticação</strong>
                             </a>
                             <div name="verCelular"> </div>
@@ -482,65 +482,6 @@
 
     <script>
 
-
-
-
-        // Transfere o conteudo da div para outro lugar de acordo o tamabho da tela -----------------------------------
-
-        $(document).ready(function () {
-            verificarResolucao();
-        })
-
-        $(window).on('resize', function (e) {
-            verificarResolucao();
-        })
-
-        function moverPerguntas(origem, destino) {
-            var perguntas = $(destino);
-            $(origem).each(function (idx, el) {
-                $(el).children().appendTo($(perguntas[idx]));
-            });
-        }
-
-        function verificarResolucao() {
-            if ($(window).width() < 991) {
-                moverPerguntas("div[name='verDesktop']", "div[name='verCelular']")
-            }
-            else {
-                moverPerguntas("div[name='verCelular']", "div[name='verDesktop']")
-            }
-        }
-
-        // function verificarResolucao() {
-
-        //     if ($(window).width() >= 992) {
-        //         // Indice Fixo na Tela --------------------------------------------------------
-
-        //         $('#menuManual').css('position', 'fixed');
-        //         $('#menuManual').css('width', 300 + 'px');
-
-        //         function checarScroll() {
-        //             var margem = 10;
-        //             var posicao = $(document).scrollTop() + window.innerHeight;
-        //             var footertop = $('footer').offset().top;
-        //             var maximo = footertop + 20 - margem;
-
-        //             if (posicao < maximo) {
-        //                 $('#menuManual').css('bottom', 20 + 'px');
-        //             } else {
-        //                 $('#menuManual').css('bottom', (margem + (posicao - footertop)) + 'px');
-        //             }
-        //         }
-        //         $(document).ready(checarScroll);
-        //         $(document).scroll(checarScroll);
-        //     }
-        //     else {
-        //         $('#menuManual').css('position', 'relative');
-        //         $('#menuManual').css('width', 'auto');
-        //     }
-        // }
-
-
         // abre e fecha material -----------------------------------
         // Esconde tudo , nemos o 1º --------------------------------
         $('.manuais').hide();
@@ -582,6 +523,38 @@
             $('#manual5').fadeIn();
         });
 
+
+        
+        // Transfere o conteudo da div para outro lugar de acordo o tamabho da tela -----------------------------------
+
+        $(document).ready(function () {
+            verificarResolucao();
+        })
+
+        $(window).on('resize', function (e) {
+            verificarResolucao();
+        })
+
+        function moverPerguntas(origem, destino) {
+            var perguntas = $(destino);
+            $(origem).each(function (idx, el) {
+                $(el).children().appendTo($(perguntas[idx]));
+            });
+        }
+
+        function verificarResolucao() {
+            if ($(window).width() < 991) {
+                moverPerguntas("div[name='verDesktop']", "div[name='verCelular']");
+                $('.manuais').hide();
+                $('#indiceManuais a').removeClass("active");
+            }
+            else {
+                moverPerguntas("div[name='verCelular']", "div[name='verDesktop']");
+                $('#manual1').fadeIn();
+                $('#ManualBtn1').addClass("active");
+                
+            }
+        }
 
     </script>
 
