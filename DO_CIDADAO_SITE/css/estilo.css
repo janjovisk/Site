@@ -66,6 +66,10 @@ a:active {
   transition: 0.5s;
 }
 
+.textoAzul{
+  color: #1f54ad
+}
+
 a.active {
   background: #1f54ad !important;
   border: 1px solid #1f54ad;
