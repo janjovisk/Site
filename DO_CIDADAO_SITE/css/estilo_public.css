@@ -1,0 +1,139 @@
+#lista_public {}
+
+#lista_public .titulo, #lista_public .caminho  {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#lista_public .status {
+    margin-top: 16px;
+    border: 1px solid #E8E8E8;
+    background: #fff
+}
+
+.public {
+    color: #27ae32;
+}
+
+.pendent{
+    color: #ff9100;
+}
+
+.rasc {
+    color: #bbbbbb;
+}
+
+.cancel{
+    color: #ff2121;
+}
+
+
+.resultBox2,
+.resultBox2:hover,
+.resultBox2:active {
+    cursor: default;
+    transition: 0.5s;
+    border-bottom: none;
+    background: transparent;
+    position: relative;
+}
+
+/* .resultBox2:hover {
+    box-shadow: inset 0 4px 2px #00000030;
+} */
+
+
+.resultBox2 .caminho,
+.resultBox2 .titulo,
+.resultBox2 .status {
+    transition: 0.5s;
+}
+
+.resultBox2:hover .caminho,
+.resultBox2:hover .titulo,
+.resultBox2:hover .status {
+    opacity: 0.2;
+}
+
+.controlers {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #e8e8e857;
+    border: 1px solid #E8E8E8;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.btncontrol {
+    opacity: 0;
+    cursor: pointer;
+    width: 74px;
+    height: 74px;
+    background: #274fae;
+    border: 1px solid transparent;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: 0.5s;
+    
+}
+
+.btncontrol i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.resultBox2:hover .controlers,
+.resultBox2:hover .btncontrol,
+.resultBox2:active .controlers,
+.resultBox2:active .btncontrol {
+    opacity: 1;
+}
+
+
+.btncontrol:hover{
+    color: #274fae;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+}
+
+.edit_limpa, .edit_info{
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    margin: 4px;
+}
+
+.upload{
+    border: 2px dashed #E8E8E8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #bbbbbb;
+}
+
+#SalvarRascunho{
+    margin-top: -78px;
+    margin-bottom: 12px;
+}
+
+@media (max-width:991px){
+    #SalvarRascunho{
+        margin-top: -32px;
+    }
+}

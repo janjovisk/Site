@@ -130,6 +130,10 @@ a.btn {
   outline: none;
 }
 
+#busca_principal::placeholder {
+  color: #cecece;
+}
+
 #buscar,
 #limpar,
 #PesAvanc {
@@ -926,7 +930,7 @@ input.selectMOD {
   cursor: pointer;
 }
 
-.resultBox {
+.resultBox, .resultBox2 {
   background: #fff;
   border-bottom: 1px solid #cccccc;
   padding: 16px;
@@ -935,14 +939,14 @@ input.selectMOD {
   transition: 0.5s;
 }
 
-.resultBox:hover {
+.resultBox:hover, .resultBox2:hover {
   cursor: pointer;
   background: #f5f5f5;
   border-bottom: 1px solid #fff;
 }
 
-.resultBox .caminho {
-  font-size: 12px;
+.resultBox .caminho, .resultBox2 .caminho {
+  font-size: 12px !important;
   color: #797979;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -954,14 +958,14 @@ input.selectMOD {
   color: #797979;
 }
 
-.resultBox h6 {
+.resultBox h6, .resultBox2 h6 {
   margin: 4px 0;
   font-weight: 600;
   text-transform: uppercase;
   color: #1f54ad;
 }
 
-.resultBox .descricao{
+.resultBox .descricao, .resultBox2 .descricao{
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1195,10 +1199,13 @@ input.selectMOD {
 
 #BoxPesqAvanc .selectMOD.data::after,
 #BoxPesqAvanc .selectMOD.data::before {
-  top: 42px !important;
+  top: 36px !important;
 }
 
-
+input:disabled, select:disabled{
+  background: #E8E8E8;
+  color: #797979;
+}
 
 .cod {
   width: 90%;
