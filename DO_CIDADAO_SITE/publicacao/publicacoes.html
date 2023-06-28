@@ -274,25 +274,26 @@
         <div class="container-custom px-0 py-3">
             <div class="row mx-0">
 
-                <div class="col-md-6 offset-md-3 p-0">
-                    <button type="button" class="btn btn-ok w-100" onclick="location.href='edit_new.html';">Criar Publicação</button>
-                </div>
-
-                <div class="col-12 p-3 mt-4" style="background: #f5f5f5;">
+                <div class="col-12 p-3" style="background: #f5f5f5;">
                     <div class="row">
-                        <div class="col-lg-6 my-3 my-lg-auto">
+                        <div class="col-md col-lg-6 my-3 my-lg-auto">
                             <h4 class="flex-grow-1 text-center text-lg-start my-0">Lista de Publicações </h4>
                         </div>
-                        <div class="col text-center text-lg-end my-auto">
+                        <div class="col d-flex justify-content-center align-items-center">
                             Total: 05
                         </div>
-                        <div class="col text-end">
+                        <div class="col-5 col-md-3 d-flex justify-content-center align-items-center">
                             <select name="" class="form-select selectMOD" id="">
                                 <option value="">Exibir 16 linhas</option>
                                 <option value="">Exibir 24 linhas</option>
                                 <option value="">Exibir 32 linhas</option>
                                 <option value="">Exibir 64 linhas</option>
                             </select>
+                        </div>
+
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn btn-ok" data-bs-toggle="tooltip" onclick="location.href='edit_new.html';"
+                                data-bs-placement="top" title="Criar Publicação"><i class="fal fa-plus-circle"></i> Criar</button>
                         </div>
                     </div>
 
