@@ -295,8 +295,10 @@
                                 <i class="far fa-list-alt fa-2x"></i></button>
 
                             <button type="button" class="btn btn-back edit_info cancel" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Cancelar Publicação" >
-                                <i class="fas fa-ban fa-2x"></i></button>
+                            data-bs-placement="top" title="Cancelar Publicação" >
+                                <i class="fas fa-ban fa-2x" data-bs-toggle="modal" data-bs-target="#cancelar"></i></button>
+
+                                
                         </div>
                     </div>
 
@@ -384,6 +386,42 @@
 
     </footer>
 
+
+  <!-- --------------------------------------------------- -->
+  <div class="modal fade" id="cancelar" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title my-auto cancel">
+                    <i class="far fa-ban me-3"></i> Cancelamento
+                </h5>
+                <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                    aria-label="Close"></i>
+
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-12 p-2 mb-3">
+                        <h5 class="p-3">
+                            Você realmente deseja cancelar esta publicação?
+                        </h5>
+                    </div>
+
+                  
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                    <i class="far fa-arrow-left me-3"></i> Voltar
+                </a>
+
+                <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                    SIM
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
