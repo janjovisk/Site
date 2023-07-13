@@ -44,9 +44,9 @@
 
 <body class="mb-0">
 
+<!-- 
 
-
-    <!-- <div id="govsp-topbarGlobal" class="blu-e">
+    <div id="govsp-topbarGlobal" class="blu-e">
         <div id="topbarGlobal">
             <div id="topbarLink" class="govsp-black">
                 <div class="govsp-portal">
@@ -272,179 +272,86 @@
 
 
         <div class="container-custom px-3 py-3">
-            <div class="row">
+            <div class="row mb-4">
 
                 <div class="col-md-6 text-center text-md-start my-2 my-md-auto">
-                    <a href="publicacoes.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Voltar à
-                        lista de Publicações</a>
+                    <a href="publicacoes.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Ver Todas Publicações</a>
                 </div>
 
-                <div class="col-md-6 text-center text-md-end my-2 my-md-auto rasc">
-                    <b class="small text-black me-4">Status:</b> <i class="far fa-pencil-alt me-3"></i> Racunho
+                <div class="col-md-6 text-center text-md-end my-2 my-md-auto public">
+                    <b class="small text-black me-4">Status:</b> <i class="far fa-check me-3"></i> Publicada
                 </div>
 
 
                 <div class="col-12 p-3 mt-4" style="background: #f5f5f5;">
                     <div class="row">
-                        <div class="col-7 col-sm-8 my-3 my-lg-auto">
-                            <h4 class="flex-grow-1 text-center text-lg-start my-0">Nova Publicação / Edição</h4>
+                        <div class="col-9 col-sm-10 my-3 my-lg-auto">
+                            <h4 class="flex-grow-1 text-center text-lg-start my-0">Situação Atual</h4>
                         </div>
-                        <div class="col-5 col-sm-4 text-center text-lg-end my-auto">
-                            <button type="button" class="btn btn-back edit_limpa" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Limpar Campos"><i
-                                    class="far fa-trash-alt fa-2x"></i></button>
+                        <div class="col-3 col-sm-2 text-center text-lg-end my-auto">
+
                             <button type="button" class="btn btn-back edit_info" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Informações de Custo"><i
-                                    class="far fa-file-invoice-dollar fa-2x"></i></button>
-
-                            <button type="button" id="btn_rever" class="btn btn-back edit_info" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Revisões"><i class="far fa-history fa-2x"></i></button>
+                                data-bs-placement="top" title="Lista de Publicações" onclick="location.href='publicacoes.html';">
+                                <i class="far fa-list-alt fa-2x"></i></button>
+                                
+                                <button type="button" class="btn btn-back edit_info" data-bs-toggle="tooltip" onclick="location.href='edit_new.html';"        
+                                data-bs-placement="top" title="Criar Publicação"><i class="far fa-plus-circle fa-2x"></i></button>
+                                        
+                                
                         </div>
                     </div>
 
                 </div>
+
             </div>
 
-            <div class="row revisoes">
-                <div class="col-12 revisao">
-                    <div class="row">
-                        <div class="col-1 d-flex justify-content-center align-items-center small">
-                            02
-                        </div>
-                        <div
-                            class="col d-flex justify-content-center justify-content-md-start align-items-center small">
-                            <i class="far fa-calendar-alt mx-2"></i> 11/10/2023 <i class="far fa-clock mx-2"></i> 21:10:59 - AM
-                        </div>
-
-                        <div class="col-md-4 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
-                            <button type="button" class="btn btn-secondary btn-sm px-4" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"><i class="far fa-retweet-alt me-3"></i> Comparar
-                            </button>
-
-                            <button type="button" class="btn btn-secondary btn-sm px-4"><i
-                                    class="far fa-redo-alt me-3"></i> Reastaurar </button>
-                        </div>
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="inputBox">
+                        <h5>Previsão de Publicação:</h5>
+                        <input type="date" name="" class="form-control selectMOD"
+                            value="10/10/2023" disabled>
                     </div>
                 </div>
-
-
-                <div class="col-12 revisao">
-                    <div class="row">
-                        <div class="col-1 d-flex justify-content-center align-items-center small">
-                            01
-                        </div>
-                        <div
-                            class="col d-flex justify-content-center justify-content-md-start align-items-center small">
-                            <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 - <i class="far fa-clock mx-2"></i> 10:10:59 - AM
-                        </div>
-
-                        <div class="col-md-4 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
-                            <button type="button" class="btn btn-secondary btn-sm px-4" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"><i class="far fa-retweet-alt me-3"></i> Comparar
-                            </button>
-
-                            <button type="button" class="btn btn-secondary btn-sm px-4"><i
-                                    class="far fa-redo-alt me-3"></i> Reastaurar </button>
-                        </div>
+                <div class="col-md-6 col-lg-4 mt-auto text-center">
+                    <div class="inputBox">
+                        <input type="text" name="" class="form-control selectMOD"
+                            value="10:00:00" disabled>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="inputBox">
+                        <h5>Publicada em:</h5>
+                        <input type="date" name="" class="form-control selectMOD"
+                            value="10/10/2023" disabled>
                     </div>
                 </div>
             </div>
 
             <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card rounded-0 p-3">
+                        <h4 class="mb-3"><i class="far fa-file-search me-3"></i> Detalhes da Publicação</h4>
 
-            </div>
+                        <div class="row small">
+                            <div class="col-md-6">
+                                Caderno: <b>Executivo</b>
+                            </div>
 
-            <div class="row mb-4">
-                <div class="col-lg-4 mb-4">
-                    <div class="inputBox">
-                        <h5>Selecione o Caderno</h5>
-                        <select name="" class="form-select selectMOD text-center" id="caderno">
-                            <option value="">Selecione</option>
-                            <option value="">Empresarial</option>
-                            <option value="">Executivo</option>
-                            <option value="">Legislativo</option>
-                            <option value="">Municípios</option>
-                        </select>
-                    </div>
-                </div>
+                            <div class="col-md-6">
+                                Típo de Matéria: <b>Decreto</b>
+                            </div>
 
+                            <div class="col-md-6">
+                                Seção: <b>Atos do Governador</b>
+                            </div>
 
-                <div class="col-lg-4 mb-4">
-                    <div class="inputBox">
-                        <h5>Seção</h5>
-                        <select name="" class="form-select selectMOD text-center" id="ativa1" disabled>
-                            <option value="">Selecione</option>
-                        </select>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 mb-4">
-                    <div class="inputBox">
-                        <h5>Tipo de Publicação</h5>
-                        <select name="" class="form-select selectMOD text-center" id="ativa2" disabled>
-                            <option value="">Selecione</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 mb-4">
-                    <div class="inputBox">
-                        <h5>Título da Publicação</h5>
-                        <input type="text" class="form-control selectMOD">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4">
-                    <div class="inputBox">
-                        <h5>Definir uma data</h5>
-                        <input type="date" class="form-control selectMOD text-center" id="data_futura" placeholder="">
-                    </div>
-                    <div class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                        <label class="form-check-label" for="now">
-                            Publicar Imediatamente
-                        </label>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="text-center text-lg-start ps-auto ps-lg-5" id="SalvarRascunho">
-                <button type="button" class="btn btn-back "><i class="far fa-save me-2"></i> Salvar Rascunho</button>
-            </div>
-            <img src="doc.jpg" class="w-100" alt="">
-
-            <div class="row my-4">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="card rounded-0">
-
-                        <h4 class="p-3 bg-light">
-                            Anexos
-                        </h4>
-
-                        <div class="p-2 mb-3">
-                            <div class="upload">
-                                <i class="far fa-cloud-upload-alt fa-5x"></i>
-                                <span> Arraste os arquivos para está área</span>
+                            <div class="col-md-6">
+                                Publicação Imediata: <b>Sim</b>
                             </div>
                         </div>
-
-                        <button type="button" class="btn btn-cancel w-100">Anexar Arquivos</button>
-
                     </div>
-
-                    <div class="row my-4">
-
-                        <div class="col-12 mb-3">
-                            <button type="button" class="btn btn-ok w-100"
-                                onclick="location.href='assinar.html';">Continuar para Assinatura</button>
-                        </div>
-
-                    </div>
-
                 </div>
-
             </div>
 
         </div>
@@ -491,185 +398,44 @@
     </footer>
 
 
+  <!-- --------------------------------------------------- -->
+  <div class="modal fade" id="cancelar" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title my-auto cancel">
+                    <i class="far fa-ban me-3"></i> Cancelamento
+                </h5>
+                <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                    aria-label="Close"></i>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-retweet-alt fa-2X me-3"></i>
-                        Comparar</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body h-100">
-
-                    <div class="row">
-                        <div class="col-lg-6 border-end px-2 px-lg-5">
-
-                            <div class="alert alert-danger">
-                                <div class="row">
-                                    <div class="col-md-6 small">
-                                        Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i class="far fa-clock mx-2"></i> 10:10:59 - AM
-                                    </div>
-    
-                                    <div class="col-md-6 text-end">
-                                        <b>Ver.:01</b>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row mb-4">
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Selecione o Caderno</h5>
-                                        <select name="" class="form-select selectMOD text-center" >
-                                            <option value="">Selecione</option>
-                                            <option value="">Empresarial</option>
-                                            <option value="">Executivo</option>
-                                            <option value="">Legislativo</option>
-                                            <option value="">Municípios</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Seção</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Tipo de Publicação</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Título da Publicação</h5>
-                                        <input type="text" class="form-control selectMOD">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Definir uma data</h5>
-                                        <input type="date" class="form-control selectMOD text-center" id="data_futura"
-                                            placeholder="">
-                                    </div>
-                                    <div
-                                        class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                                        <label class="form-check-label" for="now">
-                                            Publicar Imediatamente
-                                        </label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-                        </div>
-
-                        <div class="col-lg-6 px-2 px-lg-5">
-
-                            <div class="alert alert-success">
-                                <div class="row">
-                                    <div class="col-md-6 small">
-                                        Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i class="far fa-clock mx-2"></i> 10:10:59 - AM
-                                    </div>
-    
-                                    <div class="col-md-6 text-end">
-                                        <b>Ver.:Atual</b>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row mb-4">
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Selecione o Caderno</h5>
-                                        <select name="" class="form-select selectMOD text-center" >
-                                            <option value="">Selecione</option>
-                                            <option value="">Empresarial</option>
-                                            <option value="">Executivo</option>
-                                            <option value="">Legislativo</option>
-                                            <option value="">Municípios</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Seção</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Tipo de Publicação</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Título da Publicação</h5>
-                                        <input type="text" class="form-control selectMOD">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Definir uma data</h5>
-                                        <input type="date" class="form-control selectMOD text-center" id="data_futura"
-                                            placeholder="">
-                                    </div>
-                                    <div
-                                        class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                                        <label class="form-check-label" for="now">
-                                            Publicar Imediatamente
-                                        </label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-
-                        </div>
-
-                        <div class="col-12 px-2 px-lg-5 mt-3">
-                            <div class="card p-3">
-                                <h4>Não há Alterações no conteúdo</h4>
-                            </div>
-                        </div>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-12 p-2 mb-3">
+                        <h5 class="p-3">
+                            Você realmente deseja cancelar esta publicação?
+                        </h5>
                     </div>
 
+                  
                 </div>
-                <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-secondary px-4"><i class="far fa-history me-3"></i> Restaurar</button>
-                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                    <i class="far fa-arrow-left me-3"></i> Voltar
+                </a>
+
+                <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                    SIM
+                </a>
             </div>
         </div>
     </div>
+</div>
+
+
+
 
 
     <!-- Funções das Páginas -->
@@ -691,12 +457,6 @@
         })
 
 
-        $(".revisoes").hide();
-        $("#btn_rever").click(function () {
-            $('.revisoes').slideToggle();
-        });
-
-
         $("#caderno").change(function () {
             $('#ativa1, #ativa2').removeAttr("disabled");
 
@@ -708,7 +468,7 @@
 
 
         $("#now").click(function () {
-            $('#data_futura').val('');
+            $('#data_futura').val(''); 
         });
 
     </script>

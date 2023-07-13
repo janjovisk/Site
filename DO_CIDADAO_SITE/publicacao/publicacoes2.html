@@ -44,9 +44,9 @@
 
 <body class="mb-0">
 
-<!-- 
 
-    <div id="govsp-topbarGlobal" class="blu-e">
+
+    <!-- <div id="govsp-topbarGlobal" class="blu-e">
         <div id="topbarGlobal">
             <div id="topbarLink" class="govsp-black">
                 <div class="govsp-portal">
@@ -271,96 +271,219 @@
     <section class="conteudo px-0">
 
 
-        <div class="container-custom px-3 py-3">
-            <div class="row mb-4">
+        <div class="container-custom px-0 py-3">
+            <div class="row mx-0">
 
-                <div class="col-md-6 text-center text-md-start my-2 my-md-auto">
-                    <a href="edit_new.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Voltar ao Rascunho</a>
-                </div>
-
-                <div class="col-md-6 text-center text-md-end my-2 my-md-auto pendent">
-                    <b class="small text-black me-4">Status:</b> <i class="far fa-hourglass me-3"></i> Assinatura Pendente
-                </div>
-
-
-                <div class="col-12 p-3 mt-4" style="background: #f5f5f5;">
+                <div class="col-12 p-3" style="background: #f5f5f5;">
                     <div class="row">
-                        <div class="col-9 col-sm-10 my-3 my-lg-auto">
-                            <h4 class="flex-grow-1 text-center text-lg-start my-0">Assinar Publicação</h4>
+                        <div class="col-md col-lg-6 my-3 my-lg-auto">
+                            <h4 class="flex-grow-1 text-center text-lg-start my-0">Lista de Publicações </h4>
                         </div>
-                        <div class="col-3 col-sm-2 text-center text-lg-end my-auto">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            Total: 05
+                        </div>
+                        <div class="col-5 col-md-3 d-flex justify-content-center align-items-center">
+                            <select name="" class="form-select selectMOD" id="">
+                                <option value="">Exibir 16 linhas</option>
+                                <option value="">Exibir 24 linhas</option>
+                                <option value="">Exibir 32 linhas</option>
+                                <option value="">Exibir 64 linhas</option>
+                            </select>
+                        </div>
 
-                            <button type="button" class="btn btn-back edit_info" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Lista de Publicações" onclick="location.href='publicacoes.html';">
-                                <i class="far fa-list-alt fa-2x"></i></button>
-
-                            <button type="button" class="btn btn-back edit_info cancel" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="Cancelar Publicação" >
-                                <i class="fas fa-ban fa-2x" data-bs-toggle="modal" data-bs-target="#cancelar"></i></button>                               
-                                
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn btn-ok" data-bs-toggle="tooltip"
+                                onclick="location.href='edit_new.html';" data-bs-placement="top"
+                                title="Criar Publicação"><i class="fal fa-plus-circle"></i> Criar</button>
                         </div>
                     </div>
 
                 </div>
+
+
 
             </div>
+        </div>
+
+        <div class="container-custom px-0">
+            <div class="mb-4">
+                <div class="row" id="lista_public2">
 
 
-            <div class="row mb-4">
-                <div class="col-lg-6 offset-lg-3 mb-4">
-                    <div class="inputBox">
-                        <h5>Visualização da Publicação no Formato "PDF"</h5>
-                        <select name="" class="form-select selectMOD text-center" id="caderno">
-                            <option value="">Teste</option>
-                        </select>
+                    <div class="col-md-6 p-2">
+
+                        <div class="lista_pub">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-success rounded-0 py-1">
+                                        <i class="far fa-check me-3"></i> Publicada
+                                    </div>
+                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Auditoria"> <i class="fal fa-history"
+                                            data-bs-toggle="modal" data-bs-target="#auditoria"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                            data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
 
-                <div class="col-12 mb-5">
-                    <iframe src="teste-min.pdf" frameborder="1" width="100%" height="800px"></iframe>
-                </div>
+                    <div class="col-md-6 p-2">
 
-                <div class="col-12">
-                    
+                        <div class="lista_pub">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-secondary rounded-0 py-1">
+                                        <i class="far fa-pencil-alt me-3"></i> Racunho
+                                    </div>
+                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
 
-                    <div class="inputBox">
-                        <h5>Cerfificado</h5>
-                        <select name="" class="form-select selectMOD text-center" id="caderno">
-                            <option value="">Paulo Wirth </option>
-                        </select>
+                                        <div class="col-6">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Editar"
+                                        onclick="location.href='edit_new.html';"> <i
+                                            class="fal fa-pencil-alt"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                            data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-2">
+
+                        <div class="lista_pub">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-warning rounded-0 py-1">
+                                        <i class="far fa-hourglass me-3"></i> Publicadação Pendente
+                                    </div>
+                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
+
+                                        <div class="col-6 text-warning">
+                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Editar"
+                                        onclick="location.href='edit_new.html';"> <i
+                                            class="fal fa-pencil-alt"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                            data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-2">
+
+                        <div class="lista_pub">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-danger rounded-0 py-1">
+                                        <i class="far fa-ban me-3"></i> Cancelada
+                                    </div>
+                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
+
+                                        <div class="col-6 text-warning">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                            data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
 
-                    <div class="card rounded-0 small p-3">
-                        <h4 class="text-start">Cerfificado Digital</h4>
 
-                        <h5 class="text-start">Paulo Wirth: 984095109850135</h5>
-                        <div>Status do Certificado: <b class="text-success"><i class="far fa-check-circle mx-2"></i> Válido</b></div>
-
-                        <div>Emitido por: <strong>AC Imprensa Oficial SP</strong></div>
-                        <div>Data de Emissão: <strong>10/10/2023</strong></div>
-                        <div>Data de Vencimento: <strong>10/10/2023</strong></div>
-                    </div>
-
-                    <!-- 
-                        
-                        <h4>Carregando certificado...</h4>
-                        
-                        <div class="progress" style="height: 2px;">
-                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div> -->
-
-                      <div class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                        <label class="form-check-label small" for="now">
-                            Visualizei os documentos e estou de acordo com as informações apresentadas.
-                        </label>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6 offset-lg-3 mt-5">
-                    <button type="button" class="btn btn-ok w-100" onclick="location.href='recibo.html';">Assinar</button>
                 </div>
 
             </div>
@@ -409,43 +532,113 @@
     </footer>
 
 
-  <!-- --------------------------------------------------- -->
-  <div class="modal fade" id="cancelar" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title my-auto cancel">
-                    <i class="far fa-ban me-3"></i> Cancelamento
-                </h5>
-                <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
-                    aria-label="Close"></i>
 
-            </div>
-            <div class="modal-body p-4">
-                <div class="row">
-                    <div class="col-12 p-2 mb-3">
-                        <h5 class="p-3">
-                            Você realmente deseja cancelar esta publicação?
-                        </h5>
-                    </div>
 
-                  
+    <div class="bg-light p-3" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
+        <a href="publicacoes.html">01</a><br>
+        <a href="publicacoes2.html">02</a><br>
+        <a href="publicacoes3.html">03</a><br>
+    </div>
+
+
+
+
+
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="auditoria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto public">
+                        <i class="far fa-check me-3"></i> Publicada
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
                 </div>
-            </div>
-            <div class="modal-footer d-flex justify-content-between">
-                <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
-                    <i class="far fa-arrow-left me-3"></i> Voltar
-                </a>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-12 p-2 mb-3">
+                            <h5 class="border-bottom p-3 pb-4">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O
+                                PREGÃO
+                                ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351</h5>
+                        </div>
 
-                <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
-                    SIM
-                </a>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="inputBox text-center">
+                                <h5>Data Inicial</h5>
+                                <select name="" class="form-select selectMOD" id="">
+                                    <option value="">...</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-4">
+                            <div class="inputBox text-center">
+                                <h5>Data Final</h5>
+                                <select name="" class="form-select selectMOD" id="">
+                                    <option value="">...</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="inputBox text-center">
+                                <h5>Ordenar Por</h5>
+                                <select name="" class="form-select selectMOD" id="">
+                                    <option value="">Data Crescente</option>
+                                    <option value="">Data Decrescente </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 p-3">
+                            <div class="card rounded-0 p-3">Não há alterações para esta Publicação...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                    <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                        <i class="far fa-arrow-left me-3"></i> Voltar
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto cancel">
+                        <i class="far fa-trash-alt me-3"></i> Exclusão
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-12 p-2 mb-3">
+                            Deseja realmente excluir esta publicação?
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                        <i class="far fa-arrow-left me-3"></i> Voltar
+                    </a>
+
+                    <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                        Sim
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -466,21 +659,6 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-
-
-        $("#caderno").change(function () {
-            $('#ativa1, #ativa2').removeAttr("disabled");
-
-        });
-
-        $("#data_futura").click(function () {
-            $('#now').prop('checked', false);
-        });
-
-
-        $("#now").click(function () {
-            $('#data_futura').val(''); 
-        });
 
     </script>
 

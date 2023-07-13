@@ -46,7 +46,7 @@
 
 
 
-    <div id="govsp-topbarGlobal" class="blu-e">
+    <!-- <div id="govsp-topbarGlobal" class="blu-e">
         <div id="topbarGlobal">
             <div id="topbarLink" class="govsp-black">
                 <div class="govsp-portal">
@@ -152,7 +152,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <header id="header_menu" class="container-fluid px-0">
         <form class="container-custom px-3 px-xxl-0">
@@ -322,6 +322,10 @@
                                 <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Auditoria">
                                     <i class="far fa-history fa-3x" data-bs-toggle="modal" data-bs-target="#auditoria" ></i>
                                 </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x"  data-bs-toggle="modal" data-bs-target="#excluir"></i>
+                                </button>
                             </div>
 
                             <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA" </div>
@@ -356,6 +360,10 @@
                                     <i class="far fa-pencil-alt fa-3x"></i>
                                 </button>
 
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
+
                             </div>
 
                             <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA" </div>
@@ -386,10 +394,9 @@
                                     <i class="far fa-eye fa-3x"></i>
                                 </button>
 
-                                <!-- <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='edit_new.html';"
-                                    data-bs-placement="top" title="Editar">
-                                    <i class="far fa-pencil-alt fa-3x"></i>
-                                </button> -->
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
                             </div>
 
                             <div class="caminho">Executivo > INSTITUTO DANTE PAZZANESE DE CARDIOLOGIA | LICITAÇÃO"
@@ -424,6 +431,10 @@
                                     data-bs-placement="top" title="Assinar">
                                     <i class="far fa-file-signature fa-3x"></i>
                                 </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
                             </div>
 
                             <div class="caminho">Executivo > EDITAL PREGÃO ELETRÔNICO </div>
@@ -451,6 +462,10 @@
                                 <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='#';"
                                     data-bs-placement="top" title="Visualizar">
                                     <i class="far fa-eye fa-3x"></i>
+                                </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
                                 </button>
 
                             </div>
@@ -541,7 +556,11 @@
 
 
 
-
+<div class="bg-light p-3" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
+    <a href="publicacoes.html">01</a><br>
+    <a href="publicacoes2.html">02</a><br>
+    <a href="publicacoes3.html">03</a><br>
+</div>
 
 
 
@@ -602,6 +621,40 @@
                 <div class="modal-footer d-flex justify-content-start">
                     <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
                         <i class="far fa-arrow-left me-3"></i> Voltar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- --------------------------------------------------- -->
+      <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto cancel">
+                        <i class="far fa-trash-alt me-3"></i> Exclusão
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-12 p-2 mb-3">
+                            Deseja realmente excluir esta publicação?
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                        <i class="far fa-arrow-left me-3"></i> Voltar
+                    </a>
+
+                    <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                        Sim
                     </a>
                 </div>
             </div>
