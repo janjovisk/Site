@@ -25,8 +25,8 @@
     <link href="../css/estilo.css" rel="stylesheet">
 
 
-    <!-- CSS PUBLICAÇÂO -->
-    <link href="../css/estilo_public.css" rel="stylesheet">
+     <!-- CSS PUBLICAÇÂO -->
+     <link href="../css/estilo_public.css" rel="stylesheet">
 
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -292,9 +292,8 @@
                         </div>
 
                         <div class="col d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-ok" data-bs-toggle="tooltip"
-                                onclick="location.href='edit_new.html';" data-bs-placement="top"
-                                title="Criar Publicação"><i class="fal fa-plus-circle"></i> Criar</button>
+                            <button type="button" class="btn btn-ok" data-bs-toggle="tooltip" onclick="location.href='edit_new.html';"
+                                data-bs-placement="top" title="Criar Publicação"><i class="fal fa-plus-circle"></i> Criar</button>
                         </div>
                     </div>
 
@@ -307,183 +306,210 @@
 
         <div class="container-custom px-0">
             <div class="mb-4">
+                <div class="row">
+                    <div class="col-12" id="lista_public">
 
-                <div id="lista_public3">
+                        
 
-                    <div class="row linha">
-                        <div class="col-md-7 ps-0">
-                            <div class="IconStatus">
-                                <div class="btn_lista3 status_OK" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Publicada"><i class="far fa-check"></i></div>
-                                <button type="button" class="btn_lista3"><i class="far fa-chevron-down"></i></button>
-                            </div>
-                            <div class="pt-2">
-                                <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
-                                <h6 class="titulo">
-                                    ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
-                                    ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351. Texto Texto
-                                </h6>
-                            </div>
+                        <div class="resultBox2">
 
-                        </div>
-                        <div class="col-6 col-md status my-auto">
-                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
-                        </div>
+                            <div class="controlers">
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='#';"
+                                    data-bs-placement="top" title="Visualizar">
+                                    <i class="far fa-eye fa-3x"></i>
+                                </button>
 
-                        <div class="col-6 col-md status my-auto">
-                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
-                        </div>
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Auditoria">
+                                    <i class="far fa-history fa-3x" data-bs-toggle="modal" data-bs-target="#auditoria" ></i>
+                                </button>
 
-                        <div class="col-12 linhas_func">
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-eye me-2"></i> Visualizar</button>
-                            <button type="button" class="func" data-bs-toggle="modal" data-bs-target="#auditoria"><i
-                                    class="fal fa-history me-2"></i>Auditoria</button>
-                            <button type="button" class="func" data-bs-toggle="modal" data-bs-target="#excluir"><i
-                                    class="fal fa-trash-alt me-2"></i>Excluir</button>
-                        </div>
-                    </div>
-
-                    <div class="row linha">
-                        <div class="col-md-7 ps-0">
-                            <div class="IconStatus">
-                                <div class="btn_lista3 status_rascunho" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Rascunho"><i class="far fa-pencil-alt"></i></div>
-                                <button type="button" class="btn_lista3"><i class="far fa-chevron-down"></i></button>
-                            </div>
-                            <div class="pt-2 d-flex flex-column justify-content-center h-100">
-                                <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
-                                <h6 class="titulo">
-                                    ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA"
-                                </h6>
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x"  data-bs-toggle="modal" data-bs-target="#excluir"></i>
+                                </button>
                             </div>
 
-                        </div>
-                        <div class="col-6 col-md status my-auto">
-                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
-                        </div>
+                            <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA" </div>
+                            <h6 class="titulo">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351</h6>
+                            <div class="row py-2 status">
 
-                        <div class="col-6 col-md status my-auto">
-                            
-                        </div>
+                                <div class="col-6 col-md-3">
+                                    <span class="small">Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                </div>
 
-                        <div class="col-12 linhas_func">
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-eye me-2"></i> Visualizar</button>
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-pencil-alt me-2"></i>Editar</button>
-                            <button type="button" class="func" data-bs-toggle="modal" data-bs-target="#excluir"><i
-                                    class="fal fa-trash-alt me-2"></i>Excluir</button>
-                        </div>
-                    </div>
-                    
-                    <div class="row linha">
-                        <div class="col-md-7 ps-0">
-                            <div class="IconStatus">
-                                <div class="btn_lista3 status_wait" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Publicadação Pendente"><i class="far fa-clock"></i></div>
-                                <button type="button" class="btn_lista3"><i class="far fa-chevron-down"></i></button>
+                                <div class="col-6 col-md-3">
+                                    <span class="small">Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                </div>
+
+                                <div class="col-md-6 text-center text-md-end my-2 my-md-auto public">
+                                    <i class="far fa-check me-3"></i> Publicada
+                                </div>
                             </div>
-                            <div class="pt-2 d-flex flex-column justify-content-center h-100">
-                                <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
-                                <h6 class="titulo">
-                                    ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
-                                    ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
-                                </h6>
-                            </div>
-
-                        </div>
-                        <div class="col-6 col-md status my-auto">
-                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                         </div>
 
-                        <div class="col-6 col-md status my-auto text-warning">
-                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
-                        </div>
+                        <div class="resultBox2">
+                            <div class="controlers">
 
-                        <div class="col-12 linhas_func">
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-eye me-2"></i> Visualizar</button>
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-pencil-alt me-2"></i>Editar</button>
-                            <button type="button" class="func" data-bs-toggle="modal" data-bs-target="#excluir"><i
-                                    class="fal fa-trash-alt me-2"></i>Excluir</button>
-                        </div>
-                    </div>
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Visualizar">
+                                    <i class="far fa-eye fa-3x"></i>
+                                </button>
 
-                    <div class="row linha">
-                        <div class="col-md-7 ps-0">
-                            <div class="IconStatus">
-                                <div class="btn_lista3 status_wait" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Assinatura Pendente"><i class="far fa-file-signature"></i></div>
-                                <button type="button" class="btn_lista3"><i class="far fa-chevron-down"></i></button>
-                            </div>
-                            <div class="pt-2 d-flex flex-column justify-content-center h-100">
-                                <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
-                                <h6 class="titulo">
-                                    ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
-                                    ELETRÔNICO Nº 0864/23
-                                </h6>
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='edit_new.html';"
+                                    data-bs-placement="top" title="Editar">
+                                    <i class="far fa-pencil-alt fa-3x"></i>
+                                </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
+
                             </div>
 
-                        </div>
-                        <div class="col-6 col-md status my-auto">
-                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
-                        </div>
+                            <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA" </div>
+                            <h6 class="titulo">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351</h6>
+                            <div class="row py-2 status">
 
-                        <div class="col-6 col-md status my-auto">
-                            
-                        </div>
+                                <div class="col-6 col-md-3">
+                                    <span class="small">Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                </div>
 
-                        <div class="col-12 linhas_func">
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-eye me-2"></i> Visualizar</button>
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-pencil-alt me-2"></i>Editar</button>
-                                    <button type="button" class="func" onclick="location.href='assinar.html';"><i
-                                        class="fal fa-file-signature me-2"></i>Assinar</button>
-                            <button type="button" class="func" data-bs-toggle="modal" data-bs-target="#excluir"><i
-                                    class="fal fa-trash-alt me-2"></i>Excluir</button>
-                        </div>
-                    </div>
+                                <div class="col-6 col-md-3">
 
-                    <div class="row linha">
-                        <div class="col-md-7 ps-0">
-                            <div class="IconStatus">
-                                <div class="btn_lista3 status_del" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Cancelada"><i class="far fa-ban"></i></div>
-                                <button type="button" class="btn_lista3"><i class="far fa-chevron-down"></i></button>
+                                </div>
+
+                                <div class="col-md-6 text-center text-md-end my-2 my-md-auto rasc">
+                                    <i class="far fa-pencil-alt me-3"></i> Racunho
+                                </div>
                             </div>
-                            <div class="pt-2 d-flex flex-column justify-content-center h-100">
-                                <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
-                                <h6 class="titulo">
-                                    ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
-                                    ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
-                                </h6>
+                        </div>
+
+                        <div class="resultBox2">
+
+                            <div class="controlers">
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Visualizar">
+                                    <i class="far fa-eye fa-3x"></i>
+                                </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
                             </div>
 
-                        </div>
-                        <div class="col-6 col-md status my-auto">
-                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                            <div class="caminho">Executivo > INSTITUTO DANTE PAZZANESE DE CARDIOLOGIA | LICITAÇÃO"
+                            </div>
+                            <h6 class="titulo">INSTITUTO DANTE PAZZANESE DE CARDIOLOGIA</h6>
+                            <div class="row py-2 status">
+
+                                <div class="col-6 col-md-3">
+                                    <span class="small">Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                </div>
+
+                                <div class="col-6 col-md-3 pendent">
+                                    <span class="small">Publicado em:</span><br> <b>12/02/2023</b> ás <b>10:00:00</b>
+                                </div>
+
+                                <div class="col-md-6 text-center text-md-end my-2 my-md-auto pendent">
+                                    <i class="far fa-hourglass me-3"></i> Publicadação Pendente
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col-6 col-md status my-auto">
-                            
+                        <div class="resultBox2">
+
+                            <div class="controlers">
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='#';"
+                                    data-bs-placement="top" title="Visualizar">
+                                    <i class="far fa-eye fa-3x"></i>
+                                </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='assinar.html';"
+                                    data-bs-placement="top" title="Assinar">
+                                    <i class="far fa-file-signature fa-3x"></i>
+                                </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
+                            </div>
+
+                            <div class="caminho">Executivo > EDITAL PREGÃO ELETRÔNICO </div>
+                            <h6 class="titulo">EDITAL PREGÃO ELETRÔNICO - INSTALAÇÃO DE AR CONDICIONADO</h6>
+                            <div class="row py-2 status">
+
+                                <div class="col-6 col-md-3">
+                                    <span class="small">Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+
+                                </div>
+
+                                <div class="col-md-6 text-center text-md-end my-2 my-md-auto pendent">
+                                    <i class="far fa-hourglass me-3"></i> Assinatura Pendente
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col-12 linhas_func">
-                            <button type="button" class="func" onclick="location.href='edit_new.html';"><i
-                                    class="fal fa-eye me-2"></i> Visualizar</button>
+                        <div class="resultBox2">
 
-                            <button type="button" class="func" data-bs-toggle="modal" data-bs-target="#excluir"><i
-                                    class="fal fa-trash-alt me-2"></i>Excluir</button>
+                            <div class="controlers">
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" onclick="location.href='#';"
+                                    data-bs-placement="top" title="Visualizar">
+                                    <i class="far fa-eye fa-3x"></i>
+                                </button>
+
+                                <button type="button" class="btncontrol" data-bs-toggle="tooltip" data-bs-placement="top"  title="Excluir">
+                                    <i class="far fa-trash-alt fa-3x" data-bs-toggle="modal" data-bs-target="#excluir" ></i>
+                                </button>
+
+                            </div>
+
+                            <div class="caminho">Executivo > EDITAL PREGÃO ELETRÔNICO </div>
+                            <h6 class="titulo">EDITAL PREGÃO ELETRÔNICO - INSTALAÇÃO DE AR CONDICIONADO</h6>
+                            <div class="row py-2 status">
+
+                                <div class="col-6 col-md-3">
+                                    <span class="small">Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                </div>
+
+                                <div class="col-6 col-md-3">
+
+                                </div>
+
+                                <div class="col-md-6 text-center text-md-end my-2 my-md-auto cancel">
+                                    <i class="fas fa-ban me-3"></i> Cancelada
+                                </div>
+                            </div>
                         </div>
+
+
+
+
+                        <nav class="mt-4 d-flex justify-content-center" aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <span class="page-link"><i class="far fa-chevron-left"></i></span>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link">1</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"><i class="far fa-chevron-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
 
                 </div>
-
             </div>
-
         </div>
 
     </section>
@@ -530,17 +556,17 @@
 
 
 
-    <div class="bg-light p-3" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
-        <a href="publicacoes.html">01</a><br>
-        <a href="publicacoes2.html">02</a><br>
-        <a href="publicacoes3.html">03</a><br>
-    </div>
+<div class="bg-light p-3" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
+    <a href="publicacoes.html">01</a><br>
+    <a href="publicacoes2.html">02</a><br>
+    <a href="publicacoes3.html">03</a><br>
+</div>
 
 
 
 
 
-    <!-- --------------------------------------------------- -->
+  <!-- --------------------------------------------------- -->
     <div class="modal fade" id="auditoria" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content">
@@ -555,8 +581,7 @@
                 <div class="modal-body p-4">
                     <div class="row">
                         <div class="col-12 p-2 mb-3">
-                            <h5 class="border-bottom p-3 pb-4">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O
-                                PREGÃO
+                            <h5 class="border-bottom p-3 pb-4">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
                                 ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351</h5>
                         </div>
 
@@ -568,7 +593,7 @@
 
                                 </select>
                             </div>
-                        </div>
+                        </div> 
                         <div class="col-sm-6 col-lg-4 mb-4">
                             <div class="inputBox text-center">
                                 <h5>Data Final</h5>
@@ -589,7 +614,7 @@
                         </div>
 
                         <div class="col-12 p-3">
-                            <div class="card rounded-0 p-3">Não há alterações para esta Publicação...</div>
+                            <div class="card rounded-0 p-3">Não há alterações para esta Publicação...</div> 
                         </div>
                     </div>
                 </div>
@@ -603,8 +628,8 @@
     </div>
 
 
-    <!-- --------------------------------------------------- -->
-    <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
+      <!-- --------------------------------------------------- -->
+      <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -655,16 +680,6 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-
-
-        $(function () {
-
-            $('.linha').click(function () {
-                $('.linha').removeClass("abrir")
-                $(this).toggleClass("abrir");
-            });
-
-        });
 
     </script>
 
