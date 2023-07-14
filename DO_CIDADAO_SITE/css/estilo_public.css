@@ -1,6 +1,7 @@
 #lista_public {}
 
-#lista_public .titulo, #lista_public .caminho  {
+#lista_public .titulo,
+#lista_public .caminho {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -16,7 +17,7 @@
     color: #27ae32;
 }
 
-.pendent{
+.pendent {
     color: #ff9100;
 }
 
@@ -24,7 +25,7 @@
     color: #bbbbbb;
 }
 
-.cancel{
+.cancel {
     color: #ff2121;
 }
 
@@ -85,10 +86,10 @@
     align-items: center;
     color: #fff;
     transition: 0.5s;
-    
+
 }
 
-.btncontrol i{
+.btncontrol i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,20 +105,21 @@
 }
 
 
-.btncontrol:hover{
+.btncontrol:hover {
     color: #274fae;
     background: #fff;
     border: 1px solid #E8E8E8;
 }
 
-.edit_limpa, .edit_info{
+.edit_limpa,
+.edit_info {
     width: 36px;
     height: 36px;
     padding: 4px;
     margin: 4px;
 }
 
-.upload{
+.upload {
     border: 2px dashed #E8E8E8;
     padding: 20px;
     display: flex;
@@ -127,25 +129,25 @@
     color: #bbbbbb;
 }
 
-#SalvarRascunho{
+#SalvarRascunho {
     margin-top: -78px;
     margin-bottom: 12px;
 }
 
 
-.revisao{
+.revisao {
     position: relative;
     border: 1px solid #274fae;
     border-bottom: none;
     padding: 4px;
 }
 
-.revisao:first-child:after{
+.revisao:first-child:after {
     z-index: 5;
     position: absolute;
     content: '';
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid #274fae;
@@ -153,16 +155,17 @@
     right: 28px;
 }
 
-.revisao:first-child{
+.revisao:first-child {
     border-top: 3px solid #274fae;
 }
-.revisao:last-child{
+
+.revisao:last-child {
     border-bottom: 1px solid #274fae;
 }
 
 
-@media (max-width:991px){
-    #SalvarRascunho{
+@media (max-width:991px) {
+    #SalvarRascunho {
         margin-top: -32px;
     }
 }
@@ -171,11 +174,9 @@
 /* MODELO 2 de Publicação ----------------------------  */
 
 
-#lista_public2{
+#lista_public2 {}
 
-}
-
-.lista_pub{
+.lista_pub {
     border: 1px solid #E8E8E8;
     position: relative;
     background: #fff;
@@ -184,22 +185,139 @@
     transition: 0.5s;
 }
 
-.lista_pub:hover{
+.lista_pub:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-#lista_public2 .caminho{
+#lista_public2 .caminho {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 0.8em !important;
 }
 
-#lista_public2 .status{
+#lista_public2 .status {
     font-size: 0.8em !important;
 }
 
-.lista_pub .btn{
+.lista_pub .btn {
     height: 34px !important;
     font-size: 0.96em;
+}
+
+
+
+/* MODELO 3 de Publicação ----------------------------  */
+
+
+
+#lista_public3 .status {
+    font-size: 0.80em !important;
+}
+
+#lista_public3 .titulo{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    color: #274fae;
+
+}
+
+#lista_public3 .caminho{
+    font-size: 0.80em !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.IconStatus{
+    margin-right: 16px;
+    float: left;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_lista3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+    /* font-size: 1.6em; */
+}
+
+.status_OK{
+    background: #27ae32;
+    color: #fff;
+}
+
+.status_wait{
+    background: #ff9100;
+    color: #fff;
+}
+
+.status_rascunho{
+    background: #bbbbbb;
+    color: #fff;
+}
+
+.status_del{
+    background: #ff6a6a;
+    color: #fff; 
+}
+
+.linhas_func{
+    display: none;
+    background: #f5f5f5;
+    padding: 0;
+}
+
+.func{
+    background: #f5f5f5;
+    padding: 2px 24px;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+
+.linha.abrir button.btn_lista3,
+button.btn_lista3:hover,
+.func:hover{
+    background: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+#lista_public3 .linha{
+    border: 1px solid #f5f5f5;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 16px !important;
+}
+
+#lista_public3 .linha .col-md-7{
+    min-height: 80px;
+}
+
+#lista_public3 .linha:hover{
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.linha.abrir .linhas_func{
+    display: flex;
+}
+
+.linha.abrir button.btn_lista3 i{
+    transform: rotate(180deg);
 }
