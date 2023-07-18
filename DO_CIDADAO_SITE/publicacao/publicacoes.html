@@ -274,27 +274,35 @@
         <div class="container-custom px-0 py-3">
             <div class="row mx-0">
 
-                <div class="col-12 p-3" style="background: #f5f5f5;">
+                <div class="col-12 p-3">
+                    <h4 class="flex-grow-1 text-center text-lg-start my-0">Lista de Publicações </h4>
+                </div>
+
+                <div class="col-12 px-3 px-md-0">
                     <div class="row">
-                        <div class="col-md col-lg-6 my-3 my-lg-auto">
-                            <h4 class="flex-grow-1 text-center text-lg-start my-0">Lista de Publicações </h4>
-                        </div>
-                        <div class="col d-flex justify-content-center align-items-center">
+
+                        <div class="col-6 order-1 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             Total: 05
                         </div>
-                        <div class="col-5 col-md-3 d-flex justify-content-center align-items-center">
+
+                        <div class="col-6 order-3 col-md-3 order-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <select name="" class="form-select selectMOD" id="">
-                                <option value="">Exibir 16 linhas</option>
-                                <option value="">Exibir 24 linhas</option>
-                                <option value="">Exibir 32 linhas</option>
-                                <option value="">Exibir 64 linhas</option>
+                                <option value="">Exibir 10 Publicações</option>
+                                <option value="">Exibir 20 Publicações</option>
                             </select>
                         </div>
 
-                        <div class="col d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-ok" data-bs-toggle="tooltip"
+                        <div class="col-6 order-4 col-md-3 order-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <select name="" class="form-select selectMOD" id="">
+                                <option value="">Exibir por Status</option>
+                                <option value="">Exibir por Data</option>
+                            </select>
+                        </div>
+
+                        <div class="col-6 order-2  col-md-3 order-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
                                 onclick="location.href='edit_new.html';" data-bs-placement="top"
-                                title="Criar Publicação"><i class="fal fa-plus-circle"></i> Criar</button>
+                                title="Criar Publicação"><i class="fal fa-plus-circle me-2"></i> Criar</button>
                         </div>
                     </div>
 
@@ -315,7 +323,7 @@
                         <div class="lista_pub">
                             <div class="row">
                                 <div class="col">
-                                    <div class="alert alert-success rounded-0 py-1">
+                                    <div class="public pb-2">
                                         <i class="far fa-check me-3"></i> Publicada
                                     </div>
                                     <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
@@ -359,7 +367,7 @@
                         <div class="lista_pub">
                             <div class="row">
                                 <div class="col">
-                                    <div class="alert alert-secondary rounded-0 py-1">
+                                    <div class="public rasc pb-2">
                                         <i class="far fa-pencil-alt me-3"></i> Racunho
                                     </div>
                                     <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
@@ -403,7 +411,7 @@
                         <div class="lista_pub">
                             <div class="row">
                                 <div class="col">
-                                    <div class="alert alert-warning rounded-0 py-1">
+                                    <div class="pendent pb-2">
                                         <i class="far fa-hourglass me-3"></i> Publicadação Pendente
                                     </div>
                                     <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
@@ -417,7 +425,7 @@
                                             <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
 
-                                        <div class="col-6 text-warning">
+                                        <div class="col-6 rasc">
                                             <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
@@ -448,8 +456,8 @@
                         <div class="lista_pub">
                             <div class="row">
                                 <div class="col">
-                                    <div class="alert alert-warning rounded-0 py-1">
-                                        <i class="far fa-hourglass me-3"></i> Assinatura Pendente
+                                    <div class="pendent pb-2">
+                                        <i class="far fa-file-signature me-3"></i> Assinatura Pendente
                                     </div>
                                     <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -462,7 +470,7 @@
                                             <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
 
-                                        <div class="col-6 text-warning">
+                                        <div class="col-6 rasc">
                                             <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
@@ -498,7 +506,7 @@
                         <div class="lista_pub">
                             <div class="row">
                                 <div class="col">
-                                    <div class="alert alert-danger rounded-0 py-1">
+                                    <div class="cancel pb-2">
                                         <i class="far fa-ban me-3"></i> Cancelada
                                     </div>
                                     <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
@@ -585,11 +593,11 @@
 
 
 
-    <div class="bg-light p-3" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
+    <!-- <div class="bg-light p-3" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
         <a href="publicacoes.html">01</a><br>
         <a href="publicacoes2.html">02</a><br>
         <a href="publicacoes3.html">03</a><br>
-    </div>
+    </div> -->
 
 
 
