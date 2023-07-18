@@ -18,7 +18,7 @@
 }
 
 .pendent {
-    color: #ff9100;
+    color: #d6b600;
 }
 
 .rasc {
@@ -320,4 +320,8 @@ button.btn_lista3:hover,
 
 .linha.abrir button.btn_lista3 i{
     transform: rotate(180deg);
+}
+
+.btn-ok.cb, .btn-cancel.cb{
+    text-transform: none !important;
 }
