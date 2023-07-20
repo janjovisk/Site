@@ -261,8 +261,8 @@
 
             <div class="row position-relative mt-4">
                 <div class="col-10 col-xxl-12 offset-2 offset-xxl-0 d-none d-xxl-block" id="caminho">
-                    <a href="index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a> >
-                    <span>Área do Publicante > Lista de Publicações</span>
+                    <a href="../index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a> >
+                    <span><a href="login.html">Área do Publicante </a> > Lista de Publicações</span>
                 </div>
             </div>
         </form>
@@ -274,35 +274,42 @@
         <div class="container-custom px-0 py-3">
             <div class="row mx-0">
 
-                <div class="col-12 p-3">
-                    <h4 class="flex-grow-1 text-center text-lg-start my-0">Lista de Publicações </h4>
+                <div class="col-9 p-3">
+                    <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
+                </div>
+
+                <div class="col-3 d-flex justify-content-center align-items-center p-3">
+                   <span class="me-2"> Total:</span> <b style="color: #274fae">05</b> 
                 </div>
 
                 <div class="col-12 px-3 px-md-0">
                     <div class="row">
 
-                        <div class="col-6 order-1 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
-                            Total: 05
-                        </div>
-
-                        <div class="col-6 order-3 col-md-3 order-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
-                            <select name="" class="form-select selectMOD" id="">
-                                <option value="">Exibir 10 Publicações</option>
-                                <option value="">Exibir 20 Publicações</option>
-                            </select>
-                        </div>
-
-                        <div class="col-6 order-4 col-md-3 order-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <select name="" class="form-select selectMOD" id="">
                                 <option value="">Exibir por Status</option>
                                 <option value="">Exibir por Data</option>
                             </select>
                         </div>
 
-                        <div class="col-6 order-2  col-md-3 order-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                        <div class="col-6  col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <select name="" class="form-select selectMOD" id="">
+                                <option value="">Ordem Crescente</option>
+                                <option value="">Ordem Decrescente</option>
+                            </select>
+                        </div>
+
+                        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <select name="" class="form-select selectMOD" id="">
+                                <option value="">Exibir 10 Publicações</option>
+                                <option value="">Exibir 20 Publicações</option>
+                            </select>
+                        </div>
+
+                        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
                                 onclick="location.href='edit_new.html';" data-bs-placement="top"
-                                title="Criar Publicação"><i class="fal fa-plus-circle me-2"></i> Criar</button>
+                                title="Criar Nova Publicação"><i class="fal fa-file me-3"></i> Criar</button>
                         </div>
                     </div>
 
@@ -546,6 +553,22 @@
                 </div>
 
             </div>
+
+            <nav class="mt-5 d-flex justify-content-center" aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <span class="page-link"><i class="far fa-chevron-left"></i></span>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="far fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </nav>
 
         </div>
 
