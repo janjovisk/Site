@@ -396,7 +396,7 @@
                 // Verificar se o valor inserido é maior que o número total de elementos
                 if (numero > totalElementos) {
                     // Se não houver elementos filhos, criar uma nova linha
-                    lista.append("<li><div><input type='radio' name='lista' class='d-none' id='l1' checked> <label for='l1'>" + desc + " </label> <button type='button' class='edit'> <i class='far fa-check'></i></button></div></li>");
+                    lista.append("<li><div><input type='radio' name='lista' class='d-none' id='l" + num + "' checked> <label for='l" + num + "'>" + desc + " </label> <button type='button' class='edit'> <i class='far fa-check'></i></button></div></li>");
                 } else {
 
                     // Obter o elemento irmão da posição atual

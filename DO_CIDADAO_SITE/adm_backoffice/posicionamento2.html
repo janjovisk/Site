@@ -184,7 +184,7 @@
             cursor: pointer;
             display: flex;
             justify-content: space-between;
-            padding-right: 80px;
+            
         }
 
         .lista_position ol li:nth-child(even)::after {
@@ -225,6 +225,7 @@
         }
 
         .lista_position ol li .edit {
+            visibility: hidden;
             margin: auto 16px;
             color: #ccc;
             height: 24px !important;
@@ -241,12 +242,8 @@
             pointer-events: none;
         }
 
-        .lista_position ol li label:hover~.edit {
-            box-shadow: 0 0 0 1px #2378c3;
-            color: #2378c3;
-        }
-
         .lista_position input[name="lista"]:checked~.edit {
+            visibility: visible;
             background: #2378c3;
             color: #fff;
             pointer-events: auto !important;
@@ -254,6 +251,7 @@
         }
 
         .lista_position input[name="lista"]:checked ~ label {
+            padding-right: 80px;
             color: #2378c3;
             cursor: default;
 
@@ -410,8 +408,9 @@
 
                 // Verificar se o valor inserido é maior que o número total de elementos
                 if (numero > totalElementos) {
+
                     // Se não houver elementos filhos, criar uma nova linha
-                    lista.append("<li><div><input type='radio' name='lista' class='d-none' id='l1' checked> <label for='l1'>" + desc + " </label> <button type='button' class='edit'> <i class='far fa-check'></i></button></div></li>");
+                    lista.append("<li><div><input type='radio' name='lista' class='d-none' id='l" + num + "' checked> <label for='" + num + "'>" + desc + " </label> <button type='button' class='edit open me-5'> <i class='far fa-pencil-alt'></i></button> <button type='button' class='edit del'> <i class='far fa-trash-alt'></i></button></div></li>");
                 } else {
 
                     // Obter o elemento irmão da posição atual
@@ -421,7 +420,7 @@
                     siblingElement.clone().insertAfter(siblingElement);
 
                     $('.lista_position ol li:nth-child(' + num + ') div').remove();
-                    $('.lista_position ol li:nth-child(' + num + ')').append("<div><input type='radio' name='lista' class='d-none' id='l" + num + "' checked> <label for='l" + num + "'>" + desc + " </label> <button type='button' class='edit'> <i class='far fa-check'></i></button></div>");
+                    $('.lista_position ol li:nth-child(' + num + ')').append("<div><input type='radio' name='lista' class='d-none' id='l" + num + "' checked> <label for='l" + num + "'>" + desc + " </label> <button type='button' class='edit open me-5'> <i class='far fa-pencil-alt'></i></button> <button type='button' class='edit del'> <i class='far fa-trash-alt'></i></button></div>");
                     resolve();
                 }
 
@@ -456,7 +455,10 @@
             });
 
             $('.del').click(function () {
+                $('.add_posit').css({ "display": "flex" });
+                $('.cancel_select').css({ "display": "none" });
                 $(this).closest('li').remove();
+                $('#numero, #descricao').val('').prop("disabled", false);
             });
 
         });
