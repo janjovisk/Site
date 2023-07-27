@@ -754,6 +754,10 @@ label .numb {
   font-weight: 600;
 }
 
+select, input[type="date"]{
+  padding: 0 !important;
+}
+
 
 .selectMOD {
   border: 1px solid #E8E8E8;
