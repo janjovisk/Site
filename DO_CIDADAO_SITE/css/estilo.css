@@ -755,7 +755,7 @@ label .numb {
 }
 
 select, input[type="date"]{
-  padding: 0 !important;
+  padding: 6px !important;
 }
 
 
