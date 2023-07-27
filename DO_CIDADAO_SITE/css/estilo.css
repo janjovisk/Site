@@ -99,7 +99,7 @@ a.btn {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #govsp-topbarGlobal {
@@ -769,6 +769,7 @@ label .numb {
   background-size: auto 30%;
   transition: 0.5s;
 }
+
 
 input.selectMOD {
   background: #fff;
