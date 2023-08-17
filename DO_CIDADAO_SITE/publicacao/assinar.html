@@ -274,6 +274,33 @@
         <div class="container-custom px-3 py-3">
             <div class="row mb-4">
 
+                <div class="col-12 px-3 px-md-0 mb-3" id="btn_user_logado">
+
+                    <input type="checkbox" id="user_click" class="d-none">
+                    <label for="user_click" class="btn_user_click">
+                        <i class="fal fa-user-alt mb-1" style="font-size: 1.4em;"></i>
+                        <span style="font-size: 0.8em;">Perfil</span>
+                    </label>
+
+                    <div class="position-relative border p-2 ps-4 user-box">
+                        <div class="">
+                            <div class="my-0 py-0">
+                                <strong>Joãozinho de Jesus</strong>
+                            </div>
+        
+                            <div class="my-0 py-0">
+                                <span class="small text-secondary">Aprovador de Publicações</span>
+                            </div>
+                        </div>
+    
+                        <button type="button" class="LogOut" data-bs-toggle="modal" data-bs-target="#sair">
+                            <i class="fal fa-sign-out-alt"></i>
+                            <span>Sair</span>
+                        </button>
+                    </div>
+
+                </div>
+
                 <div class="col-md-6 text-center text-md-start my-2 my-md-auto">
                     <a href="edit_new.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Voltar ao Rascunho</a>
                 </div>
@@ -446,6 +473,38 @@
     </div>
 </div>
 
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto cancel">
+                        <i class="far fa-sign-out-alt me-3"></i> Sair da área do Publicante
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-12 p-2 mb-3">
+
+                            <h5>Deseja realmente sair?</h5>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                            NÃO
+                        </a>
+
+                        <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                            SIM
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

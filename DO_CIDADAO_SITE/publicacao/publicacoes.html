@@ -156,6 +156,7 @@
 
     <header id="header_menu" class="container-fluid px-0">
         <form class="container-custom px-3 px-xxl-0">
+
             <div class="row position-relative">
                 <a class="navbar-brand d-none d-xxl-flex" href="../index.html"> <img src="../img/logo_DO.jpg"
                         alt="Diário Oficial do Estado de São Paulo" id="LogoDO"> </a>
@@ -272,14 +273,43 @@
 
 
         <div class="container-custom px-0 py-3">
+
             <div class="row mx-0">
+
+                <div class="col-12 px-3 px-md-0 mb-3" id="btn_user_logado">
+
+                    <input type="checkbox" id="user_click" class="d-none">
+                    <label for="user_click" class="btn_user_click">
+                        <i class="fal fa-user-alt mb-1" style="font-size: 1.4em;"></i>
+                        <span style="font-size: 0.8em;">Perfil</span>
+                    </label>
+
+                    <div class="position-relative border p-2 ps-4 user-box">
+                        <div class="">
+                            <div class="my-0 py-0">
+                                <strong>Joãozinho de Jesus</strong>
+                            </div>
+        
+                            <div class="my-0 py-0">
+                                <span class="small text-secondary">Aprovador de Publicações</span>
+                            </div>
+                        </div>
+    
+                        <button type="button" class="LogOut" data-bs-toggle="modal" data-bs-target="#sair">
+                            <i class="fal fa-sign-out-alt"></i>
+                            <span>Sair</span>
+                        </button>
+                    </div>
+
+                </div>
+
 
                 <div class="col-9 p-3">
                     <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
                 </div>
 
                 <div class="col-3 d-flex justify-content-center align-items-center p-3">
-                   <span class="me-2"> Total:</span> <b style="color: #274fae">05</b> 
+                    <span class="me-2"> Total:</span> <b style="color: #274fae">05</b>
                 </div>
 
                 <div class="col-12 px-3 px-md-0">
@@ -682,22 +712,26 @@
                                     </div>
                                     <div
                                         class="col d-flex justify-content-center justify-content-md-start align-items-center small">
-                                        <i class="far fa-calendar-alt mx-2"></i> 11/10/2023 <i class="far fa-clock mx-2"></i>
+                                        <i class="far fa-calendar-alt mx-2"></i> 11/10/2023 <i
+                                            class="far fa-clock mx-2"></i>
                                         21:10:59 - AM
                                     </div>
-            
-                                    <div class="col-md-6 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
-                                        <button type="button" class="btn btn-secondary btn-sm px-4" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"><i class="far fa-retweet-alt me-3"></i> Comparar
+
+                                    <div
+                                        class="col-md-6 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
+                                        <button type="button" class="btn btn-secondary btn-sm px-4"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="far fa-retweet-alt me-3"></i> Comparar
                                         </button>
-            
-                                        <button type="button" class="btn btn-secondary btn-sm px-4" onclick="location.href='edit_new.html';"><i
-                                                class="far fa-redo-alt me-3" ></i> Restaurar </button>
+
+                                        <button type="button" class="btn btn-secondary btn-sm px-4"
+                                            onclick="location.href='edit_new.html';"><i
+                                                class="far fa-redo-alt me-3"></i> Restaurar </button>
                                     </div>
                                 </div>
                             </div>
-            
-            
+
+
                             <div class="col-12 border">
                                 <div class="row">
                                     <div class="col-1 d-flex justify-content-center align-items-center small">
@@ -705,22 +739,26 @@
                                     </div>
                                     <div
                                         class="col d-flex justify-content-center justify-content-md-start align-items-center small">
-                                        <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i class="far fa-clock mx-2"></i>
+                                        <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
+                                            class="far fa-clock mx-2"></i>
                                         10:10:59 - AM
                                     </div>
-            
-                                    <div class="col-md-6 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
-                                        <button type="button" class="btn btn-secondary btn-sm px-4" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"><i class="far fa-retweet-alt me-3"></i> Comparar
+
+                                    <div
+                                        class="col-md-6 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
+                                        <button type="button" class="btn btn-secondary btn-sm px-4"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="far fa-retweet-alt me-3"></i> Comparar
                                         </button>
-            
-                                        <button type="button" class="btn btn-secondary btn-sm px-4" onclick="location.href='edit_new.html';"><i
+
+                                        <button type="button" class="btn btn-secondary btn-sm px-4"
+                                            onclick="location.href='edit_new.html';"><i
                                                 class="far fa-redo-alt me-3"></i> Restaurar </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-            
+
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-start">
@@ -734,12 +772,12 @@
 
 
     <!-- --------------------------------------------------- -->
-    <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title my-auto cancel">
-                        <i class="far fa-trash-alt me-3"></i> Exclusão
+                        <i class="far fa-sign-out-alt me-3"></i> Sair da área do Publicante
                     </h5>
                     <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
                         aria-label="Close"></i>
@@ -748,226 +786,285 @@
                 <div class="modal-body p-4">
                     <div class="row">
                         <div class="col-12 p-2 mb-3">
-                            Deseja realmente excluir esta publicação?
+
+                            <h5>Deseja realmente sair?</h5>
+
                         </div>
-
                     </div>
-                </div>
-                <div class="modal-footer d-flex justify-content-between">
-                    <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
-                        <i class="far fa-arrow-left me-3"></i> Voltar
-                    </a>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                            NÃO
+                        </a>
 
-                    <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
-                        Sim
-                    </a>
+                        <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                            SIM
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-retweet-alt fa-2X me-3"></i>
-                        Comparar</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title my-auto cancel">
+                        <i class="far fa-ban me-3"></i> Cancelar Publicação ?
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
                 </div>
-                <div class="modal-body h-100">
-
+                <div class="modal-body p-4">
                     <div class="row">
-                        <div class="col-lg-6 border-end px-2 px-lg-5">
+                        <div class="col-12 p-2 mb-3">
 
-                            <div class="alert alert-danger">
-                                <div class="row">
-                                    <div class="col-md-6 small">
-                                        Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
-                                            class="far fa-clock mx-2"></i> 10:10:59 - AM
-                                    </div>
-
-                                    <div class="col-md-6 text-end">
-                                        <b>Ver.:01</b>
-                                    </div>
-                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Motivo 1
+                                </label>
                             </div>
 
-                            <div class="row mb-4">
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Selecione o Caderno</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">Selecione</option>
-                                            <option value="">Empresarial</option>
-                                            <option value="">Executivo</option>
-                                            <option value="">Legislativo</option>
-                                            <option value="">Municípios</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Seção</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Tipo de Publicação</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Título da Publicação</h5>
-                                        <input type="text" class="form-control selectMOD">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Definir uma data</h5>
-                                        <input type="date" class="form-control selectMOD text-center" id="data_futura"
-                                            placeholder="">
-                                    </div>
-                                    <div
-                                        class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                                        <label class="form-check-label" for="now">
-                                            Publicar Imediatamente
-                                        </label>
-                                    </div>
-                                </div>
-
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Motivo 2
+                                </label>
                             </div>
 
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-                        </div>
-
-                        <div class="col-lg-6 px-2 px-lg-5">
-
-                            <div class="alert alert-success">
-                                <div class="row">
-                                    <div class="col-md-6 small">
-                                        Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
-                                            class="far fa-clock mx-2"></i> 10:10:59 - AM
-                                    </div>
-
-                                    <div class="col-md-6 text-end">
-                                        <b>Ver.:Atual</b>
-                                    </div>
-                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Outros
+                                </label>
                             </div>
 
-                            <div class="row mb-4">
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Selecione o Caderno</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">Selecione</option>
-                                            <option value="">Empresarial</option>
-                                            <option value="">Executivo</option>
-                                            <option value="">Legislativo</option>
-                                            <option value="">Municípios</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Seção</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Tipo de Publicação</h5>
-                                        <select name="" class="form-select selectMOD text-center">
-                                            <option value="">opção1</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-8 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Título da Publicação</h5>
-                                        <input type="text" class="form-control selectMOD">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 mb-4">
-                                    <div class="inputBox">
-                                        <h5>Definir uma data</h5>
-                                        <input type="date" class="form-control selectMOD text-center" id="data_futura"
-                                            placeholder="">
-                                    </div>
-                                    <div
-                                        class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                                        <label class="form-check-label" for="now">
-                                            Publicar Imediatamente
-                                        </label>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
-
-                        </div>
-
-                        <div class="col-12 px-2 px-lg-5 mt-3">
-                            <div class="card p-3">
-                                <h4>Não há alterações no conteúdo...</h4>
-                            </div>
                         </div>
                     </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                            NÃO
+                        </a>
 
-                </div>
-                <div class="modal-footer d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-secondary px-4"><i class="far fa-history me-3"></i>
-                        Restaurar</button>
+                        <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                            SIM
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Funções das Páginas -->
-    <script src="../js/swiper.min.5.3.8.js"></script>
 
-    <!-- Funcões para todas as páginas -->
-    <script src="../js/functions_news.js"></script>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-retweet-alt fa-2X me-3"></i>
+                            Comparar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body h-100">
 
-    <!-- Funções da BARRA DO GOVERNO-->
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+                        <div class="row">
+                            <div class="col-lg-6 border-end px-2 px-lg-5">
 
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
+                                <div class="alert alert-danger">
+                                    <div class="row">
+                                        <div class="col-md-6 small">
+                                            Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
+                                                class="far fa-clock mx-2"></i> 10:10:59 - AM
+                                        </div>
 
-    </script>
+                                        <div class="col-md-6 text-end">
+                                            <b>Ver.:01</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Selecione o Caderno</h5>
+                                            <select name="" class="form-select selectMOD text-center">
+                                                <option value="">Selecione</option>
+                                                <option value="">Empresarial</option>
+                                                <option value="">Executivo</option>
+                                                <option value="">Legislativo</option>
+                                                <option value="">Municípios</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Seção</h5>
+                                            <select name="" class="form-select selectMOD text-center">
+                                                <option value="">opção1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Tipo de Publicação</h5>
+                                            <select name="" class="form-select selectMOD text-center">
+                                                <option value="">opção1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Título da Publicação</h5>
+                                            <input type="text" class="form-control selectMOD">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Definir uma data</h5>
+                                            <input type="date" class="form-control selectMOD text-center"
+                                                id="data_futura" placeholder="">
+                                        </div>
+                                        <div
+                                            class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
+                                            <input class="form-check-input me-3" type="checkbox" value="" id="now"
+                                                checked>
+                                            <label class="form-check-label" for="now">
+                                                Publicar Imediatamente
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <textarea name="" id="" rows="10" class="form-control"></textarea>
+                            </div>
+
+                            <div class="col-lg-6 px-2 px-lg-5">
+
+                                <div class="alert alert-success">
+                                    <div class="row">
+                                        <div class="col-md-6 small">
+                                            Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
+                                                class="far fa-clock mx-2"></i> 10:10:59 - AM
+                                        </div>
+
+                                        <div class="col-md-6 text-end">
+                                            <b>Ver.:Atual</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Selecione o Caderno</h5>
+                                            <select name="" class="form-select selectMOD text-center">
+                                                <option value="">Selecione</option>
+                                                <option value="">Empresarial</option>
+                                                <option value="">Executivo</option>
+                                                <option value="">Legislativo</option>
+                                                <option value="">Municípios</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Seção</h5>
+                                            <select name="" class="form-select selectMOD text-center">
+                                                <option value="">opção1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Tipo de Publicação</h5>
+                                            <select name="" class="form-select selectMOD text-center">
+                                                <option value="">opção1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Título da Publicação</h5>
+                                            <input type="text" class="form-control selectMOD">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="inputBox">
+                                            <h5>Definir uma data</h5>
+                                            <input type="date" class="form-control selectMOD text-center"
+                                                id="data_futura" placeholder="">
+                                        </div>
+                                        <div
+                                            class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
+                                            <input class="form-check-input me-3" type="checkbox" value="" id="now"
+                                                checked>
+                                            <label class="form-check-label" for="now">
+                                                Publicar Imediatamente
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <textarea name="" id="" rows="10" class="form-control"></textarea>
+
+                            </div>
+
+                            <div class="col-12 px-2 px-lg-5 mt-3">
+                                <div class="card p-3">
+                                    <h4>Não há alterações no conteúdo...</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary px-4"><i class="far fa-history me-3"></i>
+                            Restaurar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funções das Páginas -->
+        <script src="../js/swiper.min.5.3.8.js"></script>
+
+        <!-- Funcões para todas as páginas -->
+        <script src="../js/functions_news.js"></script>
+
+        <!-- Funções da BARRA DO GOVERNO-->
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+
+        <script>
+            
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+        </script>
 
 </body>
 
