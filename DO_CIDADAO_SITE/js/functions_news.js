@@ -140,6 +140,16 @@ $('input[name="secao"]').on('click', function() {
 
 
 
+// Menu Perfil de usuário
+
+$('#user_click').on('click', function() {
+	if($('#user_click').is(':checked')) {
+    $('.user-box').fadeIn();
+	} else {
+    $('.user-box').fadeOut();
+	}
+});
+
 // Espandir e Retaria Lista de Resultados
 
 $('#abre_fecha_tudo').on('click', function() {
