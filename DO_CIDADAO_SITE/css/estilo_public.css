@@ -17,11 +17,11 @@
     color: #27ae32;
 }
 
-.pendent {
+.pendent, .ouro {
     color: #d6b600;
 }
 
-.rasc {
+.rasc, .prata{
     color: #bbbbbb;
 }
 
@@ -29,6 +29,9 @@
     color: #ff2121;
 }
 
+.bronse{
+    color: #b96c4d;
+}
 
 .resultBox2,
 .resultBox2:hover,
