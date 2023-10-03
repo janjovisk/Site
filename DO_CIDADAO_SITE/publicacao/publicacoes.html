@@ -289,13 +289,13 @@
                             <div class="my-0 py-0">
                                 <strong>Joãozinho de Jesus</strong>
                             </div>
-        
+
                             <div class="my-0 py-0">
                                 <span class="small text-secondary">Aprovador de Publicações |</span>
                                 <span class="small ouro"><i class="far fa-medal mx-2"></i> Ouro</span>
                             </div>
                         </div>
-    
+
                         <button type="button" class="LogOut" data-bs-toggle="modal" data-bs-target="#sair">
                             <i class="fal fa-sign-out-alt"></i>
                             <span>Sair</span>
@@ -386,9 +386,55 @@
                                         onclick="location.href='edit_new.html';" data-bs-placement="right"
                                         title="Visualizar"><i class="fal fa-eye"></i></button>
 
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                        data-bs-target="#auditoria">
+                                        <i class="fal fa-history" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Auditoria"></i></button>
+
                                     <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
-                                        data-bs-placement="right" title="Auditoria"> <i class="fal fa-history"
-                                            data-bs-toggle="modal" data-bs-target="#auditoria"></i></button>
+                                        data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                            data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 p-2">
+
+                        <div class="lista_pub">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="public pb-2">
+                                        <i class="far fa-check me-3"></i> Publicada
+                                    </div>
+                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                        data-bs-target="#auditoria">
+                                        <i class="fal fa-history" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Auditoria"></i></button>
 
                                     <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
                                         data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
@@ -659,11 +705,11 @@
 
     <!-- --------------------------------------------------- -->
     <div class="modal fade" id="auditoria" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title my-auto public">
-                        <i class="far fa-check me-3"></i> Publicada
+                    <h5 class="modal-title my-auto">
+                        <i class="fal fa-history me-3"></i> Auditoria
                     </h5>
                     <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
                         aria-label="Close"></i>
@@ -671,93 +717,138 @@
                 </div>
                 <div class="modal-body p-4">
                     <div class="row">
-                        <div class="col-12 p-2 mb-3">
-                            <h5 class="border-bottom p-3 pb-4">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O
+                        <div class="col-lg-6 d-flex align-items-center mb-4">
+                            <h6 class="">ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O
                                 PREGÃO
-                                ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351</h5>
+                                ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351</h6>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="inputBox text-center">
-                                <h5>Data Inicial</h5>
-                                <select name="" class="form-select selectMOD" id="">
-                                    <option value="">...</option>
 
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="inputBox text-center">
-                                <h5>Data Final</h5>
-                                <select name="" class="form-select selectMOD" id="">
-                                    <option value="">...</option>
-
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
+                        <div class="col-lg-6 mb-4">
                             <div class="inputBox text-center">
                                 <h5>Ordenar Por</h5>
-                                <select name="" class="form-select selectMOD" id="">
+                                <select name="" class="form-select selectMOD text-center" id="">
                                     <option value="">Data Crescente</option>
                                     <option value="">Data Decrescente </option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="row revisoes">
-                            <div class="col-12 border">
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center small">
-                                        02
-                                    </div>
-                                    <div
-                                        class="col d-flex justify-content-center justify-content-md-start align-items-center small">
-                                        <i class="far fa-calendar-alt mx-2"></i> 11/10/2023 <i
-                                            class="far fa-clock mx-2"></i>
-                                        21:10:59 - AM
-                                    </div>
+                        <div class="time-line">
 
-                                    <div
-                                        class="col-md-6 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
-                                        <button type="button" class="btn btn-secondary btn-sm px-4"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                class="far fa-retweet-alt me-3"></i> Comparar
-                                        </button>
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="public status">
+                                        <i class="far fa-check me-3"></i> Publicada
+                                    </div>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">10/10/2021 - 19:17:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">João da Silva Batista</strong>
+                                    </div>
+                                </div>
+                            </div>
 
-                                        <button type="button" class="btn btn-secondary btn-sm px-4"
-                                            onclick="location.href='edit_new.html';"><i
-                                                class="far fa-redo-alt me-3"></i> Restaurar </button>
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="pendent status">
+                                        <i class="far fa-file-signature me-3"></i> Assinado
+                                    </div>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">08/10/2021 - 19:17:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">Benedito Batista</strong>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="pendent status">
+                                        <i class="far fa-hourglass me-3"></i> Assinatura Pendente
+                                    </div>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">07/10/2021 - 19:17:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">João da Silva Batista</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="rasc status">
+                                        <i class="far fa-pencil-alt me-3"></i> Edição de Rascunho
+                                    </div>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">02/10/2021 - 12:17:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">João da Silva Batista</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="rasc status">
+                                        <i class="far fa-pencil-alt me-3"></i> Edição de Rascunho
+                                    </div>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">01/10/2021 - 09:20:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">João da Silva Batista</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="rasc status">
+                                        <i class="far fa-pencil-alt me-3"></i> Edição de Rascunho
+                                    </div>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">01/10/2021 - 09:20:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">João da Silva Batista</strong>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div class="col-12 border">
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center small">
-                                        01
+                            <div class="row m-0 py-2 auditada">
+                                <div class="col-sm-4 col-lg-6 d-flex align-items-center">
+                                    <div class="rasc status">
+                                        <i class="far fa-pencil-alt me-3"></i> Edição de Rascunho
                                     </div>
-                                    <div
-                                        class="col d-flex justify-content-center justify-content-md-start align-items-center small">
-                                        <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
-                                            class="far fa-clock mx-2"></i>
-                                        10:10:59 - AM
-                                    </div>
-
-                                    <div
-                                        class="col-md-6 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
-                                        <button type="button" class="btn btn-secondary btn-sm px-4"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                class="far fa-retweet-alt me-3"></i> Comparar
-                                        </button>
-
-                                        <button type="button" class="btn btn-secondary btn-sm px-4"
-                                            onclick="location.href='edit_new.html';"><i
-                                                class="far fa-redo-alt me-3"></i> Restaurar </button>
+    
+                                </div>
+                                <div class="col-sm-8 col-lg-6 d-flex align-items-center justify-content-between">
+                                    <span class="data">01/10/2021 - 09:20:30</span>
+                                    <div class="d-flex justify-content-between">
+                                        <strong class="ms-4">João da Silva Batista</strong>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
+
+
                         </div>
 
                     </div>
@@ -806,266 +897,268 @@
         </div>
 
 
-    <!-- --------------------------------------------------- -->
-    <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title my-auto cancel">
-                        <i class="far fa-ban me-3"></i> Cancelar Publicação ?
-                    </h5>
-                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
-                        aria-label="Close"></i>
-
-                </div>
-                <div class="modal-body p-4">
-                    <div class="row">
-                        <div class="col-12 p-2 mb-3">
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Motivo 1
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Motivo 2
-                                </label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Outros
-                                </label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer d-flex justify-content-between">
-                        <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
-                            NÃO
-                        </a>
-
-                        <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
-                            SIM
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
+        <!-- --------------------------------------------------- -->
+        <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-retweet-alt fa-2X me-3"></i>
-                            Comparar</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title my-auto cancel">
+                            <i class="far fa-ban me-3"></i> Cancelar Publicação ?
+                        </h5>
+                        <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
+
                     </div>
-                    <div class="modal-body h-100">
-
+                    <div class="modal-body p-4">
                         <div class="row">
-                            <div class="col-lg-6 border-end px-2 px-lg-5">
+                            <div class="col-12 p-2 mb-3">
 
-                                <div class="alert alert-danger">
-                                    <div class="row">
-                                        <div class="col-md-6 small">
-                                            Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
-                                                class="far fa-clock mx-2"></i> 10:10:59 - AM
-                                        </div>
-
-                                        <div class="col-md-6 text-end">
-                                            <b>Ver.:01</b>
-                                        </div>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Motivo 1
+                                    </label>
                                 </div>
 
-                                <div class="row mb-4">
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Selecione o Caderno</h5>
-                                            <select name="" class="form-select selectMOD text-center">
-                                                <option value="">Selecione</option>
-                                                <option value="">Empresarial</option>
-                                                <option value="">Executivo</option>
-                                                <option value="">Legislativo</option>
-                                                <option value="">Municípios</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Seção</h5>
-                                            <select name="" class="form-select selectMOD text-center">
-                                                <option value="">opção1</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Tipo de Publicação</h5>
-                                            <select name="" class="form-select selectMOD text-center">
-                                                <option value="">opção1</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Título da Publicação</h5>
-                                            <input type="text" class="form-control selectMOD">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Definir uma data</h5>
-                                            <input type="date" class="form-control selectMOD text-center"
-                                                id="data_futura" placeholder="">
-                                        </div>
-                                        <div
-                                            class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                                            <input class="form-check-input me-3" type="checkbox" value="" id="now"
-                                                checked>
-                                            <label class="form-check-label" for="now">
-                                                Publicar Imediatamente
-                                            </label>
-                                        </div>
-                                    </div>
-
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Motivo 2
+                                    </label>
                                 </div>
 
-                                <textarea name="" id="" rows="10" class="form-control"></textarea>
-                            </div>
-
-                            <div class="col-lg-6 px-2 px-lg-5">
-
-                                <div class="alert alert-success">
-                                    <div class="row">
-                                        <div class="col-md-6 small">
-                                            Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023 <i
-                                                class="far fa-clock mx-2"></i> 10:10:59 - AM
-                                        </div>
-
-                                        <div class="col-md-6 text-end">
-                                            <b>Ver.:Atual</b>
-                                        </div>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Outros
+                                    </label>
                                 </div>
 
-                                <div class="row mb-4">
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Selecione o Caderno</h5>
-                                            <select name="" class="form-select selectMOD text-center">
-                                                <option value="">Selecione</option>
-                                                <option value="">Empresarial</option>
-                                                <option value="">Executivo</option>
-                                                <option value="">Legislativo</option>
-                                                <option value="">Municípios</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Seção</h5>
-                                            <select name="" class="form-select selectMOD text-center">
-                                                <option value="">opção1</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Tipo de Publicação</h5>
-                                            <select name="" class="form-select selectMOD text-center">
-                                                <option value="">opção1</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-8 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Título da Publicação</h5>
-                                            <input type="text" class="form-control selectMOD">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 mb-4">
-                                        <div class="inputBox">
-                                            <h5>Definir uma data</h5>
-                                            <input type="date" class="form-control selectMOD text-center"
-                                                id="data_futura" placeholder="">
-                                        </div>
-                                        <div
-                                            class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                                            <input class="form-check-input me-3" type="checkbox" value="" id="now"
-                                                checked>
-                                            <label class="form-check-label" for="now">
-                                                Publicar Imediatamente
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <textarea name="" id="" rows="10" class="form-control"></textarea>
-
-                            </div>
-
-                            <div class="col-12 px-2 px-lg-5 mt-3">
-                                <div class="card p-3">
-                                    <h4>Não há alterações no conteúdo...</h4>
-                                </div>
                             </div>
                         </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                                NÃO
+                            </a>
 
-                    </div>
-                    <div class="modal-footer d-flex justify-content-between">
-                        <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-secondary px-4"><i class="far fa-history me-3"></i>
-                            Restaurar</button>
+                            <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                                SIM
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Funções das Páginas -->
-        <script src="../js/swiper.min.5.3.8.js"></script>
 
-        <!-- Funcões para todas as páginas -->
-        <script src="../js/functions_news.js"></script>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><i class="far fa-retweet-alt fa-2X me-3"></i>
+                                Comparar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body h-100">
 
-        <!-- Funções da BARRA DO GOVERNO-->
-        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
-        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
-        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
-        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+                            <div class="row">
+                                <div class="col-lg-6 border-end px-2 px-lg-5">
 
-        <script>
-            
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
+                                    <div class="alert alert-danger">
+                                        <div class="row">
+                                            <div class="col-md-6 small">
+                                                Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023
+                                                <i class="far fa-clock mx-2"></i> 10:10:59 - AM
+                                            </div>
 
-        </script>
+                                            <div class="col-md-6 text-end">
+                                                <b>Ver.:01</b>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-4">
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Selecione o Caderno</h5>
+                                                <select name="" class="form-select selectMOD text-center">
+                                                    <option value="">Selecione</option>
+                                                    <option value="">Empresarial</option>
+                                                    <option value="">Executivo</option>
+                                                    <option value="">Legislativo</option>
+                                                    <option value="">Municípios</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Seção</h5>
+                                                <select name="" class="form-select selectMOD text-center">
+                                                    <option value="">opção1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Tipo de Publicação</h5>
+                                                <select name="" class="form-select selectMOD text-center">
+                                                    <option value="">opção1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-8 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Título da Publicação</h5>
+                                                <input type="text" class="form-control selectMOD">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Definir uma data</h5>
+                                                <input type="date" class="form-control selectMOD text-center"
+                                                    id="data_futura" placeholder="">
+                                            </div>
+                                            <div
+                                                class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
+                                                <input class="form-check-input me-3" type="checkbox" value="" id="now"
+                                                    checked>
+                                                <label class="form-check-label" for="now">
+                                                    Publicar Imediatamente
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <textarea name="" id="" rows="10" class="form-control"></textarea>
+                                </div>
+
+                                <div class="col-lg-6 px-2 px-lg-5">
+
+                                    <div class="alert alert-success">
+                                        <div class="row">
+                                            <div class="col-md-6 small">
+                                                Revisão Criada em: <i class="far fa-calendar-alt mx-2"></i> 10/10/2023
+                                                <i class="far fa-clock mx-2"></i> 10:10:59 - AM
+                                            </div>
+
+                                            <div class="col-md-6 text-end">
+                                                <b>Ver.:Atual</b>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-4">
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Selecione o Caderno</h5>
+                                                <select name="" class="form-select selectMOD text-center">
+                                                    <option value="">Selecione</option>
+                                                    <option value="">Empresarial</option>
+                                                    <option value="">Executivo</option>
+                                                    <option value="">Legislativo</option>
+                                                    <option value="">Municípios</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Seção</h5>
+                                                <select name="" class="form-select selectMOD text-center">
+                                                    <option value="">opção1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Tipo de Publicação</h5>
+                                                <select name="" class="form-select selectMOD text-center">
+                                                    <option value="">opção1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-8 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Título da Publicação</h5>
+                                                <input type="text" class="form-control selectMOD">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="inputBox">
+                                                <h5>Definir uma data</h5>
+                                                <input type="date" class="form-control selectMOD text-center"
+                                                    id="data_futura" placeholder="">
+                                            </div>
+                                            <div
+                                                class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
+                                                <input class="form-check-input me-3" type="checkbox" value="" id="now"
+                                                    checked>
+                                                <label class="form-check-label" for="now">
+                                                    Publicar Imediatamente
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <textarea name="" id="" rows="10" class="form-control"></textarea>
+
+                                </div>
+
+                                <div class="col-12 px-2 px-lg-5 mt-3">
+                                    <div class="card p-3">
+                                        <h4>Não há alterações no conteúdo...</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary px-4"
+                                data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-secondary px-4"><i class="far fa-history me-3"></i>
+                                Restaurar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Funções das Páginas -->
+            <script src="../js/swiper.min.5.3.8.js"></script>
+
+            <!-- Funcões para todas as páginas -->
+            <script src="../js/functions_news.js"></script>
+
+            <!-- Funções da BARRA DO GOVERNO-->
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
+            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+
+            <script>
+
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+
+            </script>
 
 </body>
 
