@@ -250,8 +250,8 @@
 
 
 .time-line{
-    height: calc(100vh - 600px);
-    min-height: 260px;
+    height: calc(100vh - 670px);
+    min-height: 200px;
     overflow-y: auto;
 }
 
