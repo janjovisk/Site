@@ -17,11 +17,13 @@
     color: #27ae32;
 }
 
-.pendent, .ouro {
+.pendent,
+.ouro {
     color: #d6b600;
 }
 
-.rasc, .prata{
+.rasc,
+.prata {
     color: #bbbbbb;
 }
 
@@ -29,7 +31,7 @@
     color: #ff2121;
 }
 
-.bronze{
+.bronze {
     color: #b96c4d;
 }
 
@@ -167,11 +169,12 @@
 }
 
 
-#btn_user_logado{
+#btn_user_logado {
     position: relative;
 }
 
-#btn_user_logado .LogOut, #btn_user_logado .btn_user_click{
+#btn_user_logado .LogOut,
+#btn_user_logado .btn_user_click {
     background: #fff;
     box-shadow: inset 0 0 0 1px #f5f5f5;
     position: absolute;
@@ -189,7 +192,7 @@
     transition: 0.5s;
 }
 
-#btn_user_logado .btn_user_click{
+#btn_user_logado .btn_user_click {
     cursor: pointer;
     left: -100px;
     right: auto;
@@ -198,19 +201,19 @@
     color: #8d8d8d;
 }
 
-#btn_user_logado #user_click:checked~label{
+#btn_user_logado #user_click:checked~label {
     background: #274fae;
     box-shadow: inset 0 0 0 0 #fff;
     color: #fff;
     margin-top: auto;
 }
 
-#btn_user_logado #user_click:checked~label:hover{
+#btn_user_logado #user_click:checked~label:hover {
     filter: brightness(1.5);
     box-shadow: inset 0 0 0 1px #274fae;
 }
 
-#btn_user_logado .LogOut::after{
+#btn_user_logado .LogOut::after {
     content: '';
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.15);
@@ -225,23 +228,23 @@
     transition: 0.5s;
 }
 
-#btn_user_logado .LogOut:hover{
+#btn_user_logado .LogOut:hover {
     color: #bbbbbb;
     background: #f5f5f5;
     box-shadow: inset 0 0 0 2px #bbbbbb;
 }
 
-#btn_user_logado .btn_user_click:hover{
+#btn_user_logado .btn_user_click:hover {
     color: #333;
     background: #f5f5f5;
     box-shadow: inset 0 0 0 2px #333;
 }
 
-#btn_user_logado .LogOut:hover::after{
+#btn_user_logado .LogOut:hover::after {
     opacity: 0;
 }
 
-.user-box{
+.user-box {
     display: none;
     transition: 0.5s;
     height: auto;
@@ -249,7 +252,7 @@
 }
 
 
-.time-line{
+.time-line {
     height: calc(100vh - 670px);
     min-height: 200px;
     overflow-y: auto;
@@ -258,25 +261,25 @@
 /* width */
 .time-line::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  .time-line::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  /* Handle */
-  .time-line::-webkit-scrollbar-thumb {
-    background: #4885B9;
-  
-  }
-  
-  /* Handle on hover */
-  .time-line::-webkit-scrollbar-thumb:hover {
-    background: #000;
-  }
+}
 
-.auditada{
+/* Track */
+.time-line::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.time-line::-webkit-scrollbar-thumb {
+    background: #4885B9;
+
+}
+
+/* Handle on hover */
+.time-line::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+.auditada {
     position: relative;
     display: flex;
     align-items: center;
@@ -284,7 +287,7 @@
     font-size: 0.8em;
 }
 
-.auditada::after{
+.auditada::after {
     content: '';
     position: absolute;
     width: 1px;
@@ -293,24 +296,24 @@
     border-left: 1px dotted #dbdbdb;
 }
 
-.auditada .time{
+.auditada .time {
     width: 100px;
 }
 
 
-.auditada .situation .escapo{
+.auditada .situation .escapo {
     width: 150px !important;
 }
 
-.auditada .situation i{
+.auditada .situation i {
     z-index: 3;
     font-size: 20px;
-    
+
     padding: 3px;
 }
 
 
-.auditada .situation i::after{
+.auditada .situation i::after {
     content: '';
     position: absolute;
     padding: 18px 0;
@@ -321,7 +324,7 @@
     margin-top: -6px;
     z-index: -1;
 }
-    
+
 
 
 
@@ -337,15 +340,15 @@
         margin-top: -32px;
     }
 
-    #btn_user_logado .btn_user_click{
+    #btn_user_logado .btn_user_click {
         display: none;
     }
 
-    #btn_user_logado .user-box{
+    #btn_user_logado .user-box {
         display: block;
     }
 
-    .auditada::after{
+    .auditada::after {
         display: none;
     }
 
@@ -357,6 +360,8 @@
     .auditada {
         flex-wrap: wrap;
         justify-content: start;
+        border: 1px solid #dbdbdb;
+        margin-bottom: 12px !important;
     }
 }
 
@@ -423,7 +428,7 @@
     font-size: 0.80em !important;
 }
 
-#lista_public3 .titulo{
+#lista_public3 .titulo {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     display: -webkit-box;
@@ -432,7 +437,7 @@
 
 }
 
-#lista_public3 .caminho{
+#lista_public3 .caminho {
     font-size: 0.80em !important;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -440,7 +445,7 @@
 
 }
 
-.IconStatus{
+.IconStatus {
     margin-right: 16px;
     float: left;
     width: 40px;
@@ -451,7 +456,7 @@
     align-items: center;
 }
 
-.btn_lista3{
+.btn_lista3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,33 +468,33 @@
     /* font-size: 1.6em; */
 }
 
-.status_OK{
+.status_OK {
     background: #27ae32;
     color: #fff;
 }
 
-.status_wait{
+.status_wait {
     background: #ff9100;
     color: #fff;
 }
 
-.status_rascunho{
+.status_rascunho {
     background: #bbbbbb;
     color: #fff;
 }
 
-.status_del{
+.status_del {
     background: #ff6a6a;
-    color: #fff; 
+    color: #fff;
 }
 
-.linhas_func{
+.linhas_func {
     display: none;
     background: #f5f5f5;
     padding: 0;
 }
 
-.func{
+.func {
     background: #f5f5f5;
     padding: 2px 24px;
     border: none;
@@ -500,12 +505,12 @@
 
 .linha.abrir button.btn_lista3,
 button.btn_lista3:hover,
-.func:hover{
+.func:hover {
     background: #fff;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
-#lista_public3 .linha{
+#lista_public3 .linha {
     border: 1px solid #f5f5f5;
     margin: 0;
     padding: 0;
@@ -514,22 +519,23 @@ button.btn_lista3:hover,
     margin-bottom: 16px !important;
 }
 
-#lista_public3 .linha .col-md-7{
+#lista_public3 .linha .col-md-7 {
     min-height: 80px;
 }
 
-#lista_public3 .linha:hover{
+#lista_public3 .linha:hover {
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.linha.abrir .linhas_func{
+.linha.abrir .linhas_func {
     display: flex;
 }
 
-.linha.abrir button.btn_lista3 i{
+.linha.abrir button.btn_lista3 i {
     transform: rotate(180deg);
 }
 
-.btn-ok.cb, .btn-cancel.cb{
+.btn-ok.cb,
+.btn-cancel.cb {
     text-transform: none !important;
 }
