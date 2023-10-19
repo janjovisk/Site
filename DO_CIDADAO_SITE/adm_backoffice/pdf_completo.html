@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            background: #ccc;
+            text-align: center;
+        }
+
+        .larguraPG {
+            margin-top: 1cm;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            width: 794px;
+        }
+
+        .coluna {
+            overflow-y: hidden; /*  Coloquei esta instrução somente para ver o limite de texto*/
+            background: #ffffff;
+            margin: 1.5cm 0px 1cm 0px;
+            width: calc(50% - 48px);
+            height: 900px;
+            padding: 24px;
+            text-align: justify;
+        }
+
+        .coluna p {
+            margin-bottom: 16px;
+        }
+
+        .header,.footer{
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 90px;
+            background: #ccc;
+        }
+
+        .header{
+            top: 0;
+        }
+
+        .footer{
+            bottom: 0;
+        }
+
+        @page {
+            margin: 0;
+        }
+
+        @media print {
+            * {
+                background: transparent;
+                color: #000;
+                text-shadow: none;
+                filter: none;
+                -ms-filter: none;
+            }
+            
+
+            .coluna:nth-child(even) {
+                page-break-after: always;
+            }
+
+            .coluna:nth-child(1),.coluna:nth-child(2) {
+                margin: 0px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        cabeçalho
+    </header>
+
+
+
+    <div class="larguraPG">
+        <div class="coluna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+
+
+
+        </div>
+
+        <div class="coluna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+
+
+
+        </div>
+
+        <div class="coluna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+
+
+
+        </div>
+
+        <div class="coluna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+
+
+
+        </div>
+        <div class="coluna">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur fugiat corrupti quia qui
+                nostrum
+                magni doloribus distinctio, repellendus quis hic et vitae cumque, dignissimos reprehenderit ducimus
+                dolorem.
+                Reiciendis, sunt.
+            </p>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <footer class="footer">
+        rodapé
+    </footer>
+</body>
+
+</html>
