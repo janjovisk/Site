@@ -30,7 +30,7 @@
             background: #ffffff;
             margin: 1.5cm 0px 1cm 0px;
             width: calc(50% - 48px);
-            height: 900px;
+            height: 950px;
             padding: 24px;
             text-align: justify;
         }
@@ -39,19 +39,22 @@
             margin-bottom: 16px;
         }
 
-        .header,.footer{
+        .cabecalho,.rodape{
             position: fixed;
             left: 0;
             right: 0;
-            height: 90px;
-            background: #ccc;
+            height: 60px;
+            border: 1px dotted #000;
+            display: none;
+            justify-content: center;
+            align-items: center;
         }
 
-        .header{
+        .cabecalho{
             top: 0;
         }
 
-        .footer{
+        .rodape{
             bottom: 0;
         }
 
@@ -75,6 +78,10 @@
 
             .coluna:nth-child(1),.coluna:nth-child(2) {
                 margin: 0px;
+            }
+
+            .cabecalho,.rodape{
+            display: flex;
             }
         }
 
@@ -424,7 +431,7 @@
     </div>
 
 
-    <footer class="footer">
+    <footer class="rodape">
         rodapé
     </footer>
 </body>
