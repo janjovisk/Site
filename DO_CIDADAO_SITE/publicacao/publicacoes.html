@@ -304,6 +304,56 @@
 
                 </div>
 
+                <div class="col-12 p-3">
+                    <h4 class="flex-grow-1 text-center text-lg-start my-0">MINHAS PENDÊNCIAS </h4>
+                </div>
+
+                <div class="col-md-6 p-2 mb-4" id="lista_public2">
+
+                    <div class="lista_pub" style="box-shadow: 0 0 0 2px #d4b704;">
+                        <div class="row">
+                            <div class="col">
+                                <div class="pendent pb-2">
+                                    <i class="far fa-exclamation-triangle me-3"></i> Edição em Aberto
+                                </div>
+                                
+                                <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Visualizar"><a href="edit_new.html">
+                                        ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                        ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                    </a></h6>
+                                <div class="row pt-2 status">
+                                    <div class="col-6">
+                                        <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-libera w-100"><i class="far fa-unlock me-2"></i> Habilitar Edição</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                    onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                    title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                    data-bs-target="#auditoria">
+                                    <i class="fal fa-history" data-bs-toggle="tooltip" data-bs-placement="right"
+                                        title="Auditoria"></i></button>
+
+                                <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                        data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
 
                 <div class="col-9 p-3">
                     <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
@@ -450,6 +500,7 @@
 
                         <div class="lista_pub">
                             <div class="row">
+                                
                                 <div class="col">
                                     <div class="public rasc pb-2">
                                         <i class="far fa-pencil-alt me-3"></i> Racunho
