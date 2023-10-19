@@ -169,6 +169,13 @@
 }
 
 
+.btn-libera{
+    border: none;
+    box-shadow: 0 0 0 1px #274fae;
+    color: #274fae;
+    height: 26px !important;
+}
+
 #btn_user_logado {
     position: relative;
 }
