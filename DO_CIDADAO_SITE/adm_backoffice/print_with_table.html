@@ -166,7 +166,7 @@
         display: flex;
         align-items: center;
         width: calc(50% - 48px);
-        padding: 24px;
+        padding: 0 24px 24px 24px;
       }
 
       .cabecalhopage .topB {
@@ -203,10 +203,23 @@
         text-overflow: ellipsis;
         white-space: nowrap;
       }
+
+      .tarja{
+        background: #fff;
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+      }
     </style>
   </head>
 
   <body>
+
+    <div class="tarja">
+    </div>
     <table>
       <thead>
         <tr>
