@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://janjovisk.github.io/Site/DO_CIDADAO_SITE/adm_backoffice/teste.html -->
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        font-size: 0.9em;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-weight: 600 !important;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        text-align: center;
+        color: #2456a6;
+        border-bottom: 1px solid #000;
+        margin-top: 16px;
+      }
+
+      h4 {
+        text-align: center;
+        width: 100%;
+        margin: 16px 0;
+      }
+
+      h4,
+      h5 {
+        font-size: 14px;
+      }
+
+      .larguraPG {
+        -webkit-columns: 2 200px;
+        -moz-columns: 2 200px;
+        columns: 2 200px;
+        -moz-column-fill: auto;
+        column-fill: auto;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+       
+        padding: 1cm 1cm 0 1cm;
+        text-align: justify;
+        z-index: 1;
+      }
+      .header,
+      .header-space {
+        height: 40px;
+      }
+      .footer-space,
+      .footer-space {
+        height: 60px;
+      }
+
+      .cabecalho,
+      .rodape {
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7em;
+        z-index: 2;
+      }
+
+      .cabecalho {
+        height: 30px;
+        top: 0;
+        border-bottom: 1px solid #000;
+      }
+
+      .rodape {
+        height: 60px;
+        bottom: 0;
+        border-top: 1px solid #000;
+      }
+
+      .topA,
+      .footerA {
+        text-align: start;
+        width: 45%;
+      }
+
+      .footerA img {
+        float: left;
+      }
+
+      .topB,
+      .footerB {
+        text-align: end;
+        width: 45%;
+      }
+
+      .footerB img {
+        float: right;
+      }
+
+      footer img {
+        padding: 4px;
+        width: 32px;
+      }
+
+      p {
+        text-indent: 36px;
+      }
+
+      @page {
+        margin: 0;
+      }
+
+      @media print {
+        * {
+          background: transparent;
+          color: #000;
+          text-shadow: none;
+          filter: none;
+          -ms-filter: none;
+        }
+
+        .coluna:nth-child(even) {
+          /* page-break-after: always; */
+        }
+
+        .coluna:nth-child(1),
+        .coluna:nth-child(2) {
+          margin: 0px;
+          height: 760px;
+        }
+
+        .cabecalho,
+        .rodape {
+          display: flex;
+        }
+      }
+
+      .cabecalhopage {
+        display: flex;
+        flex-wrap: wrap;
+        width: 794px;
+        position: relative;
+        border-bottom: 1px solid #000;
+      }
+
+      .cabecalhopage .topA,
+      .cabecalhopage .topB {
+        display: flex;
+        align-items: center;
+        width: calc(50% - 48px);
+        padding: 24px;
+      }
+
+      .cabecalhopage .topB {
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+      }
+
+      .cabecalhopage img {
+        width: 80px;
+        margin-right: 16px;
+      }
+
+      .recuo {
+        margin-left: 50%;
+      }
+
+      .sumario {
+        margin-bottom: 46px;
+      }
+
+      .sumario .linha {
+        display: flex;
+      }
+
+      .sumario .linha div:first-child {
+        flex-grow: 1;
+        white-space: nowrap;
+      }
+
+      .sumario .linha div:nth-child(2) {
+        overflow-x: hidden;
+        text-align: end;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>
+            <div class="header-space">&nbsp;</div>
+          </td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <div class="cabecalhopage">
+              <div class="topA">
+                <img src="https://janjovisk.github.io/Site/DO_CIDADAO_SITE/adm_backoffice/ico_gov.png" alt="" />
+                <div>
+                  <h1>DIÁRIO OFICIAL</h1>
+                  <h2>ESTADO DE SÃO PAULO</h2>
+                </div>
+              </div>
+
+              <div class="topB">
+                <h2>CADERNO <b>EXECUTIVO</b></h2>
+                <h2>SEÇÃO <b>1</b></h2>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  width: 794px;
+                  padding: 0 24px;
+                  margin-bottom: 8px;
+                "
+              >
+                <span>Ano CXXXIII - Número 68</span>
+                <span>ISSN 000-0000</span>
+                <span>São Paulo, Segunda Feira, 1º de maio de 2023</span>
+              </div>
+            </div>
+            <div class="larguraPG">
+              <h3>Sumário</h3>
+
+              <div class="sumario">
+                <div class="linha">
+                  <div>texto</div>
+                  <div>
+                    ...........................................................................................................................
+                  </div>
+                  <div>01</div>
+                </div>
+                <div class="linha">
+                  <div>texto texto texto</div>
+                  <div>
+                    ...........................................................................................................................
+                  </div>
+                  <div>01</div>
+                </div>
+                <div class="linha">
+                  <div>texto</div>
+                  <div>
+                    ...........................................................................................................................
+                  </div>
+                  <div>02</div>
+                </div>
+                <div class="linha">
+                  <div>texto</div>
+                  <div>
+                    ...........................................................................................................................
+                  </div>
+                  <div>03</div>
+                </div>
+                <div class="linha">
+                  <div>texto</div>
+                  <div>
+                    ...........................................................................................................................
+                  </div>
+                  <div>0134</div>
+                </div>
+              </div>
+
+              <h3>Secretaria da Casa Civil</h3>
+
+              <h4>Decreto 0008909809-9</h4>
+
+              <p class="recuo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                consequuntur fugiat corrupti quia qui nostrum magni doloribus
+                distinctio.
+              </p>
+
+              <p>
+                Donec sodales consectetur orci semper elementum. Etiam rhoncus a
+                metus non accumsan. Sed eu metus id sapien sodales posuere quis
+                sit amet orci. Mauris vulputate pharetra enim vitae commodo.
+                Praesent a purus metus. Integer vulputate imperdiet tempor.
+                Donec eu elit et nisl consequat laoreet id nec quam. Quisque
+                ullamcorper ante at tortor semper maximus. Aliquam erat
+                volutpat. Vestibulum porta aliquet dui ut lobortis. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Phasellus convallis
+                nunc non libero rhoncus sodales. Suspendisse id tincidunt ex.
+                Maecenas a eros cursus lacus mattis pretium. Mauris ex enim,
+                fermentum eget eros id, hendrerit sodales ipsum. Aliquam rhoncus
+                mattis quam vel commodo. Vestibulum quam arcu, accumsan
+                ullamcorper mauris eu, semper pretium odio. Praesent ultrices
+                orci non elit imperdiet convallis. Nunc vel felis vitae nunc
+                tempus laoreet sit amet vel mi. Morbi eleifend pellentesque urna
+                id dignissim. Duis viverra rutrum ipsum sit amet cursus.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </p>
+              <p></p>
+              <h3>título 1</h3>
+
+              <h4>Decreto 0008909809-9</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                in consectetur quam. Ut facilisis ut nulla non viverra. Morbi id
+                metus quis diam tincidunt accumsan vel ultrices felis. Aenean
+                vel leo mi. Vivamus ut sem quis sem placerat ornare quis vel
+                urna. Ut mi nunc, lacinia tincidunt urna nec, dignissim pretium
+                nisi. Phasellus non malesuada orci. Praesent luctus tortor ut
+                ipsum porttitor porta. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Donec orci dolor, tincidunt a augue a,
+                ultricies maximus felis. Vivamus porta, mauris eget gravida
+                tempor, est ex feugiat mi, vel efficitur ante nisl a tellus.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas.
+              </p>
+
+              <p></p>
+              <h3>Título 2</h3>
+
+              <h4>Decreto 0008909809-9</h4>
+
+              <p>
+                Aliquam rhoncus mattis quam vel commodo. Vestibulum quam arcu,
+                accumsan ullamcorper mauris eu, semper pretium odio. Praesent
+                ultrices orci non elit imperdiet convallis. Nunc vel felis vitae
+                nunc tempus laoreet sit amet vel mi. Morbi eleifend pellentesque
+                urna id dignissim. Duis viverra rutrum ipsum sit amet cursus.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </p>
+
+              <p></p>
+              <h3>Título 3</h3>
+
+              <h4>Decreto 0008909809-9</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                in consectetur quam. Ut facilisis ut nulla non viverra. Morbi id
+                metus quis diam tincidunt accumsan vel ultrices felis. Aenean
+                vel leo mi. Vivamus ut sem quis sem placerat ornare quis vel
+                urna. Ut mi nunc, lacinia tincidunt urna nec, dignissim pretium
+                nisi. Phasellus non malesuada orci. Praesent luctus tortor ut
+                ipsum porttitor porta. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Donec orci dolor, tincidunt a augue a,
+                ultricies maximus felis. Vivamus porta, mauris eget gravida
+                tempor, est ex feugiat mi, vel efficitur ante nisl a tellus.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas.
+              </p>
+              <h3>título 4</h3>
+
+              <h4>Decreto 0008909809-9</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                in consectetur quam. Ut facilisis ut nulla non viverra. Morbi id
+                metus quis diam tincidunt accumsan vel ultrices felis. Aenean
+                vel leo mi. Vivamus ut sem quis sem placerat ornare quis vel
+                urna. Ut mi nunc, lacinia tincidunt urna nec, dignissim pretium
+                nisi. Phasellus non malesuada orci. Praesent luctus tortor ut
+                ipsum porttitor porta. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Donec orci dolor, tincidunt a augue a,
+                ultricies maximus felis. Vivamus porta, mauris eget gravida
+                tempor, est ex feugiat mi, vel efficitur ante nisl a tellus.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                in consectetur quam. Ut facilisis ut nulla non viverra. Morbi id
+                metus quis diam tincidunt accumsan vel ultrices felis. Aenean
+                vel leo mi. Vivamus ut sem quis sem placerat ornare quis vel
+                urna. Ut mi nunc, lacinia tincidunt urna nec, dignissim pretium
+                nisi. Phasellus non malesuada orci. Praesent luctus tortor ut
+                ipsum porttitor porta. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Donec orci dolor, tincidunt a augue a,
+                ultricies maximus felis. Vivamus porta, mauris eget gravida
+                tempor, est ex feugiat mi, vel efficitur ante nisl a tellus.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas.
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>
+            <div class="footer-space">&nbsp;</div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="header">
+      <header class="cabecalho">
+        <div class="topA">DIÁRIO OFICIAL DO ESTADO DE SÃO PAULO</div>
+
+        <div class="topB">CADERNO EXECUTIVO, SEÇÃO1</div>
+      </header>
+    </div>
+
+    <div class="footer">
+      <footer class="rodape">
+        <div class="footerA">
+          <img src="https://janjovisk.github.io/Site/DO_CIDADAO_SITE/adm_backoffice/prodesp.svg" alt="" />
+          Este documento pode ser verificado pelo código 0000.00.0.0.0000<br />
+          em
+          <a
+            href="https://janjovisk.github.io/Site/DO_CIDADAO_SITE/adm_backoffice/teste.html#"
+            >http://www.doe.sp.gov.br/autenticidade.html</a
+          >
+        </div>
+        <div class="pag">1/30</div>
+        <div class="footerB">
+          <img src="https://janjovisk.github.io/Site/DO_CIDADAO_SITE/adm_backoffice/icp.svg" alt="" />
+          Documento assinado digitalmente conforme MP nº 2.200-2/2001,<br />
+          que institui a Infraestrutura de Chaves Públicas (ICP-Brasil).
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
