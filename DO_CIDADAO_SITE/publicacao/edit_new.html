@@ -420,31 +420,48 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 mb-4">
-                    <div class="inputBox">
-                        <h5>Título da Publicação</h5>
-                        <input type="text" class="form-control selectMOD">
-                    </div>
-                </div>
+                
 
                 <div class="col-lg-4 mb-4">
                     <div class="inputBox">
                         <h5>Data de Publicação</h5>
                         <input type="date" class="form-control selectMOD text-center" id="data_futura" placeholder="">
                     </div>
-                    <div class="form-check d-flex justify-content-center align-items-center mt-2 mt-lg-3">
-                        <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                        <label class="form-check-label" for="now">
-                            Publicar Imediatamente
-                        </label>
+                </div>
+
+                <div class="col-lg-4 mb-4 d-flex justify-content-center align-items-center">
+                    <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
+                    <label class="form-check-label" for="now">
+                        Publicar Imediatamente
+                    </label>
+                </div>
+
+                <div class="col-lg-4 mb-4 d-flex justify-content-center align-items-center">
+                        <button type="button" class="btn btn-back save w-100"><i class="far fa-save me-2"></i> Salvar Rascunho</button>
+
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="inputBox">
+                        <h5>Título da Publicação</h5>
+                        <div class="row br-input">
+                            <div class="col-lg m-0 area_imput">
+                                <input class="form-control selectMOD text-center" type="text" id="outra_data" maxlength="10" onkeypress="mascaraData( this, event )" placeholder="Data do Ato" />
+                            
+                            </div>
+                            <div class="col-lg m-0 area_imput">
+                                <input class="form-control selectMOD text-center" type="text" id="numeroAto" placeholder="Nº do Ato" />
+                            
+                            </div>
+                            <div class="col-lg-7 m-0 area_imput">
+                                <input class="form-control selectMOD text-center" type="text" id="descricaoAto" maxlength="150" placeholder="Descrição" />
+                            </div>
+                        </div>
+                        <div class="br-input posicionamento_input_area"> </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="text-center text-lg-start ps-auto ps-lg-5" id="SalvarRascunho">
-                <button type="button" class="btn btn-back "><i class="far fa-save me-2"></i> Salvar Rascunho</button>
-            </div>
             <img src="doc.jpg" class="w-100" alt="">
 
             <div class="row my-4">
@@ -840,6 +857,27 @@
         $("#now").click(function () {
             $('#data_futura').val('');
         });
+
+
+        function mascaraData( campo, e )
+{
+	var kC = (document.all) ? event.keyCode : e.keyCode;
+	var data = campo.value;
+	
+	if( kC!=8 && kC!=46 )
+	{
+		if( data.length==2 )
+		{
+			campo.value = data += '/';
+		}
+		else if( data.length==5 )
+		{
+			campo.value = data += '/';
+		}
+		else
+			campo.value = data;
+	}
+}
 
     </script>
 
