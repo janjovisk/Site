@@ -347,6 +347,18 @@ a.btn {
 }
 
 
+.btn-back.save {
+  color: #274fae;
+  border: 1px solid #274fae;
+}
+
+.btn-back.save:hover {
+  background: #274fae;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 .footer_pesq {
   background: #f5f5f5;
 }
