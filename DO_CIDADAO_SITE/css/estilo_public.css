@@ -345,7 +345,7 @@
     background: #f5f5f5;
 } */
 
-.br-input{
+/* .br-input{
     margin: 0px;
     padding: 2px;
     background: #f4f4f4;
@@ -366,14 +366,14 @@
     padding: 4px;
     z-index: 2;
     transition: all 0.2s ease 0s;
-}
+} */
 
 .br-input input::placeholder{
-    color: #274fae;
-    font-weight: 600;
+    color: #274fae !important;
+    /* font-weight: 600; */
 }
 
-.br-input input{
+/* .br-input input{
     color: #274fae;
     font-weight: 600;
     position: relative;
@@ -387,7 +387,7 @@
     z-index: 10;
 }
 
-
+ */
 
 
 
