@@ -325,7 +325,12 @@
                             <div name="verCelular"> </div>
 
                             <a href="#manual4" class="list-group-item list-group-item-action" id="ManualBtn4">
-                                <i class="far fa-chevron-right me-3"></i>Revisões e Auditoria</strong>
+                                <i class="far fa-chevron-right me-3"></i>Revisões</strong>
+                            </a>
+                            <div name="verCelular"> </div>
+
+                            <a href="#manual41" class="list-group-item list-group-item-action" id="ManualBtn41">
+                                <i class="far fa-chevron-right me-3"></i>Auditoria</strong>
                             </a>
                             <div name="verCelular"> </div>
 
@@ -514,7 +519,7 @@
                                 </p>
 
                                 <p class="text-end">
-                                    <a href="#manual4" class="text-end mt-3 btn textoAzul" id="link_Manual4">Mais Detalhes
+                                    <a href="#manual41" class="text-end mt-3 btn textoAzul" id="link_Manual41">Mais Detalhes
                                         <i class="far fa-arrow-right ms-2"></i></a>
                                 </p>
 
@@ -765,7 +770,7 @@
                     <div name="verDesktop">
                         <div class="manuais ps-auto ps-lg-4 mb-4" id="manual4">
                             <h3 class="text-center my-5">
-                                Revisões e Auditoria
+                                Revisões
                             </h3>
 
                             <p>
@@ -776,7 +781,7 @@
                             <div class="card rounded-0 p-4 mb-5">
 
                                 <h4 class="text-center border-bottom pb-3">
-                                    Revisando Versões e Auditando Alterações
+                                    Revisando Versões da Publicação
                                 </h4>
 
                                 <img src="../img/Manual/M2/img10.jpg" class="w-100 shadow-sm mb-4" alt="Comparação de versões">
@@ -797,11 +802,30 @@
                                     caso haja à necessidade de voltar a versão antiga e sobrepor à versão atual, basta escolher a opção "<span class="textoAzul">Restaurar</span>" ou "<span class="textoAzul">Aplicar</span>"
                                 </p>
 
-                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4">2)</b> Auditando Alterações do Usuário</h5>
-                                <p class="mb-4">
-                                    Disponível para os usuários supervisores que possuem a necessidade em conferir quais foram as
-                                    alterações realizadas na publicação pelo seus colaboradores.
-                                </p>
+                                
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div name="verDesktop">
+                        <div class="manuais ps-auto ps-lg-4 mb-4" id="manual41">
+                            <h3 class="text-center my-5">
+                                Auditoria
+                            </h3>
+
+                            <p>
+                                Diferente da barra de busca padrão, aqui será possível localizar os arquivos que você
+                                procura com maior precisão.
+                            </p>
+
+                            <div class="card rounded-0 p-4 mb-5">
+
+                                <h4 class="text-center border-bottom pb-3">
+                                    Alditando as Alterações da Publicação
+                                </h4>
                                 
                                 <img src="../img/Manual/M2/img04.jpg" class="w-100 shadow-sm mb-4" alt="Auditoria">
 
@@ -988,12 +1012,20 @@
             $('#ManualBtn31').addClass("active");
             $('#manual31').fadeIn();
         });
+        $('#ManualBtn41, #link_Manual41').click(function () {
+            $('.manuais').hide();
+            $('#indiceManuais a').removeClass("active");
+            $('#ManualBtn41').addClass("active");
+            $('#manual41').fadeIn();
+        });
+
         $('#ManualBtn4, #link_Manual4').click(function () {
             $('.manuais').hide();
             $('#indiceManuais a').removeClass("active");
             $('#ManualBtn4').addClass("active");
             $('#manual4').fadeIn();
         });
+
         $('#ManualBtn5, #link_Manual5').click(function () {
             $('.manuais').hide();
             $('#indiceManuais a').removeClass("active");
