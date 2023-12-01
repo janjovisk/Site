@@ -340,7 +340,7 @@
                             <div name="verCelular"> </div>
 
                             <a href="#manual6" class="list-group-item list-group-item-action" id="ManualBtn6">
-                                <i class="far fa-chevron-right me-3"></i>Confirmação</strong>
+                                <i class="far fa-chevron-right me-3"></i>Confirmação e Envio</strong>
                             </a>
                             <div name="verCelular"> </div>
 
@@ -601,6 +601,16 @@
                                     </span>
                                 </p>
 
+                               <p class="small">
+                                <b>Para publicações pendentes de assinatura, o usuário também poderá filtrar a lista de 
+                                    publicações e executar a ação de assinar através deste botão.</b>
+                               </p>
+
+                               <p class="text-end">
+                                <a href="#manual5" class="text-end mt-3 btn textoAzul" id="link_Manual5">Mais Detalhes
+                                    <i class="far fa-arrow-right ms-2"></i></a>
+                            </p>
+
 
                                 <p><img src="../img/Manual/M2/ico5.jpg" alt="cancelar" class="ico-manual">
                                     <span class="small"><strong>Botão de cancelamento</strong> da publicação, será exibido somente quando a 
@@ -860,8 +870,8 @@
 
                                 <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Conclusão da Edição e Envio para Assinatura</h5>
                                 <p class="mb-4">
-                                    Após conferido e finalizado a edição da publicação, este poderá ser encaminhado para assinatura, pois só assim 
-                                    seu conteúdo poderá ser aprovado e liberado para ser publicado portal DOE.SP.GOV.BR.
+                                    Após conferido e finalizado a edição da publicação, este poderá ser encaminhado para assinatura. 
+                                    A publicação terá seu status alterados para “<span class="textoAzul">Assinatura Pendente</span>” e o usuário será redirecionado para a tela de assinatura.
                                 </p>
                                 <p class="text-end">
                                     <a href="#manual5" class="text-end mt-3 btn textoAzul" id="link_Manual5">Mais Detalhes
@@ -1021,49 +1031,107 @@
                             </h3>
 
                             <p>
-                                Assinatura serve como um meio de segurança para autorizar a publicação de uma matéria.
+                                Para o envio de uma publicação, é necessário que sua transmissão seja assinada digitalmente.
+                            </p>
+
+                            <p>
+                                A assinatura digital garante a autenticidade das informações enviadas num dado período de tempo, 
+                                conferindo valor legal para a publicação.
                             </p>
 
                             <div class="card rounded-0 p-4 mb-5">
 
                                 <h4 class="text-center border-bottom pb-3">
-                                    Confirmação por SMS
+                                    Tela de Edição da Publicação
+                                </h4>
+                                <div class="text-center"><img src="../img/Manual/M2/img14.jpg" class="w-50 shadow-sm mb-4" alt=""></div>
+
+                                <p>Para assinar uma publicação, o usuário deverá antes finalizar seu trabalho no editor de publicações e clicar no botão de 
+                                    <span class="textoAzul">Assinar</span>, abaixo do editor.</p>
+
+                                <p>A publicação terá seu status alterados para “Assinatura Pendente” e o usuário 
+                                    será redirecionado para a tela de assinatura.
+                                </p>
+
+                                <!-- <h4 class="text-center border-bottom py-3">
+                                    Processo de Assinatura
                                 </h4>
 
                                 <img src="../img/Manual/M2/img29.jpg" class="w-100 shadow-sm mb-4" alt="Assinatura SMS">
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Conferindo SMS</h5>
                                 <p class="mb-4">
                                     Insira o código enviado por SMS para seguir com a Assinatura.
-                                </p>
+                                </p> -->
+
+
 
                                 <h4 class="text-center border-bottom pb-3">
                                     Tela de Assinatura
                                 </h4>
 
                                 <img src="../img/Manual/M2/img30.jpg" class="w-100 shadow-sm mb-4" alt="Assinatura Print">
+
                                 <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Conteúdo da Publicação</h5>
+
                                 <p>
-                                    Aqui, pode-se conferir o conteúdo da publicação, assim como seus anexos. Caso haja alguma irregularidade,
-                                    o botão de "<span class="textoAzul">Cancelamento</span>" estará diponível no canto superior direito da tela.
+                                    Conforme ilustrado, será exibida uma prévia da publicação (painel superior) após ser 
+                                    disponibilizada na área do cidadão, e os dados do certificado digital emitidos pelo ITI. 
+                                </p>
+
+                                <p>
+                                    Não será mais necessária a utilização de certificado digital físico com token (A3) 
+                                    ou exportado na máquina (A1), pois o certificado estará atrelado à conta GOV.BR
                                 </p>
 
                                 <img src="../img/Manual/M2/img31.jpg" class="w-100 shadow-sm mb-4" alt="Assinatura autorizar">
-                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Inclusão de Certificação</h5>
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Dados do Usuário</h5>
                                 <p>
-                                    Exibe e inclui a validação dos dados do responsável pela assinatura.
+                                    No painel inferior, são exibidos os dados do usuário que irá assinar o conteúdo transmitido.
+                                    Vale notar que o documento privado será parcialmente omitido por razões de segurança e privacidade.
                                 </p>
 
                                 <p>
-                                    Marque o <b>De acordo</b> - "<span class="textoAzul"> Visualizei o documento e estou de acordo com as informações apresentadas</span>" e em seguida clique em "<span class="textoAzul">Assinar</span>".
+                                    Para prosseguir, será necessário dar o aceite das informações apresentadas, 
+                                    para de fato assinar e transmitir a publicação.
                                 </p>
+
+                                <h4 class="text-center border-bottom py-3">
+                                    Postergando a Assinatura
+                                </h4>
+
+                                <img src="../img/Manual/M2/img32.jpg" class="w-100 shadow-sm mb-4" alt="Assinatura autorizar">
+
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4">1)</b>  Voltar para o Rascunho </h5>
+                                <p>É possível que reverta o passo da assinatura, caso novas informações precisem ser adicionadas, 
+                                    “<span class="textoAzul">Voltar para o Rascunho</span>”.
+                                    Neste caso, a publicação muda de estado para “<span class="textoAzul">Rascunho</span>” e ela poderá ser atualizada através do editor.</p>
+
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4">2)</b> Assinar posteriormente</h5>
+                                <p>Caso o usuário precise assinar posteriormente sua publicação, ele poderá retornar para a listagem</p>
+                                
                             </div>
+
                         </div>
                     </div>
+
+                    <!--
+
+                        
+
+Caso o usuário precise assinar posteriormente sua publicação, ele poderá retornar para a listagem, conforme a figura a seguir:
+
+(ilustrar a ação de voltar ou voltar para listagem, não lembro).
+
+Ou então, é possível que reverta o passo da assinatura, caso novas informações precisem ser adicionadas, “voltar para o rascunho”.
+Neste caso, a publicação muda de estado para “Rascunho”, e ela poderá ser atualizada através do editor.
+
+                    -->
 
 
                     <div name="verDesktop">
                         <div class="manuais ps-auto ps-lg-4 mb-4" id="manual6">
                             <h3 class="text-center my-5">
-                                Confirmação
+                                Confirmação e Envio
                             </h3>
 
                             <p>
@@ -1087,6 +1155,18 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <!--
+
+                        Ao clicar na ação/botão de assinar, é aplicada a assinatura, e no caso da operação ser bem sucedida, o usuário é redirecionado para a tela de confirmação do envio de sua publicação
+
+(inserir screenshot da tela de confirmação)
+
+(descrever os dados exibidos da tela de confirmação).
+
+O usuário podera visualizar o resultado do envio, e retornar para a listagem de publicações.
+                    -->
 
                 </div>
 
