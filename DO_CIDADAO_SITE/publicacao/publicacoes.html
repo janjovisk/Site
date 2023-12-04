@@ -427,6 +427,52 @@
             <div class="mb-4">
                 <div class="row" id="lista_public2">
 
+                    <div class="col-md-6 p-2">
+                        <div class="lista_pub">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="pendent pb-2">
+                                        <i class="far fa-file-signature me-3"></i> Assinatura Pendente
+                                    </div>
+                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
+
+                                        <div class="col-6 rasc">
+                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Editar"
+                                        onclick="location.href='edit_new.html';"> <i
+                                            class="fal fa-pencil-alt"></i></button>
+
+                                    <button type="button" class="btn btn-cancel w-100 btn-sm my-1" data-bs-toggle="modal" data-bs-target="#bronze" title="Assinar" > <i
+                                            class="fal fa-file-signature" ></i></button>
+
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
+                                        data-bs-placement="right" title="Excluir"> <i class="fal fa-trash-alt"
+                                            data-bs-toggle="modal" data-bs-target="#excluir"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-md-6 p-2">
 
@@ -1124,6 +1170,31 @@
     </div>
 
 
+        <!-- --------------------------------------------------- -->
+        <div class="modal fade" id="bronze" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-4">
+                        <div class="row">
+                            <div class="col-12 p-2 mb-3 text-center">
+                                <i class="fal fa-hand-paper fa-3x"></i><br>
+                                <h5>Atenção!</h5>
+    
+                                <h6 class="my-3">
+                                Seu perfil <b class="bronze">( <i class="far fa-medal me-2"></i> Bronze )</b> não possui o nível de confiabilidade 
+                                necessário para realizar a Assinatura das Publicações.
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-ok cb w-100" data-bs-dismiss="modal" aria-label="Close"> Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
     <!-- --------------------------------------------------- -->
     <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1156,63 +1227,6 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- --------------------------------------------------- -->
-        <div class="modal fade" id="excluir" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title my-auto cancel">
-                            <i class="far fa-ban me-3"></i> Cancelar Publicação ?
-                        </h5>
-                        <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
-
-                    </div>
-                    <div class="modal-body p-4">
-                        <div class="row">
-                            <div class="col-12 p-2 mb-3">
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Motivo 1
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Motivo 2
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Outros
-                                    </label>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="modal-footer d-flex justify-content-between">
-                            <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
-                                NÃO
-                            </a>
-
-                            <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
-                                SIM
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1399,6 +1413,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- Funções das Páginas -->
             <script src="../js/swiper.min.5.3.8.js"></script>
