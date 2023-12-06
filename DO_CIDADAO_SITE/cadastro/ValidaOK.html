@@ -177,7 +177,7 @@
 
                     <button type="button" id="PesAvanc" data-bs-toggle="tooltip" data-bs-placement="top"
                         title="Configurar Busca"><i class="far fa-chevron-down"></i></button> -->
-                    <h2>Recadastro Publicante</h2>
+                    <h2 class="text-center">Confirmação Empresa X</h2>
                 </div>
             </div>
 
@@ -266,6 +266,7 @@
                 <div class="col-10 col-xxl-12 offset-2 offset-xxl-0 d-none d-xxl-block" id="caminho">
                     <a href="../index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a> >
                     <span>Recadastro</span>
+    
                 </div>
             </div>
         </form>
@@ -273,108 +274,33 @@
 
     <section class="conteudo px-0" style="min-height: calc(100vh - 500px);">
 
-
         <div class="container-custom px-0 py-3">
-            <div class="row mx-0">
-
-                <div class="col-12 mb-4">
-                    <h4>Foi detectado que você já um cadastro ativo no PUBNET.</h4>
-                    <p>Favor preencher e confirmar seus dados abaixo:</p>
+            <div class="row p-4">
+                <div class="col-12 text-center mb-5">
+                    <i class="fal fa-check-circle fa-3x mb-3 public"></i>
+                    <h4 style="font-weight: 300;">Foi detectado que você <br> já um cadastro ativo no <b>PUBNET</b></h4>
                 </div>
 
+                <div class="col-md-6 border offset-md-3">
+                    <div class="p-4">
+                    <h5 class="text-start">Nome do Cliente:</h5>
+                    <h3 class="text-start mb-4"><span class="textoAzul">EmpresaX/OrgãoY</span></h3>
+
+                    <h5 class="text-start">CNPJ: </h5>
+                    <h3 class="text-start"><span class="textoAzul">****00.00000/00</span></h3>
+                    </div>
+
+                </div>
+
+                <div class="row mx-0 p-0">
+                    <div class="col-md-6 border offset-md-3 p-4" style="background: #e8e8e870;">
+                        <button type="button" class="btn btn-ok cb w-100" onclick="location.href='cad1.html';" >Iniciar Recadastro</button>
+                    </div>
+                </div>
+
+                
             </div>
-
-            <div class="row mx-0">
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="inputBox br-input">
-                        <h5>Primeiro Nome</h5>
-                        <input type="text" class="form-control selectMOD text-center" id="" value="João">
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="inputBox br-input">
-                        <h5>Último Nome</h5>
-                        <input type="text" class="form-control selectMOD text-center" id="" value="Silva">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Condição
-            
-            Formulario ja vem marcado e preenchido com os dados vindos do GOV.BR,
-            caso o usuário preencher algum dado diferente diretamente no input,
-            o dois Radios deverão ficar desmarcados -->
-
-            <div class="row mx-0">
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="inputBox br-input">
-                        <h5>Email</h5>
-                        <input type="text" class="form-control selectMOD text-center" id="" value="email1@sp.gov.br">
-                    </div>
-
-                    <div class="sugestao">
-                        <div class="small mb-3">Sugestões de Email:</div>
-                        <div class="small form-check">
-                            <input class="form-check-input" type="radio" name="mail" id="mail1" checked>
-                            <label class="form-check-label d-flex justify-content-between" for="mail1">
-                                <strong>email1@sp.gov.br</strong> <span>(GOV.BR)</span>
-                              
-                            </label>
-                          </div>
-                          <div class="small  form-check">
-                            <input class="form-check-input" type="radio" name="mail" id="mail2">
-                            <label class="form-check-label d-flex justify-content-between" for="mail2">
-                                <strong>email2@sp.gov.br</strong> <span>(Legado)</span>
-                            </label>
-                          </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="inputBox br-input">
-                        <h5>Telefone</h5>
-                        <input type="text" class="form-control selectMOD text-center" id="" value="11 99999-0000">
-                    </div>
-
-                    <div class="sugestao">
-                        <div class="small mb-3">Sugestões de Telefone:</div>
-                        <div class="small  form-check">
-                            <input class="form-check-input" type="radio" name="tel" id="tel1" checked>
-                            <label class="form-check-label d-flex justify-content-between" for="tel1">
-                                <strong>11 99999-0000 </strong> <span>(GOV.BR)</span>
-                            </label>
-                          </div>
-                          <div class="small form-check">
-                            <input class="form-check-input" type="radio" name="tel" id="tel2">
-                            <label class="form-check-label d-flex justify-content-between" for="tel2">
-                                <strong>11 99999-9999 </strong> <span>(Legado)</span>
-                            </label>
-                          </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-3">
-
-                    <h5>Tipo Telefone</h5>
-                    <select name="" id="" class="form-select selectMOD text-center">
-                        <option>Celular</option>
-                        <option>Comercial</option>
-                    </select>
-
-                </div>
-
-
-            </div>
-
-            <div class="row mx-0 my-4">
-
-            <div class="col-md-6 col-lg-4 offset-md-3 offset-xl-4 mb-3">
-                <button type="button" class="btn btn-ok cb w-100" onclick="location.href='confirm1.html';" >Prosseguir</button>
-            </div>
-            <!--data-bs-toggle="modal" data-bs-target="#sair"-->
-            </div>
+        </div>
 
 
     </section>
@@ -422,60 +348,60 @@
 
 
 
-        <!-- --------------------------------------------------- -->
-        <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title my-auto cancel">
-                            <i class="far fa-sign-out-alt me-3"></i> Sair da área do Publicante
-                        </h5>
-                        <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
-                            aria-label="Close"></i>
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto cancel">
+                        <i class="far fa-sign-out-alt me-3"></i> Sair da área do Publicante
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
 
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-12 p-2 mb-3">
+
+                            <h5>Deseja realmente sair?</h5>
+
+                        </div>
                     </div>
-                    <div class="modal-body p-4">
-                        <div class="row">
-                            <div class="col-12 p-2 mb-3">
+                    <div class="modal-footer d-flex justify-content-between">
+                        <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                            NÃO
+                        </a>
 
-                                <h5>Deseja realmente sair?</h5>
-
-                            </div>
-                        </div>
-                        <div class="modal-footer d-flex justify-content-between">
-                            <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
-                                NÃO
-                            </a>
-
-                            <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
-                                SIM
-                            </a>
-                        </div>
+                        <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                            SIM
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
 
 
-            <!-- Funções das Páginas -->
-            <script src="../js/swiper.min.5.3.8.js"></script>
+        <!-- Funções das Páginas -->
+        <script src="../js/swiper.min.5.3.8.js"></script>
 
-            <!-- Funcões para todas as páginas -->
-            <script src="../js/functions_news.js"></script>
+        <!-- Funcões para todas as páginas -->
+        <script src="../js/functions_news.js"></script>
 
-            <!-- Funções da BARRA DO GOVERNO-->
-            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
-            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
-            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
-            <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+        <!-- Funções da BARRA DO GOVERNO-->
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
 
-            <script>
+        <script>
 
-                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                    return new bootstrap.Tooltip(tooltipTriggerEl)
-                })
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
 
-            </script>
+        </script>
 
 </body>
 
