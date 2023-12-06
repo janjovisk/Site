@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=no," />
+
+    <title>Diário Oficial do Estado de São Paulo</title>
+    <link rel="icon" type="imagem/png" href="../img/ico_gov.png" />
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- fontweason -->
+    <!-- <link rel="stylesheet" href="/fontawesome-pro-5.14.0-web/css/all.css"  crossorigin="anonymous"/> -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" rel="stylesheet" />
+
+    <!-- BARRA TOP DO GOVERNO-->
+    <link href="https://saopaulo.sp.gov.br/barra-govsp/css/topo-padrao-govsp.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://saopaulo.sp.gov.br/barra-govsp/css/barra-contraste-govsp.min.css">
+
+
+    <!-- Custom -->
+    <link href="../css/estilo.css" rel="stylesheet">
+
+
+    <!-- CSS PUBLICAÇÂO -->
+    <link href="../css/estilo_public.css" rel="stylesheet">
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- CSS ADM GOV.BR -->
+    <link href="auditoria/estilo_gov.css" rel="stylesheet">
+
+    <script src="auditoria/form_js.js"></script>
+
+    <script>
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</head>
+
+<body class="mb-0 content">
+    <section class="conteudo px-0">
+        <div class="container-custom px-0">
+            <div class="mb-4">
+                <div class="row" id="lista_public2">
+
+
+                    <div class="col-md-6 p-2">
+
+                        <div class="lista_pub">
+                            <div class="row">
+
+                                <div class="col">
+                                    Auditoria Usuário
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                        data-bs-target="#auditoria_user">
+                                        <i class="fal fa-history"></i></button>
+                                    Auditoria Cliente
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                        data-bs-target="#auditoria_client">
+                                        <i class="fal fa-history"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="auditoria_user" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto">
+                        <i class="fal fa-history me-3"></i> Auditoria > Usuário
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+
+                        <div class="col-12 mb-3">
+                            <h6 class="titulo">
+                                João da Silva Almeida
+                            </h6>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="br-input">
+                                <label for="a1">Data Início</label>
+                                <input id="a1" type="date" placeholder="Placeholder"/>
+                              </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="br-input">
+                                <label for="a2">Data Fim</label>
+                                <input id="a2" type="date" placeholder="Placeholder"/>
+                              </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="br-input">
+                                <label for="a2">Ordenar por</label>
+                                <select name="ordenacao" id="">
+                                    <option value="">Data Crescente</option>
+                                    <option value="">Data Decrescente</option>
+                                </select>
+                              </div>
+                        </div>
+
+                        <div class="time-line">
+
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>08:10:25</div>
+                                    <div class="textoAzul">20/09/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo cancel d-flex align-items-center">
+                                        <i class="far fa-ban me-3 h-100"></i> <span>Status Inativo</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Status, realizado
+                                        por:</span><br>
+
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+                            
+
+
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>08:10:25</div>
+                                    <div class="textoAzul">15/10/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo public d-flex align-items-center">
+                                        <i class="far fa-pencil-alt me-3 h-100"></i> <span>Edição</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Telefone </span><br>
+                                    <span><i class="fas fa-caret-right me-2"></i> Edição realizada
+                                        por:</span><br>
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>08:10:25</div>
+                                    <div class="textoAzul">12/10/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo public d-flex align-items-center">
+                                        <i class="far fa-pencil-alt me-3 h-100"></i> <span>Edição</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Email </span><br>
+                                    <span><i class="fas fa-caret-right me-2"></i> Edição realizada
+                                        por:</span><br>
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+                        
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>20:10:30</div>
+                                    <div class="textoAzul">03/10/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo public d-flex align-items-center">
+                                        <i class="far fa-folder-plus me-3 h-100"></i> <span>Criação</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Criação de novo usuário:</span><br>
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                    <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                        <i class="far fa-arrow-left me-3"></i> Voltar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="auditoria_client" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto">
+                        <i class="fal fa-history me-3"></i> Auditoria > Cliente
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+
+                        <div class="col-12 mb-3">
+                            <h6 class="titulo">
+                                NOme da Empresda - TESTE
+                            </h6>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="br-input">
+                                <label for="a1">Data Início</label>
+                                <input id="a1" type="date" placeholder="Placeholder"/>
+                              </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="br-input">
+                                <label for="a2">Data Fim</label>
+                                <input id="a2" type="date" placeholder="Placeholder"/>
+                              </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="br-input">
+                                <label for="a2">Ordenar por</label>
+                                <select name="ordenacao" id="">
+                                    <option value="">Data Crescente</option>
+                                    <option value="">Data Decrescente</option>
+                                </select>
+                              </div>
+                        </div>
+
+                        <div class="time-line">
+
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>08:10:25</div>
+                                    <div class="textoAzul">20/09/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo cancel d-flex align-items-center">
+                                        <i class="far fa-ban me-3 h-100"></i> <span>Status Inativo</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Status, realizado
+                                        por:</span><br>
+
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+                            
+
+
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>08:10:25</div>
+                                    <div class="textoAzul">15/10/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo public d-flex align-items-center">
+                                        <i class="far fa-pencil-alt me-3 h-100"></i> <span>Edição</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Logradouro </span><br>
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Número </span><br>
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Telefone </span><br>
+                                    <span><i class="fas fa-caret-right me-2"></i> Alteração de Email </span><br>
+                                    <span><i class="fas fa-caret-right me-2"></i> Edição realizada
+                                        por:</span><br>
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+
+                                                    
+                            <div class="m-0 auditada">
+                                <div class="text-end time p-3">
+                                    <div>20:10:30</div>
+                                    <div class="textoAzul">03/10/2023</div>
+                                </div>
+
+                                <div class="text-start situation position-relative ">
+                                    <div class="escapo public d-flex align-items-center">
+                                        <i class="far fa-folder-plus me-3 h-100"></i> <span>Criação</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1 text-start p-3">
+                                    <span><i class="fas fa-caret-right me-2"></i> Criação de novo usuário:</span><br>
+                                    <b class="ms-3">João da Silva Batista</b>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-start">
+                    <a href="#" class="btn btn-back px-4" data-bs-dismiss="modal">
+                        <i class="far fa-arrow-left me-3"></i> Voltar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
+
+</body>
+
+</html>
