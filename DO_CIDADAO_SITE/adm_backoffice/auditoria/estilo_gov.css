@@ -235,3 +235,18 @@
   border: 1px solid #c2850c !important;
   box-shadow: 0 0 0 1.5px #c2850c;
 }
+
+.secondary{
+  background: #fff;
+  border: 1px solid #1351b4;
+  color: #1351b4;
+  border-radius: 8em;
+  padding: 4px 16px;
+  width: 50%;
+  font-size: 16.8px;
+  transition: 0.1s;
+}
+
+.secondary:hover{
+  background: #c5d4eb;
+}
