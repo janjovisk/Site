@@ -19,3 +19,7 @@
 .lixeira:hover{
     color: #f00;
 }
+
+.result_form h4,
+#permisio_view tr td{
+    color:#1f54ad !important;}
