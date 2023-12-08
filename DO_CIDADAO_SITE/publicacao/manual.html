@@ -42,12 +42,11 @@
     </script>
 
     <style>
-
-            .lista2 li{
+        .lista2 li {
             font-weight: 700;
         }
 
-        .lista2 li::before{
+        .lista2 li::before {
             color: #f00;
         }
     </style>
@@ -581,8 +580,9 @@
                             <h6>Assuntos:</h6>
                             <ul class="small">
                                 <li><a href="#linka1">Informações Apresentadas nos Cards</a></li>
-                                <li><a href="#linka2">Botões de Ação</a></li>
-                                <li><a href="#linka3">Disponibilidade de Funções</a></li>
+                                <li><a href="#linka2">Status</a></li>
+                                <li><a href="#linka3">Botões de Ação</a></li>
+                                <li><a href="#linka4">Disponibilidade de Funções</a></li>
                             </ul>
 
 
@@ -612,24 +612,68 @@
                                 <div class="text-center"><img src="../img/Manual/M2/img28.jpg"
                                         class="w-75 shadow-sm mb-4"></div>
 
-                                <ul class="small">
-                                    <li>Status da Publicação:
-                                        <ul>
-                                            <li class="public rasc"> Rascunho </li>
-                                            <li class="public pendent"> Edição em Aberto</li>
-                                            <li class="public pendent"> Assinatura Pendente </li>
-                                            <li class="public pendent"> Publicadação Pendente </li>
-                                            <li class="public public"> Publicada</li>
-                                            <li class="public cancel"> Cancelada</li>
-                                        </ul>
-                                    </li>
-                                    <li>Título da Publicação</li>
-                                    <li>Data de Criação</li>
-                                    <li>Data da Publicação</li>
-                                    <li>Botões de Ação</li>
+                                <ul class="small"> <strong>
+                                        <li style="list-style: none;"> A) Status da Publicação:
+                                            <ul>
+                                                <li class="public rasc"> Rascunho </li>
+                                                <li class="public pendent"> Edição em Aberto</li>
+                                                <li class="public pendent"> Assinatura Pendente </li>
+                                                <li class="public pendent"> Publicadação Pendente </li>
+                                                <li class="public public"> Publicada</li>
+                                                <li class="public cancel"> Cancelada</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: none;">B) Título da Publicação</li>
+                                        <li style="list-style: none;">C) Data de Criação</li>
+                                        <li style="list-style: none;">D) Data da Publicação</li>
+                                        <li style="list-style: none;">E) Botões de Ação</li>
+                                    </strong>
                                 </ul>
 
-                                <h4 class="text-center border-bottom py-3" id="linka2">Botões de Ação</h4>
+
+                                <h4 class="text-center border-bottom py-3" id="linka2">Status</h4>
+
+                                <div class="public rasc pb-2">
+                                    <i class="far fa-pencil-alt me-3"></i> Rascunho
+                                </div>
+                                <p class="small">Publicação criada e em faze de edição.</p>
+
+                                <div class="pendent pb-2">
+                                    <i class="far fa-exclamation-triangle me-3"></i> Edição em Aberto
+                                </div>
+                                <p class="small">Nos casos onde outra pessoa esteja realizando uma alteração na publicação neste exato momento.</p>
+
+                                <div class="pendent pb-2">
+                                    <i class="far fa-file-signature me-3"></i> Assinatura Pendente
+                                </div>
+                                <p class="small">Publicação tem sua edição finalizada, mas está aguadando assinatura para sua finalização.</p>
+
+                                <div class="pendent pb-2">
+                                    <i class="far fa-hourglass me-3"></i> Publicadação Pendente
+                                </div>
+                                <p class="small">Publicação foi aprovada e assinada, mas está aguadando a chegada de uma data pré estabelecida para ser publicada.</p>
+
+                                <div class="public pb-2">
+                                    <i class="far fa-check me-3"></i> Publicada
+                                </div>
+                                <p class="small">Publicação está disponível ao público no portal DOE.SP.GOV.BR.</p>
+
+                                <div class="cancel pb-2">
+                                    <i class="far fa-ban me-3"></i> Cancelada
+                                </div>
+                                <p class="small">Ao invés de receber aprovação, uma publicação pode ser cancelada por inúmeros motivos</p>
+
+
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4">3)</b> Criando uma nova Publicação</h5>
+                                <p> Botão de acesso a tela de criação de uma nova publicação.
+                                </p>
+                                <p class="text-end">
+                                    <a href="#manual3" class="text-end mt-3 btn textoAzul" id="link_Manual3">Mais Detalhes
+                                        <i class="far fa-arrow-right ms-2"></i></a>
+                                </p>
+
+
+                                <h4 class="text-center border-bottom py-3" id="linka3">Botões de Ação</h4>
 
                                 <p><img src="../img/Manual/M2/ico1.jpg" alt="Visualizar" class="ico-manual">
                                     <span class="small"><strong>Botão de exibição</strong> da publicação. Serve para
@@ -701,7 +745,7 @@
                                 </p>
 
 
-                                <h4 class="text-center border-bottom pb-3" id="linka3">Disponibilidade de Funções:</h4>
+                                <h4 class="text-center border-bottom pb-3" id="linka4">Disponibilidade de Funções:</h4>
 
                                 <table class="table">
                                     <thead>
@@ -966,7 +1010,7 @@
                                     Editor de Conteúdo
                                 </h4>
 
-                                <img src="../img/Manual/M2/img06.jpg" class="w-100 shadow-sm mb-4" alt="">
+
 
                                 <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Sobre o editor
                                 </h5>
@@ -980,12 +1024,14 @@
 
                                 </p>
 
-                                <p>
+                                <p class="mb-3">
                                     Contém uma série de funções para edição e manipulação de texto, também sendo
                                     possível inserir
                                     outros elementos, como imagens, tabelas, listas.
 
                                 </p>
+
+                                <img src="../img/Manual/M2/img06.jpg" class="w-100 shadow-sm mb-4" alt="">
 
                                 <p>
                                     É possível aplicar uma estilização mínima no texto, como negrito, sublinhado,
@@ -1419,19 +1465,20 @@
                                 <p> Existem quatro informações importantes que podem ser destacadas:</p>
 
                                 <ol class="small lista2">
-                                        <li>Quando foi alterado;</li>
-                                        <li>Tipo da alteração (operação realizada);</li>
-                                        <li>Uma relação do que foi alterado (pode ser mais de uma alteração numa
-                                            operação);</li>
-                                        <li>E quem é o autor da alteração (caso não seja uma ação sistêmica).</li>
-                                    
+                                    <li>Quando foi alterado;</li>
+                                    <li>Tipo da alteração (operação realizada);</li>
+                                    <li>Uma relação do que foi alterado (pode ser mais de uma alteração numa
+                                        operação);</li>
+                                    <li>E quem é o autor da alteração (caso não seja uma ação sistêmica).</li>
+
                                 </ol>
 
 
                                 <p>
-                                    Esta lista de alterações pode ser extensa, por isso a tela de auditoria possui 
-                                    um controle na parte superior da janela que ajuda na exibição das alterações, 
-                                    determinando um intervalo de tempo, além de ordena-las por data crescente ou decrescente.
+                                    Esta lista de alterações pode ser extensa, por isso a tela de auditoria possui
+                                    um controle na parte superior da janela que ajuda na exibição das alterações,
+                                    determinando um intervalo de tempo, além de ordena-las por data crescente ou
+                                    decrescente.
                                 </p>
 
                             </div>
