@@ -320,7 +320,7 @@
                             <div name="verCelular"> </div>
 
                             <a href="#manual31" class="list-group-item list-group-item-action" id="ManualBtn31">
-                                <i class="far fa-chevron-right me-3"></i>Edição Bloqueada</strong>
+                                <i class="far fa-chevron-right me-3"></i>Check-In / Check-Out</strong>
                             </a>
                             <div name="verCelular"> </div>
 
@@ -1014,47 +1014,122 @@
                     <div name="verDesktop">
                         <div class="manuais ps-auto ps-lg-4 mb-4" id="manual31">
                             <h3 class="text-center my-5">
-                                Edição Bloqueada
+                                Check-In / Check-Out
                             </h3>
 
+                            <h6>Assuntos:</h6>
+                            <ul class="small">
+                                <li><a href="#linkd1">Introdução</a></li>
+                                <li><a href="#linkd2">Check-In</a></li>
+                                <li><a href="#linkd3">Check-Out</a></li>
+
+                            </ul>
+
+                            <h4 class="text-center pb-3" id="linkd1">
+                                Introdução
+                            </h4>
+
                             <p>
-                                Quando outro usuário compartilha das mesmas permissões de acesso que você possui,
-                                este poderá ver e editar publicações de sua autoria, porém o sistema não permite que mais
-                                de uma pessoa edite a mesma publicação simultaneamente.
+                                Um grupo de usuários poderá estar associado ao mesmo cliente na plataforma.
                             </p>
 
-                            <p class="mb-3">
-                                Você só conseguirá acessar a edição de um publicação bloqueada, assim que 
-                                o outro usuário responsável pela alteração atual, <span class="textoAzul">salvar e sair do modo de edição</span>.
+                            <p>
+                                Como consequência disso, será possível que um usuário possa visualizar ou 
+                                editar o trabalho de outros com cadastro ativo.
                             </p>
+
+
+                            <p class="mb-5">
+                                Para evitar que usuários possam editar a mesma publicação simultaneamente,
+                                gerando conflitos de versão e informação, entre outros problemas, foi aplicado um
+                                mecanismo de Check-In / Check-Out para travar a edição para um usuário por vez.
+                            </p>
+
 
                             <div class="card rounded-0 p-4 mb-5">
 
-                                <h4 class="text-center border-bottom pb-3">
-                                    Alerta de publicação Bloqueada
+                                <h4 class="text-center border-bottom pb-3" id="linkd2">
+                                    Check-In
                                 </h4>
+
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Edição em Andamento</h5>
+
+                                <p><img src="../img/Manual/M2/ico2.jpg" alt="editar" class="ico-manual">
+                                    Caso o usuário deseje editar sua publicação salva anteriormente como rascunho,
+                                    ele poderá acessar a ação de contexto “<span class="textoAzul">Editar</span>” atráves da lista de publicações.
+                                </p>
+
+                                <p>No ato de executar a ação, a publicação será travada para outros 
+                                    usuários editarem, o que caracteriza a ação de <b>check-in da publicação</b>.
+                                </p>
+
+                                <p>
+                                    O usuário será redirecionado para a rota de edição, para realizar seu trabalho.
+                                </p>
 
                                 <img src="../img/Manual/M2/img15.jpg" class="w-100 shadow-sm mb-4" alt="">
 
-                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Como desbloquear a edição de uma publicação?</h5>
-                                <p>Ao acessar este card de publicação, abrirá uma janela informando quem está atuando nesta publicação no momento.
+                                <p>
+                                    Demais usuários que estiverem visualizando a listagem de publicações, 
+                                    poderão observar que as publicações que estão sendo editadas por outros usuários, 
+                                    estarão indicadas pelo status “<span class="textoAzul">Edição em Aberto</span>” 
+                                    no item da lista, bem como o aviso de “<span class="textoAzul">Edição Bloqueada</span>”
                                 </p>
 
-                                <div class="text-center"><img src="../img/Manual/M2/img16.jpg" class="w-75 shadow-sm mb-4" alt=""></div>
 
-                                <p>Aguarde ou peça para que o outro usuário responsável termine sua tarefa de edição.
+                                <p>
+                                    Um usuário só conseguirá editar uma publicação se ela estiver no modo Rascunho e sem ser editada por outro usuário,
+                                    caso contrário, a edição do conteúdo ficará bloqueada, isto é indicado pelo status “<span class="textoAzul">Edição em Aberto</span>”.
                                 </p>
 
-                                <h4 class="text-center border-bottom pb-3">
-                                    Edição em Andamento 
-                                </h4>
+                                <p>
+                                    Para facilitar a navegação, na listagem de publicações, usuários que possuirem trabalho em andamento, 
+                                    terá sua publicação exibida no topo da listagem de publicações:
+                                </p>
+
                                 <img src="../img/Manual/M2/img17.jpg" class="w-100 shadow-sm mb-4" alt="Edição em Aberto">
-                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Liberando a Edição</h5>
-                                <p>Clique no botão <span class="textoAzul">Libertar para edição</span> para finalizar a edição desta publicação que ficou em aberto.</p>
-                                <p><strong>Você não poderá criar ou editar outra publicação sem antes finalizar a edição da publicação que ficou em aberto.</strong> 
-                                </p>
 
-                                <div class="text-center"><img src="../img/Manual/M2/img18.jpg" class="w-75 shadow-sm mb-4" alt=""></div>
+
+                                <p>Além disso, não será possível que um usuário trabalhe em múltiplas 
+                                    publicações simultaneamente, isto é, ele <b>só poderá editar uma publicação por vez</b>.</p>
+
+                                <p>Ao tentar executar a ação de editar em outro item da lista, será exibido 
+                                    um alerta bloqueando a edição, conforme ilustrado a seguir:</p>
+
+                                    <div class="text-center"><img src="../img/Manual/M2/img18.jpg" class="w-75 shadow-sm mb-4" alt=""></div>
+
+                               
+                                
+
+                                
+
+                                <h4 class="text-center border-bottom pb-3" id="linkd3">
+                                    Check-out
+                                </h4>
+               
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4"></b>Liberando a Edição</h5>
+
+                                <p>Há duas maneiras de liberar a publicação para edição, quando o usuário concluir seu trabalho.</p>
+                                <ul class="small">
+                                    <li>
+                                        Através da Listagem de Publicações 
+                                        <p>
+                                            O usuário poderá clicar no botão “<span class="textoAzul">Habilitar Para Edição</span>”.
+                                            A publicação terá seu status 
+                                            alterado para “<span class="textoAzul">Rascunho</span>” novamente, e um outro usuário poderá trabalhar no conteúdo, ou o mesmo 
+                                            usuário que originou a publicação poderá submeter para envio em um momento posterior.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        Ao salvar sua publicação
+                                        <p>
+                                            No ato de salvar o rascunho ou criar uma publicação do zero, será perguntado ao usuário se ele deseja continuar 
+                                            trabalhando no conteúdo (check-in), ou se ele deseja voltar à lista de publicações.
+                                        </p>
+                                    </li>
+                                </ul>
+
 
                             </div>
 
