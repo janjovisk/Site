@@ -41,10 +41,16 @@
         })
     </script>
 
+    <style>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+            .lista2 li{
+            font-weight: 700;
+        }
 
+        .lista2 li::before{
+            color: #f00;
+        }
+    </style>
 
 </head>
 
@@ -331,6 +337,11 @@
 
                             <a href="#manual41" class="list-group-item list-group-item-action" id="ManualBtn41">
                                 <i class="far fa-chevron-right me-3"></i>Auditoria</strong>
+                            </a>
+                            <div name="verCelular"> </div>
+
+                            <a href="#manual42" class="list-group-item list-group-item-action" id="ManualBtn42">
+                                <i class="far fa-chevron-right me-3"></i>Anexos</strong>
                             </a>
                             <div name="verCelular"> </div>
 
@@ -1061,7 +1072,7 @@
                                 </p>
 
                                 <p class="text-end">
-                                    <a href="#" class="text-end mt-3 btn textoAzul" id="link_ManualAAA">Mais Detalhes
+                                    <a href="#manual42" class="text-end mt-3 btn textoAzul" id="link_Manual42">Mais Detalhes
                                         <i class="far fa-arrow-right ms-2"></i></a>
                                 </p>
 
@@ -1324,13 +1335,17 @@
 
                                 <p>
                                     Uma vez que tudo foi conferido, caso haja a necessidade de voltar a versão antiga e
-                                sobrepor à versão atual, basta escolher a opção "<span class="textoAzul">Restaurar</span>" ou "<span class="textoAzul">Aplicar</span>".
+                                    sobrepor à versão atual, basta escolher a opção "<span
+                                        class="textoAzul">Restaurar</span>" ou "<span class="textoAzul">Aplicar</span>".
                                 </p>
 
-                                <p>"<span class="textoAzul">Restaurar</span>" é uma ação disponível no painel inicial, ilustrado no tópico anterior.</p>
-                                <p>"<span class="textoAzul">Aplicar</span>" é uma ação disponível na comparação de versões.</p>
+                                <p>"<span class="textoAzul">Restaurar</span>" é uma ação disponível no painel inicial,
+                                    ilustrado no tópico anterior.</p>
+                                <p>"<span class="textoAzul">Aplicar</span>" é uma ação disponível na comparação de
+                                    versões.</p>
 
-                                <p>Ao restaurar uma versão, ela irá sobrepor a atual, gerando uma nova revisão na linha do
+                                <p>Ao restaurar uma versão, ela irá sobrepor a atual, gerando uma nova revisão na linha
+                                    do
                                     tempo de alterações.</p>
 
 
@@ -1348,37 +1363,111 @@
                             </h3>
 
                             <p>
-                                Por questão de segurança, a auditoria serve para que os responsáveis por seus
-                                colaboradores
-                                possam monitorar suas ações, caso ocorra algum incidente com o conteúdo da publicação.
+                                A auditoria de publicações tem o objetivo de registrar todas as ações,
+                                sejam sistêmicas ou humanas, ao longo do tempo, de forma a oferecer
+                                transparência e confiabilidade para os publicantes sobre os fluxos de publicação,
+                                desde a criação de uma publicação, até a sua disponibilização ou cancelamento.
                             </p>
 
+
+
                             <p class="mb-3">
-                                Podendo assim constatar: <strong>
-                                    <ul>
+                                Dessa forma, o publicante não fica às cegas sobre o que está ocorrendo com suas
+                                publicações,
+                                e em caso de comportamentos indesejáveis. Por exemplo: uma publicação não foi
+                                disponibilizada
+                                dentro da data esperada por algum erro sistêmico, ou uma publicação foi cancelada
+                                indevidamente
+                                por outro usuário ativo.
+                            </p>
+
+
+
+
+
+
+                            <div class="card rounded-0 p-4 mb-5">
+
+                                <h4 class="text-center border-bottom pb-3">
+                                    Acesso à Auditoria
+                                </h4>
+
+                                <p class="mb-4">
+                                    A auditoria poderá ser acessada pela listagem de publicações, através
+                                    do botão de contexto que é exibido em cada resultado.
+                                </p>
+
+                                <div class="text-center">
+                                    <img src="../img/Manual/M2/img35.jpg" class="w-75 shadow-sm mb-4" alt="Auditoria">
+                                </div>
+
+                                <p class="mb-4">
+                                    Ou alternativamente, quando visualizar os detalhes de uma publicação específica,
+                                    através do botão disponível no topo direito do editor.
+                                </p>
+
+                                <img src="../img/Manual/M2/img36.jpg" class="w-100 shadow-sm mb-4" alt="Auditoria">
+
+
+                                <p class="mb-4">
+                                    O seguinte modal será apresentado:
+
+                                </p>
+
+                                <img src="../img/Manual/M2/img04.jpg" class="w-100 shadow-sm mb-4" alt="Auditoria">
+
+                                <p> Existem quatro informações importantes que podem ser destacadas:</p>
+
+                                <ol class="small lista2">
                                         <li>Quando foi alterado;</li>
-                                        <li>Tipo da alteração;</li>
-                                        <li>O que foi alterado;</li>
-                                        <li>E quem é o autor da alteração.</li>
-                                    </ul>
-                                </strong>
+                                        <li>Tipo da alteração (operação realizada);</li>
+                                        <li>Uma relação do que foi alterado (pode ser mais de uma alteração numa
+                                            operação);</li>
+                                        <li>E quem é o autor da alteração (caso não seja uma ação sistêmica).</li>
+                                    
+                                </ol>
+
+
+                                <p>
+                                    Esta lista de alterações pode ser extensa, por isso a tela de auditoria possui 
+                                    um controle na parte superior da janela que ajuda na exibição das alterações, 
+                                    determinando um intervalo de tempo, além de ordena-las por data crescente ou decrescente.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div name="verDesktop">
+                        <div class="manuais ps-auto ps-lg-4 mb-4" id="manual42">
+                            <h3 class="text-center my-5">
+                                Anexos
+                            </h3>
+
+                            <p class="mb-3">
+                                texto
                             </p>
 
                             <div class="card rounded-0 p-4 mb-5">
 
                                 <h4 class="text-center border-bottom pb-3">
-                                    Auditando as Alterações na Publicação
+                                    Anexos
                                 </h4>
 
-                                <img src="../img/Manual/M2/img04.jpg" class="w-100 shadow-sm mb-4" alt="Auditoria">
+                                <h5 class="text-start bg-light mt-3 p-2"><b class="text-danger me-4">1)</b> Anexos </h5>
+
+                                <div class="text-center">
+                                    <img src="../img/Manual/M2/i#" class="w-75 shadow-sm mb-4" alt="Auditoria">
+                                </div>
 
                                 <p class="mb-4">
-                                    Esta lista de alterações pode ser extensa, por isso a tela de auditoria possui
-                                    um controle na parte superior da janela que ajuda na exibição das alterações,
-                                    determinando um
-                                    intervalo de tempo, além de ordena-las por data crescente ou decrescente.
+                                    .
                                 </p>
 
+                                
                             </div>
 
                         </div>
@@ -1689,6 +1778,13 @@
             $('#indiceManuais a').removeClass("active");
             $('#ManualBtn41').addClass("active");
             $('#manual41').fadeIn();
+        });
+
+        $('#ManualBtn42, #link_Manual42').click(function () {
+            $('.manuais').hide();
+            $('#indiceManuais a').removeClass("active");
+            $('#ManualBtn42').addClass("active");
+            $('#manual42').fadeIn();
         });
 
         $('#ManualBtn4, #link_Manual4').click(function () {
