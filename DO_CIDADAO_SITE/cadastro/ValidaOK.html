@@ -177,7 +177,7 @@
 
                     <button type="button" id="PesAvanc" data-bs-toggle="tooltip" data-bs-placement="top"
                         title="Configurar Busca"><i class="far fa-chevron-down"></i></button> -->
-                    <h2 class="text-center">Confirmação Empresa X</h2>
+                    <h2 class="text-center">Confirmação</h2>
                 </div>
             </div>
 
@@ -266,7 +266,7 @@
                 <div class="col-10 col-xxl-12 offset-2 offset-xxl-0 d-none d-xxl-block" id="caminho">
                     <a href="../index.html"><i class="fas fa-home me-1"></i>Diário Oficial</a> >
                     <span>Recadastro</span>
-    
+
                 </div>
             </div>
         </form>
@@ -276,29 +276,43 @@
 
         <div class="container-custom px-0 py-3">
             <div class="row p-4">
-                <div class="col-12 text-center mb-5">
+                <div class="col-12 text-center mb-4">
                     <i class="fal fa-check-circle fa-3x mb-3 public"></i>
                     <h4 style="font-weight: 300;">Foi detectado que você <br> já um cadastro ativo no <b>PUBNET</b></h4>
                 </div>
 
-                <div class="col-md-6 border offset-md-3">
+
+                <div class="col-md-6 offset-md-3 mb-0 px-0" id="empresa">
+                    <h5 >Selecione o Cliente Empresa/Orgão</h5>
+                    <select name="" id="" class="form-select selectMOD text-center" id="empresa">
+                        <option>01 - Empresa XPTO</option>
+                        <option>02 - Empresa XPTO</option>
+                        <option>03 - Empresa XPTO</option>
+                        <option>04 - Empresa XPTO</option>
+                        <option>05 - Empresa XPTO</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 border offset-md-3" id="exibe_emp" style="display: none;">
+
                     <div class="p-4">
-                    <h5 class="text-start">Nome do Cliente:</h5>
-                    <h3 class="text-start mb-4"><span class="textoAzul">EmpresaX/OrgãoY</span></h3>
+                        <h5 class="text-start">Nome do Cliente:</h5>
+                        <h3 class="text-start mb-4"><span class="textoAzul">EmpresaX/OrgãoY</span></h3>
 
-                    <h5 class="text-start">CNPJ: </h5>
-                    <h3 class="text-start"><span class="textoAzul">****00.00000/00</span></h3>
+                        <h5 class="text-start">CNPJ: </h5>
+                        <h3 class="text-start"><span class="textoAzul">****00.00000/00</span></h3>
                     </div>
 
                 </div>
 
-                <div class="row mx-0 p-0">
+                <div class="row mx-0 p-0" style="display: none;" id="exibe_btn">
                     <div class="col-md-6 border offset-md-3 p-4" style="background: #e8e8e870;">
-                        <button type="button" class="btn btn-ok cb w-100" onclick="location.href='cad1.html';" >Iniciar Recadastro</button>
+                        <button type="button" class="btn btn-ok cb w-100" onclick="location.href='cad1.html';">Iniciar
+                            Recadastro</button>
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
 
@@ -395,6 +409,13 @@
         <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
 
         <script>
+
+
+
+            $('#empresa').click(function () {
+                $('#exibe_emp, #exibe_btn').fadeIn();
+            });
+
 
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
