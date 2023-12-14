@@ -354,6 +354,11 @@
                             </a>
                             <div name="verCelular"> </div>
 
+                            <a href="#manual60" class="list-group-item list-group-item-action" id="ManualBtn60">
+                                <i class="far fa-chevron-right me-3"></i>Cancelamento de Publicações</strong>
+                            </a>
+                            <div name="verCelular"> </div>
+
                         </div>
                     </nav>
                 </div>
@@ -1655,17 +1660,10 @@
     
                                         <p class="mb-3">O <strong>botão de cancelamento</strong> estará disponível quando a publicação estiver com status de 
                                             "<span class="textoAzul">Assinatura Pendente</span>", localizado no canto superior direito,
-                                        junto com as demais funcionalidades complementares ou no card da publicação.</p>
-    
-                                    <div class="text-center"><img src="../img/Manual/M2/img37.jpg" class="w-75 shadow-sm mb-4"
-                                        alt="Cancelamento Publicação"></div>
-    
-                                    <h5 class="text-start bg-light mt-3 p-2"> Confirmação do Cancelamento </h5>
-                                    <p> Ao solicitar o cancelamento, será apresentado uma lista de possíveis motivos para 
-                                        justificar a ação.</p>
-    
-                                    <p>Clique em "<span class="textoAzul">Sim</span>", caso realmente precise cancelar a publicação, ou desista 
-                                    desta ação, retornando a tela anterior, através do link "<span class="textoAzul">Voltar</span>"</p>
+                                        com as demais funcionalidades complementares ou no card da publicação.</p>
+                                            
+                                        <a href="#manual60" class="text-end mt-3 btn textoAzul" id="link_Manual60">Mais Detalhes
+                                            <i class="far fa-arrow-right ms-2"></i></a>
 
                             </div>
 
@@ -1718,21 +1716,70 @@
                                     aguardando a chegada da sua data de publicação.
                                 </p>
 
+                                <h4 class="text-center border-bottom py-3" id="linkc5">
+                                    Cancelamento
+                                </h4>
+
+                                   
+                                   <p class="mb-3">
+                                    <img src="../img/Manual/M2/ico5.jpg" alt="cancelar" class="ico-manual"> 
+                                    O <strong>botão de cancelamento</strong> também estará disponível quando a publicação estiver com status de 
+                                        "<span class="textoAzul">Publicação Pendente</span>", localizado no card da <strong>Listagem de Publicações</strong> .</p>
+                                        
+                                    <a href="#manual60" class="text-end mt-3 btn textoAzul" id="link_Manual60">Mais Detalhes
+                                        <i class="far fa-arrow-right ms-2"></i></a>
+
                             </div>
                         </div>
                     </div>
 
+                    
+                    <div name="verDesktop">
+                        <div class="manuais ps-auto ps-lg-4 mb-4" id="manual60">
+                            <h3 class="text-center my-5">
+                                Cancelamento de Publicações
+                            </h3>
 
-                    <!--
+                            <p>
+                                Seja pela inclusão de expressões proibidas ou adiamentos, uma publicação poderá ser cancelada por inúmeros motivos.
+                                Abaixo, segue processo para cancelamento:
+                            </p>
 
-                        Ao clicar na ação/botão de assinar, é aplicada a assinatura, e no caso da operação ser bem sucedida, o usuário é redirecionado para a tela de confirmação do envio de sua publicação
+                            <div class="card rounded-0 p-4 mb-5">
 
-                        (inserir screenshot da tela de confirmação)
+                                <div class="text-center"><img src="../img/Manual/M2/img39.jpg" class="w-75 shadow-sm mb-4"
+                                    alt="Cancelamento Publicação"></div>
 
-                        (descrever os dados exibidos da tela de confirmação).
+                                <h5 class="text-start bg-light mt-3 p-2"> Restrições para o Cancelamento </h5>
 
-                        O usuário podera visualizar o resultado do envio, e retornar para a listagem de publicações.
-                    -->
+                                <p class="mb-3"> O botão de "<b>Cancelamento</b>" só estará disponível para as publicações com status de:</p>
+
+                                <ul class="small">
+                                    <li class="mb-2">
+                                        <b class="pendent"> Assinatura Pendente </b> - Publicação tem sua edição finalizada, mas está aguardando assinatura para sua finalização.
+                                    </li>
+
+                                    <li class="mb-2">
+                                        <b class="pendent"> Publicação Pendente </b> - Publicação foi aprovada e assinada, mas está aguardando a chegada de uma data pré-estabelecida para ser publicada.
+
+                                    </li>
+                                </ul>
+
+                                <p class="mb-3"> Ao clicar, irá parecer um modal com a seguinte informação:</p>
+
+                                <div class="text-center"><img src="../img/Manual/M2/img37.jpg" class="w-75 shadow-sm mb-4"
+                                    alt="Cancelamento Publicação"></div>
+
+                                <h5 class="text-start bg-light mt-3 p-2"> Confirmação do Cancelamento </h5>
+                                <p> Ao solicitar o cancelamento, será apresentado uma lista de possíveis motivos para 
+                                    justificar a ação. </p>
+
+                                <p><b>Selecione um motivo</b> e clique em "<span class="textoAzul">Sim</span>", caso realmente precise cancelar a publicação, ou desista 
+                                desta ação, retornando a tela anterior, através do link "<span class="textoAzul">Voltar</span>"</p>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -1864,6 +1911,13 @@
             $('#indiceManuais a').removeClass("active");
             $('#ManualBtn5').addClass("active");
             $('#manual5').fadeIn();
+        });
+
+        $('#ManualBtn60, #link_Manual60').click(function () {
+            $('.manuais').hide();
+            $('#indiceManuais a').removeClass("active");
+            $('#ManualBtn60').addClass("active");
+            $('#manual60').fadeIn();
         });
 
         $('#ManualBtn6, #link_Manual6').click(function () {
