@@ -275,7 +275,7 @@
             <div class="row">
 
                 <div class="area-help">
-                    <div  class="btn_help">
+                    <div class="btn_help">
                         <i class="fal fa-book" style="font-size: 1.4em;"></i>
                         <span style="font-size: 0.8em;">Info</span>
                     </div>
@@ -284,7 +284,7 @@
                         <span class="close"><i class="fal fa-times"></i></span>
                     </div>
                     <ul class="menu_help">
-                        <li><a href="manual.html" target="_blank" target="_parent">Manual de Navegação</a></li>                       
+                        <li><a href="manual.html" target="_blank" target="_parent">Manual de Navegação</a></li>
                     </ul>
                 </div>
 
@@ -301,13 +301,13 @@
                             <div class="my-0 py-0">
                                 <strong>Joãozinho de Jesus</strong>
                             </div>
-        
+
                             <div class="my-0 py-0">
                                 <span class="small text-secondary">Aprovador de Publicações |</span>
                                 <span class="small prata"><i class="far fa-medal mx-2"></i> Prata</span>
                             </div>
                         </div>
-    
+
                         <button type="button" class="LogOut" data-bs-toggle="modal" data-bs-target="#sair">
                             <i class="fal fa-sign-out-alt"></i>
                             <span>Sair</span>
@@ -401,7 +401,7 @@
             </div>
 
             <div class="row mb-4">
-                <div class="col-lg-4 mb-4">
+                <!-- <div class="col-lg-4 mb-4">
                     <div class="inputBox">
                         <h5>Selecione o Caderno</h5>
                         <select name="" class="form-select selectMOD text-center" id="caderno">
@@ -432,44 +432,88 @@
                             <option value="">Selecione</option>
                         </select>
                     </div>
+                </div>  -->
+
+
+                <div class="col-12 mb-4">
+                    <button type="button" class="btn btn-ok w-100" id="tipos_select" data-bs-toggle="modal" data-bs-target="#tipo">
+                        <i class="fal fa-clipboard-list me-2"></i> Definir o Tipo de Publicação e Matéria
+                    </button>
+
+                    <div class="row m-0" id="selecionado">
+                        <div class="col selected">
+                            <label for="">Caderno: </label>
+                            <div>BRASIL</div>
+                        </div>
+
+                        <div class="col selected">
+                            <label for="">Seção Principal: </label>
+                            <div>SUDESTE</div>
+                        </div>
+
+                        <div class="col selected">
+                            <label for="">Subseção: </label>
+                            <div>São Paulo</div>
+                        </div>
+
+                        <div class="col selected">
+                            <label for="">Grupo de Tipo de Publicação </label>
+                            <div>Ato Normativo</div>
+                        </div>
+
+                    </div>
+
+                    <div class="row m-0" id="tipo_ato_selected">
+                        <div class="col-12 text-center  position-relative d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="small">Típo de Matéria</div>
+                            <div class="text-center flex-grow-1"><b>Veto Parceial a Projeto de Lei</b></div>
+
+                            <button class="btn btn-back save px-3 mt-3 mt-lg-1 btn_altera"
+                            data-bs-toggle="modal" data-bs-target="#tipo">Alterar</button>
+                        </div>
+
+
+                        
+                    </div>
+
                 </div>
 
-                
-
-                <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div class="inputBox">
                         <h5>Data de Publicação</h5>
                         <input type="date" class="form-control selectMOD text-center" id="data_futura" placeholder="">
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-4 mb-4 d-flex justify-content-center align-items-center">
-                    <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
-                    <label class="form-check-label" for="now">
-                        Publicar Imediatamente
-                    </label>
-                </div>
 
-                <div class="col-lg-4 mb-4 d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn btn-back save w-100"><i class="far fa-save me-2"></i> SALVAR</button>
-
-                </div>
-
-
-
-                <div class="col-sm-6 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div class="inputBox br-input">
                         <h5>Número do Ato</h5>
                         <input type="number" class="form-control selectMOD text-center" id="" placeholder="99999">
                     </div>
                 </div>
 
-                <div class="col-sm-6 mb-4">
+                <div class="col-lg-4 mb-4">
                     <div class="inputBox br-input">
                         <h5>Data do Ato</h5>
                         <input type="date" class="form-control selectMOD text-center" id="" placeholder="">
                     </div>
                 </div>
+
+                <div class="col-lg-4 mb-4 d-flex justify-content-center align-items-center">
+                    <input class="form-check-input me-3" type="checkbox" value="" id="now" checked>
+                    <label class="form-check-label" for="now">
+                        Publicar Imediatamente
+                    </label>
+                </div>
+
+
+                <div class="col-lg-4 offset-lg-4 mb-4 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-back save w-100"><i class="far fa-save me-2"></i>
+                        SALVAR</button>
+
+                </div>
+
 
                 <div class="col-12">
                     <div class="inputBox br-input">
@@ -859,7 +903,110 @@
             </div>
         </div>
 
-        
+    </div>
+
+
+    <!-- --------------------------------------------------- -->
+    <div class="modal fade" id="tipo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-auto">
+                        <i class="far fa-clipboard-list me-3"></i> Classificando a Publicação:
+                    </h5>
+                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
+
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+
+
+                        <div class="col-12 mb-4">
+                            <div class="inputBox">
+                                <h5 class="text-center">Selecione o Caderno</h5>
+                                <select name="" class="form-select selectMOD text-center" id="caderno">
+                                    <option value="">Selecione</option>
+                                    <option value="">Empresarial</option>
+                                    <option value="">Executivo</option>
+                                    <option value="">Legislativo</option>
+                                    <option value="">Municípios</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 mb-4">
+                            <div class="inputBox">
+                                <h5 class="text-center">Selecione a Seção Principal</h5>
+                                <select name="" class="form-select selectMOD text-center" id="ativa1" disabled>
+                                    <option value="">Selecione</option>
+                                    <option value="">Empresarial</option>
+                                    <option value="">Executivo</option>
+                                    <option value="">Legislativo</option>
+                                    <option value="">Municípios</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 mb-4">
+                            <div class="inputBox">
+                                <h5 class="text-center">Selecione a Subseção</h5>
+                                <select name="" class="form-select selectMOD text-center" id="ativa2" disabled>
+                                    <option value="">Selecione</option>
+                                    <option value="">Empresarial</option>
+                                    <option value="">Executivo</option>
+                                    <option value="">Legislativo</option>
+                                    <option value="">Municípios</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="inputBox">
+                                <h5 class="text-center">Grupo de Tipo de Publicação</h5>
+                                <select name="" class="form-select selectMOD text-center" id="ativa3" disabled>
+                                    <option value="">Selecione</option>
+                                    <option value="">Empresarial</option>
+                                    <option value="">Executivo</option>
+                                    <option value="">Legislativo</option>
+                                    <option value="">Municípios</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="inputBox">
+                                <h5 class="text-center">Tipo de Matéria</h5>
+                                <select name="" class="form-select selectMOD text-center" id="ativa4" disabled>
+                                    <option value="">Selecione</option>
+                                    <option value="">Empresarial</option>
+                                    <option value="">Executivo</option>
+                                    <option value="">Legislativo</option>
+                                    <option value="">Municípios</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+                <div class="modal-footer d-flex justify-content-between p-4">
+                    <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                        Cancelar
+                    </a>
+
+                    <button disabled class="btn btn-ok px-4" data-bs-dismiss="modal" id="ok_tipo">
+                        OK
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Funções das Páginas -->
     <script src="../js/swiper.min.5.3.8.js"></script>
 
@@ -885,10 +1032,35 @@
         });
 
 
-        $("#caderno").change(function () {
-            $('#ativa1, #ativa2').removeAttr("disabled");
 
+
+        $("#caderno").change(function () {
+            $('#ativa1').removeAttr("disabled").focus();
         });
+
+        $("#ativa1").change(function () {
+            $('#ativa2').removeAttr("disabled").focus();
+        });
+
+        $("#ativa2").change(function () {
+            $('#ativa3').removeAttr("disabled").focus();
+        });
+
+        $("#ativa3").change(function () {
+            $('#ativa4').removeAttr("disabled").focus();
+        });
+
+        $("#ativa4").change(function () {
+            $('#ok_tipo').removeAttr("disabled").focus();
+        });
+
+        $("#ok_tipo").click(function () {
+            $('#tipos_select').hide();
+            $('#selecionado, #tipo_ato_selected').css({"display": "flex"});
+        });
+        
+
+
 
         $("#data_futura").click(function () {
             $('#now').prop('checked', false);
@@ -900,25 +1072,21 @@
         });
 
 
-        function mascaraData( campo, e )
-{
-	var kC = (document.all) ? event.keyCode : e.keyCode;
-	var data = campo.value;
-	
-	if( kC!=8 && kC!=46 )
-	{
-		if( data.length==2 )
-		{
-			campo.value = data += '/';
-		}
-		else if( data.length==5 )
-		{
-			campo.value = data += '/';
-		}
-		else
-			campo.value = data;
-	}
-}
+        function mascaraData(campo, e) {
+            var kC = (document.all) ? event.keyCode : e.keyCode;
+            var data = campo.value;
+
+            if (kC != 8 && kC != 46) {
+                if (data.length == 2) {
+                    campo.value = data += '/';
+                }
+                else if (data.length == 5) {
+                    campo.value = data += '/';
+                }
+                else
+                    campo.value = data;
+            }
+        }
 
     </script>
 
