@@ -466,12 +466,122 @@
 
  */
 
-.help_mobile {
-    display: none;
+.help_mobile, #selecionado, #tipo_ato_selected{
+    display: none; 
+}
+
+
+#selecionado{
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#tipo_ato_selected{
+    border: 1px solid #274fae;
+    padding: 8px 16px;
+}
+
+#selecionado .selected label{
+    font-size: 0.65em;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#selecionado .selected div{
+    text-transform: uppercase;
+    margin-top: -6px;
+    font-weight: 700;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#selecionado .selected{
+    width: 25%;
+    padding: 6px 16px;
+    background: #274fae;
+    color: #fff;
+    position: relative;
+}
+
+#selecionado .selected::after{
+    content: '';
+    z-index: 2;
+    background: #274fae;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+}
+
+#selecionado .selected:nth-child(2),
+#selecionado .selected:nth-child(3),
+#selecionado .selected:nth-child(4){
+    padding-left: 24px;
+    margin-left: -20px;
+    background: #1e3c81;
+}
+
+#selecionado .selected:nth-child(2)::after,
+#selecionado .selected:nth-child(3)::after,
+#selecionado .selected:last-child::after{
+    background: #1e3c81;
+}
+
+#selecionado .selected:nth-child(3),
+#selecionado .selected:nth-child(3)::after{
+    background: #183066;
+}
+
+#selecionado .selected:last-child,
+#selecionado .selected:last-child::after{
+    background: #102046;
+}
+
+#selecionado .selected:last-child::after{
+    transform: rotate(90deg);
+    top: 36px;
+    right: 65%;
 }
 
 
 @media (max-width:991px) {
+
+    .btn_altera{
+        flex-basis: 100%;
+        
+    }
+
+    #selecionado{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #selecionado .selected,
+    #selecionado .selected:nth-child(2),
+    #selecionado .selected:nth-child(3),
+    #selecionado .selected:nth-child(4){
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #selecionado .selected::after,
+    #selecionado .selected:nth-child(2)::after,
+    #selecionado .selected:nth-child(3)::after,
+    #selecionado .selected:nth-child(4)::after{
+        transform: rotate(90deg);
+        top: 36px;
+        right: 15%;
+    }
+    
+
     #SalvarRascunho {
         margin-top: -32px;
     }
