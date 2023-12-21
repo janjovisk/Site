@@ -67,7 +67,7 @@ a:active {
 }
 
 .textoAzul{
-  color: #1f54ad
+  color: #1f54ad;
 }
 
 a.active {
@@ -793,6 +793,11 @@ input.selectMOD {
 
 .selectMOD:hover {
   border: 1px solid #000;
+}
+
+.selectMOD:disabled{
+  background: #f1f1f1;
+  color: #2E5B81;
 }
 
 .tab_views {

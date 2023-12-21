@@ -581,6 +581,9 @@
         right: 15%;
     }
     
+    #tipo_ato_selected{
+        padding: 20px 16px 8px 16px;
+    }
 
     #SalvarRascunho {
         margin-top: -32px;
