@@ -482,6 +482,10 @@
     padding: 8px 16px;
 }
 
+#tipo_ato_selected b{
+    text-transform: uppercase;
+}
+
 #selecionado .selected label{
     font-size: 0.65em;
     overflow-x: hidden;
@@ -542,10 +546,18 @@
 }
 
 #selecionado .selected:last-child::after{
-    transform: rotate(90deg);
-    top: 36px;
-    right: 15%;
+    display: none;
 }
+
+.status_final{
+    background: #27ae32;
+    padding: 6px 16px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin-left: -4px;
+}
+
 
 
 @media (max-width:991px) {
