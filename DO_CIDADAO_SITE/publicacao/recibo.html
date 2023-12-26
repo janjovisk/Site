@@ -44,7 +44,7 @@
 
 <body class="mb-0">
 
-<!-- 
+    <!-- 
 
     <div id="govsp-topbarGlobal" class="blu-e">
         <div id="topbarGlobal">
@@ -275,7 +275,7 @@
             <div class="row mb-4">
 
                 <div class="area-help">
-                    <div  class="btn_help">
+                    <div class="btn_help">
                         <i class="fal fa-book" style="font-size: 1.4em;"></i>
                         <span style="font-size: 0.8em;">Info</span>
                     </div>
@@ -284,7 +284,7 @@
                         <span class="close"><i class="fal fa-times"></i></span>
                     </div>
                     <ul class="menu_help">
-                        <li><a href="manual.html" target="_blank" target="_parent">Manual de Navegação</a></li>                       
+                        <li><a href="manual.html" target="_blank" target="_parent">Manual de Navegação</a></li>
                     </ul>
                 </div>
 
@@ -301,13 +301,13 @@
                             <div class="my-0 py-0">
                                 <strong>Joãozinho de Jesus</strong>
                             </div>
-        
+
                             <div class="my-0 py-0">
                                 <span class="small text-secondary">Aprovador de Publicações |</span>
                                 <span class="small bronze"><i class="far fa-medal mx-2"></i> Bronze</span>
                             </div>
                         </div>
-    
+
                         <button type="button" class="LogOut" data-bs-toggle="modal" data-bs-target="#sair">
                             <i class="fal fa-sign-out-alt"></i>
                             <span>Sair</span>
@@ -317,17 +317,18 @@
                 </div>
 
                 <div class="col-md-6 text-center text-md-start my-2 my-md-auto">
-                    <a href="publicacoes.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Ver Todas Publicações</a>
+                    <a href="publicacoes.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Ver
+                        Todas Publicações</a>
                 </div>
 
-                <div class="col-md-6 text-center text-md-end my-2 my-md-auto public" style="text-transform: uppercase;">
-                    <b class="text-black me-4">Status:</b> <i class="far fa-check me-3"></i> Publicada
+                <div class="col-md-6 text-center text-md-end my-2 my-md-auto pendent" style="text-transform: uppercase;">
+                    <b class="text-black me-4">Status:</b> <i class="far fa-hourglass me-3"></i> Publicação Pendente
                 </div>
 
                 <div class="col-12 border-bottom my-3"> </div>
 
                 <div class="col-12 p-3">
-                    
+
                     <div class="row">
                         <div class="col-9 col-sm-10 my-3 my-lg-auto">
                             <h4 class="flex-grow-1 text-center text-lg-start my-0">SITUAÇÃO ATUAL</h4>
@@ -335,13 +336,15 @@
                         <div class="col-3 col-sm-2 text-center text-lg-end my-auto">
 
                             <button type="button" class="btn btn-back edit_info" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Lista de Publicações" onclick="location.href='publicacoes.html';">
+                                data-bs-placement="top" title="Lista de Publicações"
+                                onclick="location.href='publicacoes.html';">
                                 <i class="far fa-list-alt fa-2x"></i></button>
-                                
-                                <button type="button" class="btn btn-back edit_info" data-bs-toggle="tooltip" onclick="location.href='edit_new.html';"        
-                                data-bs-placement="top" title="Criar Nova Publicação"><i class="far fa-file fa-2x"></i></button>
-                                        
-                                
+
+                            <button type="button" class="btn btn-back edit_info" data-bs-toggle="tooltip"
+                                onclick="location.href='edit_new.html';" data-bs-placement="top"
+                                title="Criar Nova Publicação"><i class="far fa-file fa-2x"></i></button>
+
+
                         </div>
                     </div>
 
@@ -354,6 +357,23 @@
                     <h4 class="mb-3"><i class="far fa-file-search me-3"></i> Detalhes da Publicação</h4>
                 </div>
             </div>
+
+            <div class="mb-3 p-3">
+                <div class="row">
+
+                    <div class="col-md-4 position-relative p-0">
+                        Status: <br>
+                        <b class="pendent"> <i class="far fa-hourglass mx-2"></i> Publicação Pendente</b>
+                    </div>
+
+                    <div class="col-md-4">
+                        Enviado por: <br>
+                        <b> João da Silva Alencar</b>
+                    </div>
+                </div>
+            </div>
+
+
 
             <div class="row m-0" id="selecionado">
 
@@ -375,54 +395,49 @@
             </div>
 
             <div class="row m-0 mb-4" id="tipo_ato_selected">
-                <div
-                    class="col-12 text-center  position-relative d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="small">Típo de Matéria</div>
-                    <div class="text-center flex-grow-1"><b>Veto Parceial a Projeto de Lei</b></div>
+
+                <div class="col-md-4">
+                    <label for="">Típo de Publicação: </label> <br>
+                    <b>Veto Parceial a Projeto de Lei</b>
                 </div>
 
+                <div class="col-md-4">
+                    <label for="">Número do Ato: </label> <br>
+                    <b>000000</b>
+                </div>
+                <div class="col-md-4">
+                    <label for="">Data do Ato: </label> <br>
+                    <b>00/00/0000</b>
+                </div>
 
+                <div class="col-12 bg-light border my-3 p-3">
+                    <label for="">Título da Publicação: </label> <br>
+                    <b>Projeto de Lei 0029424890, Governo Aprovação</b>
+                </div>
+                
 
             </div>
 
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <div class="card rounded-0 p-3">
-                        
+                    <div class="border p-3">
 
-                        <div class="row small">
+                        <div class="row">
 
-                            <div class="col-12">
-                                Status: <b class="public"> <i class="far fa-check mx-2"></i> Publicada</b>
+                            <div class="col-md-4">
+                                Data Prevista da Publicação: <br>
+                                <b>22/01/2024 00:00</b>
                             </div>
 
-                            <div class="col-12">
-                                Enviado por: <b> João da Silva</b>
+                            <div class="col-md-4">
+                                Data e Hora de Envio: <br>
+                                <b>10/01/2024 00:00</b>
                             </div>
 
-                            <div class="col-12">
-                                Origem: <b> SEI, PubNET, Manual</b>
-                            </div>
-
-                            <div class="col-12">
-                                Caderno: <b>Executivo</b>
-                            </div>
-
-                            <div class="col-12">
-                                Seção: <b>Atos do Governador</b>
-                            </div>
-
-                            <div class="col-12">
-                                Típo de Matéria: <b>Decreto</b>
-                            </div>
-
-                            <div class="col-12">
-                                Data e Hora de Envio: <b>21/07/2023 00:00</b>
-                            </div>
-
-                            <div class="col-12">
-                                Código de Autenticação: <b>2023.07.21.0.0.00.0000</b>
+                            <div class="col-md-4">
+                                Código de Autenticação: <br>
+                                <b>2024.01.10.0.0.00.0000</b>
                             </div>
                         </div>
                     </div>
@@ -508,40 +523,40 @@
 
 
 
-    <!-- Funções das Páginas -->
-    <script src="../js/swiper.min.5.3.8.js"></script>
+        <!-- Funções das Páginas -->
+        <script src="../js/swiper.min.5.3.8.js"></script>
 
-    <!-- Funcões para todas as páginas -->
-    <script src="../js/functions_news.js"></script>
+        <!-- Funcões para todas as páginas -->
+        <script src="../js/functions_news.js"></script>
 
-    <!-- Funções da BARRA DO GOVERNO-->
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
-    <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
+        <!-- Funções da BARRA DO GOVERNO-->
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-topo.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-contrast.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-tamanho-fonte.js"></script>
+        <script src="https://saopaulo.sp.gov.br/barra-govsp/js/script-scroll.js"></script>
 
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-
-
-        $("#caderno").change(function () {
-            $('#ativa1, #ativa2').removeAttr("disabled");
-
-        });
-
-        $("#data_futura").click(function () {
-            $('#now').prop('checked', false);
-        });
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
 
 
-        $("#now").click(function () {
-            $('#data_futura').val(''); 
-        });
+            $("#caderno").change(function () {
+                $('#ativa1, #ativa2').removeAttr("disabled");
 
-    </script>
+            });
+
+            $("#data_futura").click(function () {
+                $('#now').prop('checked', false);
+            });
+
+
+            $("#now").click(function () {
+                $('#data_futura').val('');
+            });
+
+        </script>
 
 </body>
 
