@@ -348,6 +348,7 @@ a.btn {
 
 
 .btn-back.save {
+  background: #fff;
   color: #274fae;
   border: 1px solid #274fae;
 }
@@ -358,6 +359,12 @@ a.btn {
   text-decoration: none;
 }
 
+
+.btn-back.save.total:hover {
+  cursor: default;
+  background: transparent;
+  color: #274fae;
+}
 
 .footer_pesq {
   background: #f5f5f5;

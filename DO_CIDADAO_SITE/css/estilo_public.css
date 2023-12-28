@@ -558,6 +558,10 @@
     margin-left: -4px;
 }
 
+.order_ico{
+    height: 28px;
+    position: absolute;
+}
 
 
 @media (max-width:991px) {
