@@ -323,100 +323,108 @@
 
                 </div>
 
-
-
-                <!-- <div class="col-12 p-3">
-                    <h4 class="flex-grow-1 text-center text-lg-start my-0">MINHAS PENDÊNCIAS </h4>
-                </div>
-
-                <div class="col-md-6 p-2 mb-4" id="lista_public2">
-
-                    <div class="lista_pub" style="box-shadow: 0 0 0 2px #d4b704;">
-                        <div class="row">
-                            <div class="col">
-                                <div class="pendent pb-2">
-                                    <i class="far fa-exclamation-triangle me-3"></i> Edição em Aberto
-                                </div>
-
-                                <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                    title="Visualizar"><a href="edit_new.html">
-                                        ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
-                                        ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
-                                    </a></h6>
-                                <div class="row pt-2 status">
-                                    <div class="col-6">
-                                        <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-libera w-100"><i
-                                                class="far fa-unlock me-2"></i> Habilitar Edição</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-2">
-                                <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
-                                    onclick="location.href='edit_new.html';" data-bs-placement="right"
-                                    title="Visualizar"><i class="fal fa-eye"></i></button>
-
-                                <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
-                                    data-bs-target="#auditoria">
-                                    <i class="fal fa-history" data-bs-toggle="tooltip" data-bs-placement="right"
-                                        title="Auditoria"></i></button>
-
-    
-
-                            </div>
+                <div class="col-12 px-3 px-md-0 mb-4">
+                    <div class="row">
+                        <div class="col-md-8 p-3">
+                            <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
+                        </div>
+        
+                        <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-1 px-0">
+                            <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
+                                onclick="location.href='edit_new.html';" data-bs-placement="top"><i
+                                    class="fal fa-file me-3"></i> Criar Publicação</button>
+        
+        
                         </div>
                     </div>
-
-                </div>
-
-                <hr> -->
-
-
-
-                <div class="col-9 p-3">
-                    <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
-                </div>
-
-                <div class="col-3 d-flex justify-content-center align-items-center p-3">
-                    <span class="me-2"> Total:</span> <b style="color: #274fae">05</b>
                 </div>
 
                 <div class="col-12 px-3 px-md-0">
                     <div class="row">
 
-                        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                        <div class="col-md-4 mb-3 mb-md-1">
+                            <h5>Filtrar por</h5>
                             <select name="" class="form-select selectMOD text-center" id="">
-                                <option value="">Exibir por Status</option>
-                                <option value="">Exibir por Data</option>
+                                <option value="">Todos os Status</option>
+                                <option value="">Status: Publicados</option>
+                                <option value="">Status: Aguardando Assinatura</option>
+                                <option value="">Status: Cancelados</option>
                             </select>
                         </div>
 
-                        <div class="col-6  col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                        <div class="col-md-4  mb-3 mb-md-1">
+                            <div class="inputBox">
+                                <h5>Data de criação (Início)</h5>
+                                <input type="date" name="" class="form-control selectMOD data text-center"
+                                    value="Qua., 15 de março de 2023" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mb-3 mb-md-1">
+                            <div class="inputBox">
+                                <h5>Data de criação (Final)</h5>
+                                <input type="date" name="" class="form-control selectMOD data text-center"
+                                    value="Qua., 15 de março de 2023" required="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 p-0 mt-3">
+                    <div class="row m-0 p-3 bg-light border">
+
+                        <div class="col-sm-4 col-md d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <h5 class="my-0 py-0">Exibir Cards Por:</h5>
+                        </div>
+
+                        <div class="col-sm-8 col-md-4 mb-3 mb-md-1">
                             <select name="" class="form-select selectMOD text-center" id="">
-                                <option value="">Ordem Crescente</option>
-                                <option value="">Ordem Decrescente</option>
+                                <option value="">Data de Criação</option>
+                                <option value="">Data de Publicação</option>
+                                <option value="">Data de Cancelamento</option>
+                                <option value="">Data Prevista de Publicação</option>
                             </select>
                         </div>
 
-                        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
-                            <select name="" class="form-select selectMOD text-center" id="">
-                                <option value="">Exibir 10 Publicações</option>
-                                <option value="">Exibir 20 Publicações</option>
-                            </select>
+
+                        <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="menor"
+                                title="Ordenação de cards a partir da data mais antiga"
+                                class="btn btn-back save w-100 h-100">
+                                <i class="fal fa-angle-double-right"></i> 1,2,3... </button>
+
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="maior"
+                                style="display: none;" title="Ordenação de cards a partir da data mais rescente"
+                                class="btn btn-back save w-100 h-100">
+                                ... 3,2,1 <i class="fal fa-angle-double-left"></i> </button>
+
                         </div>
 
-                        <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
-                            <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
-                                onclick="location.href='edit_new.html';" data-bs-placement="top"
-                                title="Criar Nova Publicação"><i class="fal fa-file me-3"></i> Criar</button>
+                        <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Número de cards por página" class="btn btn-back save w-100 h-100" id="dez">
+                                <i class="far fa-clone"></i> 10</button>
+
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Número de cards por página" class="btn btn-back save w-100 h-100" id="vinte"
+                                style="display: none;">
+                                <i class="far fa-clone"></i> 20</button>
+
                         </div>
+
+                        <div class="col-4 col-md-2  mb-3 mb-md-1">
+                            <span class="btn btn-back save total w-100 h-100 d-flex justify-content-center align-items-center"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Total de cards localizados">
+                                Total: <b class="mx-2">05</b></span>
+                        </div>
+
+
                     </div>
 
                 </div>
+
+
 
 
 
@@ -461,8 +469,9 @@
                                         onclick="location.href='edit_new.html';"> <i
                                             class="fal fa-pencil-alt"></i></button>
 
-                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal" data-bs-target="#bronze" title="Assinar" > <i
-                                            class="fal fa-file-signature" ></i></button>
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                        data-bs-target="#bronze" title="Assinar"> <i
+                                            class="fal fa-file-signature"></i></button>
 
 
                                     <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="tooltip"
@@ -1170,63 +1179,65 @@
     </div>
 
 
-        <!-- --------------------------------------------------- -->
-        <div class="modal fade" id="bronze" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body p-4">
-                        <div class="row">
-                            <div class="col-12 p-2 mb-3 text-center">
-                                <i class="fal fa-hand-paper fa-3x"></i><br>
-                                <h5>Atenção!</h5>
-    
-                                <h6 class="my-3">
-                                Seu perfil <b class="bronze">( <i class="far fa-medal me-2"></i> Bronze )</b> não possui o nível de confiabilidade 
-                                necessário para realizar a Assinatura das Publicações.
-                                </h6>
-                            </div>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-ok cb w-100" data-bs-dismiss="modal" aria-label="Close"> Voltar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
     <!-- --------------------------------------------------- -->
-    <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="bronze" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title my-auto cancel">
-                        <i class="far fa-sign-out-alt me-3"></i> Sair da área do Publicante
-                    </h5>
-                    <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
-                        aria-label="Close"></i>
-
-                </div>
                 <div class="modal-body p-4">
                     <div class="row">
-                        <div class="col-12 p-2 mb-3">
+                        <div class="col-12 p-2 mb-3 text-center">
+                            <i class="fal fa-hand-paper fa-3x"></i><br>
+                            <h5>Atenção!</h5>
 
-                            <h5>Deseja realmente sair?</h5>
-
+                            <h6 class="my-3">
+                                Seu perfil <b class="bronze">( <i class="far fa-medal me-2"></i> Bronze )</b> não possui
+                                o nível de confiabilidade
+                                necessário para realizar a Assinatura das Publicações.
+                            </h6>
                         </div>
                     </div>
-                    <div class="modal-footer d-flex justify-content-between">
-                        <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
-                            NÃO
-                        </a>
 
-                        <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
-                            SIM
-                        </a>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ok cb w-100" data-bs-dismiss="modal" aria-label="Close">
+                            Voltar</button>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- --------------------------------------------------- -->
+        <div class="modal fade" id="sair" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title my-auto cancel">
+                            <i class="far fa-sign-out-alt me-3"></i> Sair da área do Publicante
+                        </h5>
+                        <i class="fal fa-window-close fa-2x p-0 m-0 btn_close" data-bs-dismiss="modal"
+                            aria-label="Close"></i>
+
+                    </div>
+                    <div class="modal-body p-4">
+                        <div class="row">
+                            <div class="col-12 p-2 mb-3">
+
+                                <h5>Deseja realmente sair?</h5>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <a href="#" class="btn btn-cancel px-4" data-bs-dismiss="modal">
+                                NÃO
+                            </a>
+
+                            <a href="#" class="btn btn-danger px-4" data-bs-dismiss="modal">
+                                SIM
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1433,6 +1444,32 @@
                 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                     return new bootstrap.Tooltip(tooltipTriggerEl)
                 })
+
+                $(function () {
+
+                    $('#dez').click(function () {
+                        $(this).hide();
+                        $('#vinte').show();
+                    });
+
+                    $('#vinte').click(function () {
+                        $(this).hide();
+                        $('#dez').show();
+                    });
+
+                    $('#menor').click(function () {
+                        $(this).hide();
+                        $('#maior').show();
+                    });
+
+                    $('#maior').click(function () {
+                        $(this).hide();
+                        $('#menor').show();
+                    });
+
+
+
+                });
 
             </script>
 
