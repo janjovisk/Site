@@ -323,7 +323,7 @@
 
                 </div>
 
-                <div class="col-12 px-3 px-md-0 mb-4">
+                <div class="col-12 px-2 px-md-0 mb-4">
                     <div class="row">
                         <div class="col-md-8 p-3">
                             <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
@@ -332,23 +332,26 @@
                         <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
                                 onclick="location.href='edit_new.html';" data-bs-placement="top"><i
-                                    class="fal fa-file me-3"></i> Criar Publicação</button>
+                                    class="fal fa-file me-3"></i> CRIAR PUBLICAÇÃO</button>
         
         
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 px-3 px-md-0">
+                <div class="col-12 px-2 px-md-0">
                     <div class="row">
 
                         <div class="col-md-4 mb-3 mb-md-1">
-                            <h5>Filtrar por</h5>
+                            <h5>Filtrar por Status</h5>
                             <select name="" class="form-select selectMOD text-center" id="">
-                                <option value="">Todos os Status</option>
-                                <option value="">Status: Publicados</option>
-                                <option value="">Status: Aguardando Assinatura</option>
-                                <option value="">Status: Cancelados</option>
+                                <option value="">Todos</option>
+                                <option value="">Rascunho</option>
+                                <option value="">Aguardando Assinatura</option>
+                                
+                                <option value="">Aguardando Publicação</option>
+                                <option value="">Publicado</option>
+                                <option value="">Cancelado</option>
                             </select>
                         </div>
 
@@ -375,7 +378,7 @@
                     <div class="row m-0 p-3 bg-light border">
 
                         <div class="col-sm-4 col-md d-flex justify-content-center align-items-center mb-3 mb-md-1">
-                            <h5 class="my-0 py-0">Exibir Cards Por:</h5>
+                            <h5 class="my-0 py-0">Ordenar Por:</h5>
                         </div>
 
                         <div class="col-sm-8 col-md-4 mb-3 mb-md-1">
@@ -390,26 +393,27 @@
 
                         <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="menor"
-                                title="Ordenação de cards a partir da data mais antiga"
+                                title="Ordem Crescente"
                                 class="btn btn-back save w-100 h-100">
-                                <i class="fal fa-angle-double-right"></i> 1,2,3... </button>
+                                <img src="../img/AZ.svg" alt="order" class="icon_ordem"> A-Z </button>
+                                
 
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="maior"
-                                style="display: none;" title="Ordenação de cards a partir da data mais rescente"
+                                style="display: none;" title="Ordem Decrescente"
                                 class="btn btn-back save w-100 h-100">
-                                ... 3,2,1 <i class="fal fa-angle-double-left"></i> </button>
+                                <img src="../img/ZA.svg" alt="order" class="icon_ordem"> Z-A </button>
 
                         </div>
 
                         <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Número de cards por página" class="btn btn-back save w-100 h-100" id="dez">
-                                <i class="far fa-clone"></i> 10</button>
+                                <img src="../img/quantidade.svg" alt="order" class="icon_ordem"> 10 Itens</button>
 
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Número de cards por página" class="btn btn-back save w-100 h-100" id="vinte"
                                 style="display: none;">
-                                <i class="far fa-clone"></i> 20</button>
+                                <img src="../img/quantidade.svg" alt="order" class="icon_ordem"> 20 Itens</button>
 
                         </div>
 
@@ -433,7 +437,7 @@
 
         <div class="container-custom px-0">
             <div class="mb-4">
-                <div class="row" id="lista_public2">
+                <div class="row px-1" id="lista_public2">
 
                     <div class="col-md-6 p-2">
                         <div class="lista_pub">
@@ -442,7 +446,7 @@
                                     <div class="pendent pb-2">
                                         <i class="far fa-file-signature me-3"></i> Assinatura Pendente
                                     </div>
-                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
@@ -453,7 +457,7 @@
                                             <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
 
-                                        <div class="col-6 rasc">
+                                        <div class="col-6 textoAzul">
                                             <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
@@ -581,7 +585,7 @@
                                     <div class="public rasc pb-2">
                                         <i class="far fa-pencil-alt me-3"></i> Racunho
                                     </div>
-                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
@@ -625,7 +629,7 @@
                                     <div class="pendent pb-2">
                                         <i class="far fa-hourglass me-3"></i> Publicadação Pendente
                                     </div>
-                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
@@ -636,7 +640,7 @@
                                             <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
 
-                                        <div class="col-6 rasc">
+                                        <div class="col-6 textoAzul">
                                             <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
@@ -681,7 +685,7 @@
                                             <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
 
-                                        <div class="col-6 rasc">
+                                        <div class="col-6 textoAzul">
                                             <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
@@ -720,7 +724,7 @@
                                     <div class="cancel pb-2">
                                         <i class="far fa-ban me-3"></i> Cancelada
                                     </div>
-                                    <div class="caminho">Executivo > INSTITUTO "LAURO DE SOUZA LIMA"</div>
+                                    
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
