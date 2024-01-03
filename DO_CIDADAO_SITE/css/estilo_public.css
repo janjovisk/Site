@@ -558,10 +558,17 @@
     margin-left: -4px;
 }
 
-.order_ico{
-    height: 28px;
-    position: absolute;
+.icon_ordem{
+    width: 22px;
+    height: 22px;
+    transition: 0.5s;
 }
+button:hover .icon_ordem{
+    filter: grayscale(1) brightness(4) ;
+}
+
+
+
 
 
 @media (max-width:991px) {
