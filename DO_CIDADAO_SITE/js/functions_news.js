@@ -1,7 +1,7 @@
 ﻿
 // focus na busca
 
-window.onload = function() {
+window.onload = function () {
   var input = document.getElementById("busca_principal").focus();
 }
 
@@ -51,7 +51,7 @@ $(function () {
 //   if ($(window).scrollTop() > 80) {
 //     $('#header_menu').css({"position":"fixed","top":"0"});
 //     $('.conteudo').css({"margin-top":"110px"});
-    
+
 //   } else {
 //       $('#header_menu').css({"position" : "relative"});
 //       $('.conteudo').css({"margin-top":"10px"});
@@ -60,10 +60,10 @@ $(function () {
 
 
 // Scroll UP
- $(window).on('scroll', function(event) {
+$(window).on('scroll', function (event) {
   if ($(window).scrollTop() > 300) {
-  $('.sobe').fadeIn();
-    
+    $('.sobe').fadeIn();
+
   } else {
     $('.sobe').fadeOut();
   }
@@ -72,69 +72,69 @@ $(function () {
 // Selecionando Caderno Executivo
 
 
-$('input[name="caderno"]').on('click', function() {
+$('input[name="caderno"]').on('click', function () {
   // $('html, body').animate({scrollTop:$('#result_edicao').position().top});
-	if($('#CLes, #CExe').is(':checked')) {
+  if ($('#CLes, #CExe').is(':checked')) {
     $('#area_secao').slideDown();
-	} else {
+  } else {
     $('#area_secao').hide();
-	}
+  }
 
-  if($('#CExe').is(':checked')) {
+  if ($('#CExe').is(':checked')) {
     $('#b01').fadeIn();
-	} else {
+  } else {
     $('#b01').hide();
-	}
+  }
 
-  if($('#CLes').is(':checked')) {
+  if ($('#CLes').is(':checked')) {
     $('#b02').fadeIn();
-	} else {
+  } else {
     $('#b02').hide();
-	}
+  }
 });
 
-$('input[name="caderno"]').on('click', function() {
+$('input[name="caderno"]').on('click', function () {
   $('#c01, #c02, #c03').hide();
-	if($('#CMun').is(':checked')) {
+  if ($('#CMun').is(':checked')) {
     $('#b03').fadeIn();
-	} else {
+  } else {
     $('#b03').hide();
-	}
+  }
 });
 
-$('input[name="caderno"]').on('click', function() {
+$('input[name="caderno"]').on('click', function () {
   $('#c01, #c02, #c03').hide();
-	if($('#CEmp').is(':checked')) {
+  if ($('#CEmp').is(':checked')) {
     $('#b04').fadeIn();
-	} else {
+  } else {
     $('#b04').hide();
-	}
+  }
 });
 
 // Selecionando Seção
 
-$('input[name="secao"]').on('click', function() {
-	if($('#AN').is(':checked')) {
+$('input[name="secao"]').on('click', function () {
+  if ($('#AN').is(':checked')) {
     $('#c01').fadeIn();
-	} else {
+  } else {
     $('#c01').hide();
-	}
+  }
 });
 
-$('input[name="secao"]').on('click', function() {
-	if($('#AP').is(':checked')) {
+$('input[name="secao"]').on('click', function () {
+  if ($('#AP').is(':checked')) {
     $('#c02').fadeIn();
-	} else {
+  } else {
     $('#c02').hide();
-	}
+  }
 });
 
-$('input[name="secao"]').on('click', function() {
-	if($('#NP').is(':checked')) {
+$('input[name="secao"]').on('click', function () {
+  if ($('#NP').is(':checked')) {
     $('#c03').fadeIn();
-	} else {
+  } else {
     $('#c03').hide();
-	}
+  }
 });
 
 
@@ -142,32 +142,39 @@ $('input[name="secao"]').on('click', function() {
 
 // Menu Perfil de usuário
 
-$('#user_click').on('click', function() {
-	if($('#user_click').is(':checked')) {
-    $('.user-box').fadeIn();
-	} else {
-    $('.user-box').fadeOut();
-	}
+$('#user_click').on('click', function () {
+  if ($('#user_click').is(':checked')) {
+    $('.user-box').css({"display":"flex"});
+  } else {
+    $('.user-box').css({"display":"none"});
+  }
 });
 
 // Espandir e Retaria Lista de Resultados
 
-$('#abre_fecha_tudo').on('click', function() {
-	if($('#abre_fecha_tudo').is(':checked')) {
-    $('.treeview input').prop('checked',true);
-	} else {
-    $('.treeview input').prop('checked',false);
-	}
+$('#abre_fecha_tudo').on('click', function () {
+  if ($('#abre_fecha_tudo').is(':checked')) {
+    $('.treeview input').prop('checked', true);
+  } else {
+    $('.treeview input').prop('checked', false);
+  }
 });
 
 
 //  ------------Links de Acesso para exclusão ....>>>
 
-$('#buscar, #go_resultado').click(function() {
+$('#buscar, #go_resultado').click(function () {
   window.location = "Resultado_busca.html";
 });
 
-$('.resultBox, .materia').click(function() {
+$('.resultBox, .materia').click(function () {
   window.location = "public.html";
 });
 
+
+// $(function () {
+//   $('.btn_help, .help_mobile').click(function () {
+//     $(this).toggleClass("ativo");
+//     $('.menu_help, .help_mobile .text, .help_mobile .close').toggle();
+//   });
+// });
