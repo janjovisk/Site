@@ -220,8 +220,8 @@
     flex-direction: column;
     cursor: pointer;
     right: -100px;
-    width: 68px;
-    height: 68px;
+    width: 74px;
+    height: 74px;
     font-weight: 400;
     box-shadow: inset 0 0 0 1px #dbdbdb;
     color: #8d8d8d;
@@ -264,8 +264,7 @@
     align-items: center;
     flex-direction: column;
     width: 74px;
-    height: 100%;
-    min-height: 66px;
+    height: 74px;
     top: 0;
     right: 0;
     border: none;
@@ -288,6 +287,28 @@
     color: #fff;
     margin-top: auto;
 }
+
+.controles{
+    display: flex;
+    background: #f7f7f7;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+    padding: 6px 24px;
+    transition: 0.5s;
+}
+
+
+.controles:hover{
+    text-decoration: none;
+    background: #fff;
+    box-shadow: inset 0 0 10px #d6d4d4;
+}
+
+.afastar{
+    margin-right: 66px;
+}
+
 
 .menu_help {
     transition: 0.3s;
@@ -337,8 +358,7 @@
 .user-box {
     display: none;
     transition: 0.5s;
-    height: auto;
-    min-height: 68px;
+    min-height: 76px;
 }
 
 
@@ -572,6 +592,15 @@ button:hover .icon_ordem{
 
 
 @media (max-width:991px) {
+
+    .afastar{
+        margin-right: 0px;
+        margin: 10px -8px 0 -24px;
+    }
+
+    .controles{
+        height: auto;
+    }
 
     .btn_altera{
         flex-basis: 100%;
