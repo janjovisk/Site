@@ -323,19 +323,48 @@
                     </div>
                 </div>
 
-                <div class="col-12 p-0 mb-3">
-                    <div class="row m-0 p-3 bg-light border">
 
-                        <div class="col-sm-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                <div class="col-12 px-2 px-md-0">
+                    <div class="row">
 
-                                <select name="" class="form-select selectMOD text-center" id="">
-                                    <option value="">Exibir Ativos</option>
-                                    <option value="">Exibir Inativos</option>
-                                </select>
-      
+                        <div class="col-md-4 mb-3 mb-md-1">
+                            <h5>Filtrar por Status</h5>
+                            <select name="" class="form-select selectMOD text-center" id="">
+                                <option value="">Todos</option>
+                                <option value="">Ativos</option>
+                                <option value="">Inativos</option>
+
+                            </select>
                         </div>
 
-                        <div class="col-sm-6 col-md-3 mb-3 mb-md-1">
+                        <div class="col-md-4  mb-3 mb-md-1">
+                            <div class="inputBox">
+                                <h5>Data de criação (Início)</h5>
+                                <input type="date" name="" class="form-control selectMOD  text-center"
+                                    value="Qua., 15 de março de 2023" required="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mb-3 mb-md-1">
+                            <div class="inputBox">
+                                <h5>Data de criação (Final)</h5>
+                                <input type="date" name="" class="form-control selectMOD  text-center"
+                                    value="Qua., 15 de março de 2023" required="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 p-0 my-3">
+                    <div class="row m-0 p-3 bg-light border">
+
+                        <div class="col-sm-4 col-md d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <h5 class="my-0 py-0">Ordenar Por:</h5>
+                        </div>
+
+                        <div class="col-sm-8 col-md-4 mb-3 mb-md-1">
                             <select name="" class="form-select selectMOD text-center" id="">
                                 <option value="">Data de Criação</option>
                                 <option value="">Data de Alteração</option>
@@ -345,14 +374,12 @@
 
                         <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="menor"
-                                title="Ordem Crescente"
-                                class="btn btn-back save w-100 h-100">
+                                title="Ordem Crescente" class="btn btn-back save w-100 h-100">
                                 <img src="../img/AZ.svg" alt="order" class="icon_ordem"> A-Z </button>
-                                
+
 
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="maior"
-                                style="display: none;" title="Ordem Decrescente"
-                                class="btn btn-back save w-100 h-100">
+                                style="display: none;" title="Ordem Decrescente" class="btn btn-back save w-100 h-100">
                                 <img src="../img/ZA.svg" alt="order" class="icon_ordem"> Z-A </button>
 
                         </div>
@@ -370,7 +397,8 @@
                         </div>
 
                         <div class="col-4 col-md-2  mb-3 mb-md-1">
-                            <span class="btn btn-back save total w-100 h-100 d-flex justify-content-center align-items-center"
+                            <span
+                                class="btn btn-back save total w-100 h-100 d-flex justify-content-center align-items-center"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Total de cards localizados">
                                 Total: <b class="mx-2">05</b></span>
                         </div>
