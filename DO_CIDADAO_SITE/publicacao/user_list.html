@@ -298,14 +298,11 @@
 
                 </div>
 
-                <div class="col-md-6 text-center text-md-start my-2 my-md-auto">
+                <div class="col-12 text-center text-md-start my-2 my-md-auto">
                     <a href="gestor.html" class="btn btn-back px-4"><i class="far fa-arrow-left me-3"></i> Voltar à
                         lista de Publicações</a>
                 </div>
 
-                <div class="col-md-6 text-center text-md-end my-2 my-md-auto rasc" style="text-transform: uppercase;">
-                    <b class="text-black me-4">Total de Usuário:</b> <i class="far fa-users me-3"></i> <b>25</b>
-                </div>
 
                 <div class="col-12 border-bottom my-3"> </div>
 
@@ -319,13 +316,69 @@
                         <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
                                 onclick="location.href='new_user.html';" data-bs-placement="top"><i
-                                    class="fal fa-plus me-3"></i> CADASTRAR USUÁRIO</button>
+                                    class="fal fa-plus me-3"></i> NOVO USUÁRIO</button>
 
 
                         </div>
                     </div>
                 </div>
 
+                <div class="col-12 p-0 mb-3">
+                    <div class="row m-0 p-3 bg-light border">
+
+                        <div class="col-sm-6 col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+
+                                <select name="" class="form-select selectMOD text-center" id="">
+                                    <option value="">Exibir Ativos</option>
+                                    <option value="">Exibir Inativos</option>
+                                </select>
+      
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 mb-3 mb-md-1">
+                            <select name="" class="form-select selectMOD text-center" id="">
+                                <option value="">Data de Criação</option>
+                                <option value="">Data de Alteração</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="menor"
+                                title="Ordem Crescente"
+                                class="btn btn-back save w-100 h-100">
+                                <img src="../img/AZ.svg" alt="order" class="icon_ordem"> A-Z </button>
+                                
+
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="maior"
+                                style="display: none;" title="Ordem Decrescente"
+                                class="btn btn-back save w-100 h-100">
+                                <img src="../img/ZA.svg" alt="order" class="icon_ordem"> Z-A </button>
+
+                        </div>
+
+                        <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Número de cards por página" class="btn btn-back save w-100 h-100" id="dez">
+                                <img src="../img/quantidade.svg" alt="order" class="icon_ordem"> 10 Itens</button>
+
+                            <button data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Número de cards por página" class="btn btn-back save w-100 h-100" id="vinte"
+                                style="display: none;">
+                                <img src="../img/quantidade.svg" alt="order" class="icon_ordem"> 20 Itens</button>
+
+                        </div>
+
+                        <div class="col-4 col-md-2  mb-3 mb-md-1">
+                            <span class="btn btn-back save total w-100 h-100 d-flex justify-content-center align-items-center"
+                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Total de cards localizados">
+                                Total: <b class="mx-2">05</b></span>
+                        </div>
+
+
+                    </div>
+
+                </div>
 
                 <div class="container-custom px-0">
                     <div class="mb-4">
