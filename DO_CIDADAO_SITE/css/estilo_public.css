@@ -587,9 +587,35 @@ button:hover .icon_ordem{
     filter: grayscale(1) brightness(4) ;
 }
 
+.result_item{
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #274fae;
+    color: #8d8d8d;
+    font-weight: 600;
+    padding: 4px 16px;
+    font-size: 0.8em;
+    transition: 0.5s;
+    cursor: default;
+}
 
+.result_item:hover{
+    background: #f0f0f0;
+}
 
+.result_item .close{
+    margin-left: 16px;
+    cursor: pointer;
+    color: #274fae;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
 
+.result_item .close:hover{
+    color: #ff2121;
+}
 
 @media (max-width:991px) {
 
