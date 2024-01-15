@@ -342,14 +342,37 @@
                                     title="Informações de Consumo"></i></button>
 
                             <button type="button" id="btn_rever" class="btn btn-back edit_info" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Revisões"><i class="far fa-history fa-2x"></i></button>
+                                data-bs-placement="top" title="Revisões"><i class="far fa-clipboard-list fa-2x"></i></button>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="row revisoes">
+            <div class="row revisoes mb-3">
+
+                <div class="col-12 revisao">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center small">
+                            02
+                        </div>
+                        <div
+                            class="col d-flex justify-content-center justify-content-md-start align-items-center small">
+                            <i class="far fa-calendar-alt mx-2"></i> 11/10/2023 <i class="far fa-clock mx-2"></i>
+                            21:10:59 - AM
+                        </div>
+
+                        <div class="col-md-4 d-flex justify-content-evenly justify-content-md-between mt-3 mt-md-auto">
+                            <button type="button" class="btn btn-secondary btn-sm px-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="far fa-retweet-alt me-3"></i> Comparar
+                            </button>
+
+                            <button type="button" class="btn btn-secondary btn-sm px-4"><i
+                                    class="far fa-redo-alt me-3"></i> Restaurar </button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-12 revisao">
                     <div class="row">
                         <div class="col-1 d-flex justify-content-center align-items-center small">
@@ -396,9 +419,11 @@
                 </div>
             </div>
 
-            <div class="row mb-4">
-
-            </div>
+            <!-- <div class="row mx-0 mb-4">
+                <div class="col-12 bg-light p-2 border">
+                    <span>Assinado Por: <strong class="textoAzul ms-3">Joãozinho de Carvalho Teste</strong></span>
+                </div>
+            </div> -->
 
             <div class="row mb-4">
                 <div class="col-lg-4 mb-4">
