@@ -440,6 +440,50 @@
                 <div class="row px-1" id="lista_public2">
 
                     <div class="col-md-6 p-2">
+
+                        <div class="lista_pub" style="box-shadow: 0 0 0 2px #274fae;">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="cancel pb-2">
+                                        <i class="far fa-exclamation-triangle me-3"></i> Edição em Aberto
+                                    </div>
+
+                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                        title="Visualizar"><a href="edit_new.html">
+                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
+                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
+                                        </a></h6>
+                                    <div class="row pt-2 status">
+                                        <div class="col-6">
+                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div style="padding: 6px;
+                                            border: 1px solid #274fae;
+                                            color: #274fae;
+                                            text-align: center;"><i class="far fa-lock me-2"></i> Edição Bloqueada
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
+                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
+                                        title="Visualizar"><i class="fal fa-eye"></i></button>
+
+                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
+                                        data-bs-target="#auditoria">
+                                        <i class="fal fa-history" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Auditoria"></i></button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-2">
                         <div class="lista_pub">
                             <div class="row">
                                 <div class="col">
@@ -458,7 +502,7 @@
                                         </div>
 
                                         <div class="col-6 textoAzul">
-                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                            <span>Publicação Prevista:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
                                 </div>
@@ -532,49 +576,7 @@
 
                     </div>
 
-                    <div class="col-md-6 p-2">
 
-                        <div class="lista_pub" style="box-shadow: 0 0 0 2px #ff2121;">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="cancel pb-2">
-                                        <i class="far fa-exclamation-triangle me-3"></i> Edição em Aberto
-                                    </div>
-
-                                    <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                        title="Visualizar"><a href="edit_new.html">
-                                            ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
-                                            ELETRÔNICO Nº 0864/23, PROCESSO Nº 02021-39/315351
-                                        </a></h6>
-                                    <div class="row pt-2 status">
-                                        <div class="col-6">
-                                            <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
-                                        </div>
-
-                                        <div class="col-6">
-                                            <div style="padding: 6px;
-                                            border: 1px solid #ff2121;
-                                            color: #ff2121;
-                                            text-align: center;"><i class="far fa-lock me-2"></i> Edição Bloqueada
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-2">
-                                    <button type="button" class="btn btn-ok w-100 btn-sm mb-1" data-bs-toggle="tooltip"
-                                        onclick="location.href='edit_new.html';" data-bs-placement="right"
-                                        title="Visualizar"><i class="fal fa-eye"></i></button>
-
-                                    <button type="button" class="btn btn-ok w-100 btn-sm my-1" data-bs-toggle="modal"
-                                        data-bs-target="#auditoria">
-                                        <i class="fal fa-history" data-bs-toggle="tooltip" data-bs-placement="right"
-                                            title="Auditoria"></i></button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-md-6 p-2">
 
@@ -641,7 +643,7 @@
                                         </div>
 
                                         <div class="col-6 textoAzul">
-                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                            <span>Publicação Prevista:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
                                 </div>
@@ -685,7 +687,7 @@
                                         </div>
 
                                         <div class="col-6 textoAzul">
-                                            <span>Publicado em:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
+                                            <span>Publicação Prevista:</span><br> <b>12/01/2023</b> ás <b>10:00:00</b>
                                         </div>
                                     </div>
                                 </div>
@@ -734,8 +736,8 @@
                                             <span>Criado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
 
-                                        <div class="col-6 text-warning">
-
+                                        <div class="col-6">
+                                            <span>Cancelado em:</span><br> <b>10/01/2023</b> ás <b>21:00:00</b>
                                         </div>
                                     </div>
                                 </div>
