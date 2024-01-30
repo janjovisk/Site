@@ -306,20 +306,26 @@
                     <div class="position-relative border px-2 ps-4 user-box justify-content-between bd-highlight">
                         <div class="py-2 me-4 lex-grow-1 bd-highlight">
                             <div class="my-0 py-0">
-                                <strong>Joãozinho de Jesus</strong>                               
+                                <strong>Joãozinho de Jesus</strong>
                             </div>
 
                             <div class="my-0 py-0">
                                 <span class="small ouro"><i class="far fa-medal me-2"></i> Ouro</span>
+                                <span class="small"> | <a href="cliente.html">Cliente: PRODESP<i class="far fa-eye mx-2"></i></a></span>
                             </div>
+
+                            
                         </div>
 
                         <div class="d-lg-flex afastar">
 
+
+                            <!-- 
                             <a href="user_list.html" class="controles">
                                 <i class="far fa-users-cog me-3"></i>
                                 <span>Outro Botão</span>
                             </a>
+                            -->
 
                             <a href="user_list.html" class="controles">
                                 <i class="far fa-users-cog me-3"></i>
@@ -328,14 +334,14 @@
 
 
                         </div>
-                        
+
 
                         <button type="button" class="LogOut" data-bs-toggle="modal" data-bs-target="#sair">
                             <i class="fal fa-sign-out-alt"></i>
                             <span>Sair</span>
                         </button>
 
-                        
+
                     </div>
 
                 </div>
@@ -345,13 +351,13 @@
                         <div class="col-md-8 p-3">
                             <h4 class="flex-grow-1 text-center text-lg-start my-0">LISTA DE PUBLICAÇÕES </h4>
                         </div>
-        
+
                         <div class="col-md-4 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button type="button" class="btn btn-ok w-100 cb" data-bs-toggle="tooltip"
                                 onclick="location.href='edit_new.html';" data-bs-placement="top"><i
                                     class="fal fa-file me-3"></i> CRIAR PUBLICAÇÃO</button>
-        
-        
+
+
                         </div>
                     </div>
                 </div>
@@ -365,7 +371,7 @@
                                 <option value="">Todos</option>
                                 <option value="">Rascunho</option>
                                 <option value="">Aguardando Assinatura</option>
-                                
+
                                 <option value="">Aguardando Publicação</option>
                                 <option value="">Publicado</option>
                                 <option value="">Cancelado</option>
@@ -410,14 +416,12 @@
 
                         <div class="col-4 col-md-2 d-flex justify-content-center align-items-center mb-3 mb-md-1">
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="menor"
-                                title="Ordem Crescente"
-                                class="btn btn-back save w-100 h-100">
+                                title="Ordem Crescente" class="btn btn-back save w-100 h-100">
                                 <img src="../img/AZ.svg" alt="order" class="icon_ordem"> A-Z </button>
-                                
+
 
                             <button data-bs-toggle="tooltip" data-bs-placement="bottom" id="maior"
-                                style="display: none;" title="Ordem Decrescente"
-                                class="btn btn-back save w-100 h-100">
+                                style="display: none;" title="Ordem Decrescente" class="btn btn-back save w-100 h-100">
                                 <img src="../img/ZA.svg" alt="order" class="icon_ordem"> Z-A </button>
 
                         </div>
@@ -435,7 +439,8 @@
                         </div>
 
                         <div class="col-4 col-md-2  mb-3 mb-md-1">
-                            <span class="btn btn-back save total w-100 h-100 d-flex justify-content-center align-items-center"
+                            <span
+                                class="btn btn-back save total w-100 h-100 d-flex justify-content-center align-items-center"
                                 data-bs-toggle="tooltip" data-bs-placement="bottom" title="Total de cards localizados">
                                 Total: <b class="mx-2">05</b></span>
                         </div>
@@ -463,7 +468,7 @@
                                     <div class="pendent pb-2">
                                         <i class="far fa-file-signature me-3"></i> Assinatura Pendente
                                     </div>
-                                    
+
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
@@ -602,7 +607,7 @@
                                     <div class="public rasc pb-2">
                                         <i class="far fa-pencil-alt me-3"></i> Racunho
                                     </div>
-                                    
+
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
@@ -646,7 +651,7 @@
                                     <div class="pendent pb-2">
                                         <i class="far fa-hourglass me-3"></i> Publicadação Pendente
                                     </div>
-                                    
+
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
@@ -741,7 +746,7 @@
                                     <div class="cancel pb-2">
                                         <i class="far fa-ban me-3"></i> Cancelada
                                     </div>
-                                    
+
                                     <h6 class="titulo" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                         title="Visualizar"><a href="edit_new.html">
                                             ENCONTRA-SE ABERTO NO INSTITUTO "LAURO DE SOUZA LIMA", O PREGÃO
