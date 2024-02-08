@@ -601,9 +601,23 @@ button:hover .icon_ordem{
 
 .result_item .close:hover{
     color: #ff2121;
+   
 }
 
+
+
+
 @media (max-width:991px) {
+
+    
+.restringir_tamanho{
+    width: calc(100% - 180px);
+    margin-right: 80px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
 
     .afastar{
         margin-right: 0px;
@@ -722,6 +736,11 @@ button:hover .icon_ordem{
     }
 
 
+    .restringir_tamanho{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    
+    }
 }
 
 
