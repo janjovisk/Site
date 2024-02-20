@@ -1307,6 +1307,7 @@ input:disabled, select:disabled{
 
 
 .modos_public{
+  z-index: 10;
   padding: 0px 12px;
   display: flex;
   justify-content: center;
@@ -1356,7 +1357,9 @@ input:disabled, select:disabled{
   background: #fff !important;
 }
 
-
+#anexos_views tr:nth-child(even){
+  background: #f7f7f7;
+}
 
 
 /* RESPONSIVO AJUSTE */
