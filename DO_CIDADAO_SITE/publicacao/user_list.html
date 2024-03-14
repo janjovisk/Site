@@ -183,14 +183,14 @@
                 <div id="BoxPesqAvanc">
 
 
-                    <div class="row px-4">
-                        <div class="col-12 py-3">
+                    <div class="row px-0">
+                        <div class="col-12 p-4">
                             <h4 class="mt-2 mb-2" style="color:#274fae;">
                                 Configurar Busca
                             </h4>
                         </div>
 
-                        <div class="col-sm-6 col-lg-4 mb-2 text-start">
+                        <div class="col-sm-6 col-lg-4 mb-2 text-start px-4">
                             <div class="form-check form-switch mb-4 ms-2">
                                 <input class="form-check-input" type="radio" name="pesquisa" role="switch" id="a01"
                                     checked>
@@ -201,7 +201,7 @@
                         </div>
 
 
-                        <div class="col-sm-6 col-lg-4 mb-2 text-start">
+                        <div class="col-sm-6 col-lg-4 mb-2 text-start px-4">
                             <div class="form-check form-switch mb-4 ms-2">
                                 <input class="form-check-input" type="radio" name="pesquisa" role="switch" id="a03">
                                 <label for="a03" class="form-check-label">
@@ -210,8 +210,21 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4">
-                            <button type="button" class="btn btn-ok w-100" id="go_resultado">Pesquisar</button>
+                        <div class="col-sm-6 col-lg-4 mb-2 text-start px-4">
+                            <div class="form-check form-switch mb-4 ms-2">
+                                <input class="form-check-input" type="checkbox" name="pesquisa" role="switch" checked >
+                                <label for="a03" class="form-check-label">
+                                    <span class="ms-3">Ativos</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 bg-light m-0 p-4">
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-4">
+                                    <button type="button" class="btn btn-ok w-100" id="go_resultado">Pesquisar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -325,16 +338,14 @@
                 </div>
 
 
-                <div class="col-12 px-2 px-md-0">
+                <div class="col-12 px-2 px-md-0 mb-3">
                     <div class="row">
 
                         <div class="col-md-4 mb-3 mb-md-1">
-                            <h5>Filtrar por Status</h5>
-                            <select name="" class="form-select selectMOD text-center" id="">
-                                <option value="">Todos</option>
-                                <option value="">Ativos</option>
-                                <option value="">Inativos</option>
-
+                            <h5>Filtrar</h5>
+                            <select name="" class="form-select selectMOD text-center" id="filt_permit">
+                                <option value="">Todos os Usuários</option>
+                                <option>Por Sessão / Retranca</option>
                             </select>
                         </div>
 
@@ -354,6 +365,43 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+
+                <div class="col-12 px-2 px-md-0" id="filtro_line">
+                    <div class="row">
+
+                        <div class="col-md mb-3 mb-md-1">
+                            <h5>Sesão Principal</h5>
+                            <select name="" class="form-select selectMOD text-center" id="">
+                                <option value="">Selecione</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md mb-3 mb-md-1">
+                            <h5>Subseção</h5>
+                            <select name="" class="form-select selectMOD text-center" id="">
+                                <option value="">Selecione</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md mb-3 mb-md-1 my-auto">
+                            <div class="form-check form-switch mb-2 ms-2 ">
+                                <input class="form-check-input" type="radio" name="test" role="switch" id="t01" checked >
+                                <label for="a03" class="form-check-label">
+                                    <span class="ms-3">Localizar por nome</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md mb-3 mb-md-1 mt-auto">
+                            <div class="form-check form-switch mb-2 ms-2">
+                                <input class="form-check-input" type="radio" name="test" role="switch" id="t02" >
+                                <label for="a03" class="form-check-label">
+                                    <span class="ms-3">Localizar por Código</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1022,7 +1070,15 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
 
+
+
         $(function () {
+
+            $("#filtro_line").hide();
+
+            $('#filt_permit').change(function () {
+                $('#filtro_line').show();
+            });
 
             $('#dez').click(function () {
                 $(this).hide();
